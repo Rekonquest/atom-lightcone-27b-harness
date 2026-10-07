@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "adapter_id": "ollama-openai-v1",
+  "runtime_family": "ollama",
+  "transport": "http_openai",
+  "prompt_format": "plain",
+  "boundary_mode": "host_input_output",
+  "model_match": {},
+  "capabilities": {
+    "raw_logits": false,
+    "custom_sampler": false,
+    "grammar": false,
+    "tools": true,
+    "streaming": true,
+    "multimodal": true,
+    "deterministic": true,
+    "seed_control": true,
+    "embeddings": true
+  },
+  "context_limit": 131072,
+  "output_limit": 32768,
+  "conformance_status": "declared",
+  "conformance_receipt": null
+}
+

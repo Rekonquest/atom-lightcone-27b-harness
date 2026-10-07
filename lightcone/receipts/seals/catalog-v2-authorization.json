@@ -1,0 +1,31 @@
+{
+  "authorization_id": "new-complete-lightcone-catalog-seal-v2-authorization",
+  "authorized_at": "2026-09-21T18:53:13.914452+00:00",
+  "expected_sealed_coverage_ledger_sha256": "2b18241d5c243a331f29a43b68931b5b710906f64d30cb6508dccdda3c750c8c",
+  "open_world": true,
+  "pre_transition_coverage_ledger_sha256": "04540e80b84ea39d2e43a4296e2e94d815c2b2a43c3e6f96831d94fe2ae09031",
+  "required_conditions": {
+    "adapter_conformance_passed": true,
+    "authoritative_discoveries_unresolved": 0,
+    "failed_worlds": 0,
+    "known_coverage_axes": 9600,
+    "known_coverage_items": 640,
+    "real_kaggle_tpu_worlds_passed": 178,
+    "rust_verified_packs": 178
+  },
+  "schema_version": 1,
+  "scope": "All 178 worlds registered in hash-bound catalog revision v2 at the stated source revision passed every pre-registered training, held-out, negative-control, and four-dimensional shadow gate on a real eight-device Kaggle TPU and were independently hash-validated and loaded by the Rust runtime.",
+  "status": "seal_transition_authorized",
+  "transition": {
+    "axis_count": 15,
+    "evidence": "receipts/seals/catalog-v2-authorization.json",
+    "item_count": 640,
+    "note": "Catalog revision v2 sealed after 178 of 178 real Kaggle TPU worlds at kernel version 4, 5,339 pre-registered gates, 178 Rust-verified immutable packs, a four-record floor across all 8,960 curriculum-backed item-axis pairs, zero unresolved authoritative discoveries, and passed Qwen3.8-27B adapter conformance.",
+    "pre_transition_status_counts": {
+      "sealed": 640
+    },
+    "sealed_axis_count": 9600
+  },
+  "validation_receipt": "receipts/validation/catalog-tpu-v2.json",
+  "validation_receipt_sha256": "585d89a2cae485974153e8de0d7229fe7928aa2b5bd5ff93e3641be6f7f576c5"
+}

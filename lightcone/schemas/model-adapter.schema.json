@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lightcone.local/schemas/model-adapter.schema.json",
+  "title": "Local LLM adapter profile",
+  "type": "object",
+  "required": ["schema_version", "adapter_id", "runtime_family", "transport", "prompt_format", "boundary_mode", "model_match", "capabilities", "context_limit", "output_limit", "conformance_status", "conformance_receipt"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "adapter_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "runtime_family": { "enum": ["llama.cpp", "ollama", "vllm", "mlx", "transformers", "custom"] },
+    "transport": { "enum": ["native", "http_openai", "http_custom", "stdio"] },
+    "prompt_format": { "enum": ["chat_ml", "llama3", "gemma", "plain"] },
+    "boundary_mode": { "enum": ["native_post_logits", "host_input_output"] },
+    "model_match": { "type": "object" },
+    "capabilities": {
+      "type": "object",
+      "required": ["raw_logits", "custom_sampler", "grammar", "tools", "streaming", "multimodal", "deterministic", "seed_control", "embeddings"],
+      "additionalProperties": { "type": "boolean" }
+    },
+    "context_limit": { "type": "integer", "minimum": 256 },
+    "output_limit": { "type": "integer", "minimum": 1 },
+    "conformance_status": { "enum": ["declared", "probing", "passed", "failed"] },
+    "conformance_receipt": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}

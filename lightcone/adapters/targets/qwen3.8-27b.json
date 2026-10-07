@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "target_id": "qwen3.8-27b",
+  "model_id": "Qwen/Qwen3.8-27B",
+  "publisher": "Qwen",
+  "model_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "license": "apache-2.0",
+  "architecture": "causal-language-model-with-vision-encoder",
+  "parameter_count": 27000000000,
+  "native_context_limit": 262144,
+  "modalities": ["text", "image", "video"],
+  "thinking_controls": ["enable_thinking", "reasoning_effort", "preserve_thinking"],
+  "declared_runtime_routes": ["llama-cpp-openai-v1"],
+  "source": {
+    "locator": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "retrieved_at": "2026-09-11"
+  },
+  "conformance_status": "passed",
+  "conformance_receipts": ["receipts/adapters/qwen3.8-27b-llama-cpp-openai.json"],
+  "limitations": [
+    "No runtime route is supported until its exact model revision and runtime build pass the adapter conformance suite.",
+    "A declared route does not imply that the 27B weights or a compatible runtime are installed on this host.",
+    "World artifacts remain model-independent and do not contain this model's tokenizer or chat template."
+  ]
+}

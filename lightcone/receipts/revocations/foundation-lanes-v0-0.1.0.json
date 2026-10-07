@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "revocation_id": "foundation-lanes-v0-0.1.0-source-rights-20260903",
+  "world_id": "foundation-lanes-v0",
+  "world_version": "0.1.0",
+  "manifest_sha256": "663c116748789aaf88e7689fce1ff68a55d3441e05cf929204d2b43ef0fadf96",
+  "revoked_at": "2026-09-03",
+  "reason_class": "source_rights_restriction",
+  "affected_source_ids": [
+    "openstax-precalculus-2e",
+    "openstax-psychology-2e"
+  ],
+  "source_evidence": [
+    "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "https://openstax.org/books/calculus-volume-1/pages/1-introduction",
+    "https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms",
+    "https://openstax.org/books/university-physics-volume-3/pages/7-introduction"
+  ],
+  "decision": "excluded_from_active_world_acceptance",
+  "artifact_retained_for_audit": true,
+  "replacement_curriculum": "curricula/foundation/lane-foundations.jsonl",
+  "replacement_curriculum_sha256": "0b82c6fc70f5234ff2257ac02959986a588df6c8909c3c357640d93c6d5e6ae5",
+  "replacement_status": "authored",
+  "notes": [
+    "The original accelerator receipt remains historical evidence that computation ran on a TPU, but it no longer proves an admissible world.",
+    "The replacement curriculum cites no OpenStax source and requires a new pre-registered TPU run and sealed validation."
+  ]
+}

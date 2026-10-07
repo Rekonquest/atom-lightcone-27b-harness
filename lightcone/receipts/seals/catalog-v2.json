@@ -1,0 +1,44 @@
+{
+  "adapter": {
+    "receipt": "receipts/adapters/qwen3.8-27b-llama-cpp-openai.json",
+    "receipt_sha256": "d432236c320db3a59b0e1139e5057051cb68f93a03c2efeacb189abcaa87e2ee",
+    "status": "passed"
+  },
+  "authorization_receipt": "receipts/seals/catalog-v2-authorization.json",
+  "authorization_receipt_sha256": "6c1fefd93659ed907ab8d41bb2b46e192b1f4fd2e590336a9a28223e2511aa63",
+  "coverage": {
+    "known_items": 640,
+    "sealed_axes": 9600,
+    "sealed_items": 640,
+    "unresolved_authoritative_discoveries": 0
+  },
+  "coverage_ledger_sha256": "2b18241d5c243a331f29a43b68931b5b710906f64d30cb6508dccdda3c750c8c",
+  "kaggle_kernel_ref": "jessealicea/new-lightcone-catalog-tpu-v0",
+  "kaggle_kernel_version": 4,
+  "limitations": [
+    "The catalog remains open-world: sealing this revision does not assert that no future domain, source revision, counterexample, or adapter can be discovered.",
+    "The four-dimensional (x,y,z,w) all-spatial shadow remains observer-only; exact graph reachability and full 48-dimensional coordinates remain authoritative.",
+    "World evidence is model-independent; the separately validated Qwen3.8-27B adapter is not embedded in world artifacts."
+  ],
+  "open_world": true,
+  "schema_version": 1,
+  "scope": "All 178 worlds registered in hash-bound catalog revision v2 at the stated source revision passed every pre-registered training, held-out, negative-control, and four-dimensional shadow gate on a real eight-device Kaggle TPU and were independently hash-validated and loaded by the Rust runtime.",
+  "seal_applied": true,
+  "seal_id": "new-complete-lightcone-catalog-v2",
+  "sealed_at": "2026-09-21T18:53:57.249968+00:00",
+  "status": "sealed",
+  "training_source_revision": "265fbe981ea5eb34bfb6488b2f2627be2a5a319e",
+  "validation_receipt": "receipts/validation/catalog-tpu-v2.json",
+  "validation_receipt_sha256": "585d89a2cae485974153e8de0d7229fe7928aa2b5bd5ff93e3641be6f7f576c5",
+  "worlds": {
+    "failed_world_count": 0,
+    "input_hash_binding_count": 1780,
+    "output_hash_binding_count": 3204,
+    "passed_world_count": 178,
+    "pre_registered_gate_count": 5339,
+    "rust_verified_pack_count": 178,
+    "training_elapsed_seconds_sum": 4928.435391840001,
+    "world_count": 178,
+    "world_evidence_set_sha256": "9798913feafbb5a2c894e9e9ac7f6ddce1a50490fea24d791b668e20138c8603"
+  }
+}

@@ -1,0 +1,12 @@
+[package]
+name = "atom-executive-contracts"
+version = "0.1.0"
+edition = "2024"
+
+# Verification leaf for the executive contract (docs/EXECUTIVE.md). Nothing
+# depends on it; it depends on the executive and the orchestrator only under
+# [dev-dependencies]. It exists so the executive crate can stay inside the build
+# contract's 500 physical lines including its tests.
+[dev-dependencies]
+atom-executive = { path = "../atom-executive" }
+atom-orchestrator = { path = "../atom-orchestrator" }

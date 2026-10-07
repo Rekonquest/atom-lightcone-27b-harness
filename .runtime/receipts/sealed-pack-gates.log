@@ -1,0 +1,25 @@
+=== corpus gate (sealed pack, development-corpus rev c) ===
+2026-09-24T17:23:43-04:00
+Error: "unsupported corpus schema 0"
+corpus_exit=1
+
+=== correctness gate (sealed pack, flagship corpus) ===
+2026-09-24T17:23:43-04:00
+correctness corpus correctness-flagship-2026-09-24 — 2 cases, both arms, one instrument
+ground truth is the pack's own edges; scoring is deterministic; no blended score
+
+enables-established [connected] admitted_links=2 lane_paths=[1, 1] rung=Slow creative_paths=0
+  bare: WRONG — answer asserts no relation between them
+  atom: WRONG — answer asserts no relation between them
+
+unconnected-novel [unconnected] admitted_links=0 lane_paths=[0, 0] rung=SpeculativeFallback creative_paths=1
+  bare: CORRECT
+  atom: CORRECT
+
+--- correctness (the only score) ---
+bare arm: 1/2 correct
+atom arm: 1/2 correct
+grounding changed nothing on this corpus
+note: no correctness scoring can license a quality claim by itself — this is a count of cases right, not a measure of how right the answers are
+correctness_exit=0
+2026-09-24T17:24:37-04:00

@@ -1,0 +1,11 @@
+[package]
+name = "atom-creative-paths"
+version = "0.1.0"
+edition = "2024"
+
+# The contracted creative probability response: several speculative paths, no
+# winner, no factual authority. Its own crate for the same reason the old
+# harness kept `atom_creative_probability.py` in its own module, and because the
+# build contract caps every crate at 500 physical lines including tests.
+[dependencies]
+atom-orchestrator = { path = "../atom-orchestrator" }

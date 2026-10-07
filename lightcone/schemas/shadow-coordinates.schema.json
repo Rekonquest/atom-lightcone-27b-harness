@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lightcone.local/schemas/shadow-coordinates.schema.json",
+  "title": "Four-dimensional all-spatial shadow coordinates",
+  "type": "object",
+  "required": ["schema_version", "projection_id", "dimensions", "axis_names", "vectors"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "projection_id": { "type": "string", "minLength": 1 },
+    "dimensions": { "const": 4 },
+    "axis_names": { "const": ["x", "y", "z", "w"] },
+    "vectors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["node_id", "values"],
+        "properties": {
+          "node_id": { "type": "string", "minLength": 1 },
+          "values": {
+            "type": "array", "minItems": 4, "maxItems": 4,
+            "items": { "type": "number" }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+[package]
+name = "atom-lane-contracts"
+version = "0.1.0"
+edition = "2024"
+
+# Verification leaf. It is not part of the cognitive chain
+# (causal primitives -> creative primitives -> reasoning engine -> orchestrator):
+# nothing depends on it, and it depends on the engine only under [dev-dependencies]
+# so the shipped workspace has no production edge from it. Its purpose is to keep
+# the seven per-lane contracts verified while every production crate stays inside
+# the 500-physical-line build contract.
+[dev-dependencies]
+atom-reasoning-engine = { path = "../atom-reasoning-engine" }

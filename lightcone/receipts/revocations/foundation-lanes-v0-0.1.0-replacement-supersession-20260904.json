@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "supersession_id": "foundation-lanes-v0-0.1.0-replacement-evidence-20260904",
+  "supersedes_revocation": "foundation-lanes-v0-0.1.0-source-rights-20260903",
+  "superseded_receipt_sha256": "d7500cc5c02a3cec002d4353bc63b33ab29e979979e47c81a024d9b4dc9fce27",
+  "world_id": "foundation-lanes-v0",
+  "world_version": "0.1.0",
+  "created_at": "2026-09-04",
+  "reason_class": "replacement_curriculum_evolved",
+  "affected_source_ids": [
+    "openstax-precalculus-2e",
+    "openstax-psychology-2e"
+  ],
+  "decision": "replacement_evidence_rebound",
+  "replacement_curriculum": "curricula/foundation/lane-foundations.jsonl",
+  "replacement_curriculum_sha256": "ab1f6af217da9d95ac1085b76d3b5233259d4ec9ca2884c2964148f8c0905d6c",
+  "replacement_status": "authored",
+  "excluded_source_overlap": [],
+  "notes": [
+    "The 2026-09-03 revocation remains immutable and continues to revoke the retained accelerator artifact.",
+    "The rights-clean replacement curriculum subsequently gained worked examples and graph membership records without reintroducing any excluded source.",
+    "This supersession binds the current replacement bytes; it does not restore accelerator acceptance or replace the required fresh TPU run."
+  ]
+}

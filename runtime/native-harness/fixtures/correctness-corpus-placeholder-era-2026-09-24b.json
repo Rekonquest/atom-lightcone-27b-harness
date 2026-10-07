@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "revision": "correctness-2026-09-24b",
+  "note": "Frozen before its first run. Ground truth comes from the pack's own typed edges: a pair the pack connects is a positive case, a pair it does not connect is a control. Scoring is deterministic against the released text and the reported lane positions; no model judges the model. The question is the only score that matters: how many cases each arm gets right. Revision b poses each connected case by naming the cause only, because the admission drops an edge whose target is already a seed (reproduced 2026-09-24: naming both ends loses exactly the relation asked about). Asking the geometry fairly means naming one end and letting the neighbourhood supply the other.",
+  "cases": [
+    {
+      "id": "supports-connected",
+      "truth": "connected",
+      "direction": "supports",
+      "query": "Explain what intermediate structure does.",
+      "cause": "bottom.intermediate",
+      "effect": "creative.generation",
+      "goal": "causal",
+      "terms": [
+        "intermediate structure",
+        "candidate generation"
+      ]
+    },
+    {
+      "id": "enables-connected",
+      "truth": "connected",
+      "direction": "supports",
+      "query": "Explain what a bounded feedback loop does.",
+      "cause": "nonlinear.feedback",
+      "effect": "nonlinear.recursion",
+      "goal": "causal",
+      "terms": [
+        "bounded feedback loop",
+        "recursive decomposition"
+      ]
+    },
+    {
+      "id": "disconnected-in-pack",
+      "truth": "unconnected",
+      "query": "Explain what recursive decomposition does.",
+      "cause": "nonlinear.recursion",
+      "effect": "creative.generation",
+      "goal": "causal",
+      "terms": [
+        "recursive decomposition",
+        "candidate generation"
+      ]
+    },
+    {
+      "id": "unconnected-novel",
+      "truth": "unconnected",
+      "query": "Why does bread dough rise in a warm kitchen?",
+      "cause": "kitchen.warmth",
+      "effect": "dough.rise",
+      "goal": "causal",
+      "terms": []
+    }
+  ]
+}

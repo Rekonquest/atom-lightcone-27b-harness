@@ -1,0 +1,12 @@
+[package]
+name = "atom-executive"
+version = "0.1.0"
+edition = "2024"
+
+# The policy layer: lanes are mechanisms, this chooses between them, hands
+# candidates across bridges, and guarantees an answer. It sits after the
+# reasoning engine and before the fixed orchestrator, holds no factual
+# authority, and merges no scores.
+[dependencies]
+atom-orchestrator = { path = "../atom-orchestrator" }
+atom-creative-paths = { path = "../atom-creative-paths" }

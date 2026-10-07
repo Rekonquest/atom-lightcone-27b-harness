@@ -1,0 +1,24 @@
+development corpus development-2026-09-26g — 9 cases
+corpus_integrity=fnv1a64:63277086869307fd bytes:11147 pack:lightcone/artifacts/worlds/network-security-browser-v0/0.2.0
+note: wiring and failure-mode gates only; no correctness scoring, no effectiveness claim
+brief: on (admitted geometry + lanes in the atom arm's context)
+PASS deduction-direct-edge [grounded] verdict=Consistent admitted_links=3 reinforced=true arms_identical=false fires=54 deflections=0
+PASS induction-single-cone [generalization] verdict=Consistent admitted_links=5 reinforced=true arms_identical=false fires=60 deflections=0
+PASS abduction-rival-causes [explanation] verdict=Consistent admitted_links=3 reinforced=true arms_identical=false fires=42 deflections=2
+PASS causal-trace [causal] verdict=Consistent admitted_links=5 reinforced=true arms_identical=false fires=58 deflections=0
+PASS counterfactual-removed-link [counterfactual] verdict=Consistent admitted_links=3 reinforced=true arms_identical=false fires=35 deflections=0
+PASS analogy-transfer [transfer] verdict=NotApplicable admitted_links=6 reinforced=false arms_identical=false fires=53 deflections=1
+PASS probabilistic-no-weight [estimation] verdict=Consistent admitted_links=5 reinforced=true arms_identical=false fires=37 deflections=1
+PASS unknown-term-control [unknown] verdict=NotApplicable admitted_links=0 reinforced=false arms_identical=false fires=0 deflections=0
+PASS out-of-cone-control [out-of-cone] verdict=Ungrounded admitted_links=0 reinforced=false arms_identical=false fires=0 deflections=0
+--- per class (never blended) ---
+class=causal passed=1 failed=0
+class=counterfactual passed=1 failed=0
+class=estimation passed=1 failed=0
+class=explanation passed=1 failed=0
+class=generalization passed=1 failed=0
+class=grounded passed=1 failed=0
+class=out-of-cone passed=1 failed=0
+class=transfer passed=1 failed=0
+class=unknown passed=1 failed=0
+total passed=9 failed=0

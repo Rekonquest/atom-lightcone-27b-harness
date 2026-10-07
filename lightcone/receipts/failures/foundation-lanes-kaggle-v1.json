@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "run_id": "foundation-lanes-v0-kaggle-kernel-v1",
+  "status": "failed",
+  "kernel_ref": "jessealicea/new-lightcone-foundation-tpu-v0",
+  "kernel_version": 1,
+  "dataset_ref": "jessealicea/new-lightcone-foundation-input-v0",
+  "dataset_version": 1,
+  "source_revision": "edf2ba20b4a1a760311c2599d9144ac1ca1ca505",
+  "source_dirty": false,
+  "failed_stage": "post_training_output_serialization",
+  "error_type": "ValueError",
+  "error": "output array is read-only",
+  "source_location": "trainer/train_jax.py: normalization after jax.device_get",
+  "diagnosis": "JAX returned a read-only NumPy view. Training reached the output phase, but the script attempted in-place normalization before writing metrics or an acceptance receipt.",
+  "correction": "Materialize writable copies of the trained node and relation arrays before normalization, then rerun the unchanged pre-registered protocol.",
+  "accepted_artifacts": [],
+  "acceptance": false,
+  "recorded_at": "2026-09-03T06:31:11Z"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lightcone.local/schemas/shadow-observers.schema.json",
+  "title": "Composed lower-dimensional observer views of a 4D shadow",
+  "type": "object",
+  "required": [
+    "schema_version", "projection_id", "observer_only", "composition",
+    "three_dimensional", "two_dimensional"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "projection_id": { "type": "string", "minLength": 1 },
+    "observer_only": { "const": true },
+    "composition": { "type": "object" },
+    "three_dimensional": { "type": "array", "minItems": 4, "maxItems": 4 },
+    "two_dimensional": { "type": "array", "minItems": 6, "maxItems": 6 }
+  },
+  "additionalProperties": false
+}

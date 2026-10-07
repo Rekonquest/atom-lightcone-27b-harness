@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "catalog_id": "lightcone-typed-relation-semantics-v1",
+  "relations": [
+    {"id": "analogous_to", "definition": "Shares relevant relational structure without asserting identity.", "lexical_cues": ["analogous", "analogy", "parallel", "correspondence", "similarity"]},
+    {"id": "causes", "definition": "Produces or changes an outcome under declared causal conditions.", "lexical_cues": ["cause", "causes", "caused", "produces", "leads", "triggers", "emits", "yields"]},
+    {"id": "clarifies", "definition": "Makes a distinction, scope, representation, or mechanism more explicit.", "lexical_cues": ["clarify", "clarifies", "explicit", "exposes", "distinguishes", "explains"]},
+    {"id": "contradicts", "definition": "Cannot jointly hold with the target under the same declared interpretation.", "lexical_cues": ["contradict", "contradicts", "incompatible", "refute", "refutes", "false"]},
+    {"id": "counterexample", "definition": "Supplies an admissible case that defeats a universal or necessary claim.", "lexical_cues": ["counterexample", "counterexamples", "refutes", "falsifies", "disproves"]},
+    {"id": "enables", "definition": "Makes the target possible without claiming it is sufficient or inevitable.", "lexical_cues": ["enable", "enables", "allow", "allows", "permit", "permits", "possible", "provides", "assigns"]},
+    {"id": "grounds", "definition": "Supplies the basis, rule, observation, or invariant on which the target depends.", "lexical_cues": ["ground", "grounds", "basis", "foundation", "establishes", "determines", "defines"]},
+    {"id": "implements", "definition": "Operationally realizes a declared abstraction, rule, or interface.", "lexical_cues": ["implement", "implements", "realizes", "executes", "instantiates", "operationalizes"]},
+    {"id": "inhibits", "definition": "Reduces or constrains the target without necessarily eliminating it.", "lexical_cues": ["inhibit", "inhibits", "reduce", "reduces", "limits", "suppresses", "constrains"]},
+    {"id": "measures", "definition": "Produces an observation or quantity about the target under a declared procedure.", "lexical_cues": ["measure", "measures", "measured", "metric", "quantifies", "records", "assesses", "evaluates"]},
+    {"id": "part_of", "definition": "Is a declared component or member of the target structure.", "lexical_cues": ["part", "component", "member", "within", "contains"]},
+    {"id": "predicts", "definition": "Raises or specifies an expected outcome without asserting that the outcome occurred.", "lexical_cues": ["predict", "predicts", "forecast", "forecasts", "expectation", "expected"]},
+    {"id": "prerequisite", "definition": "Must be available or satisfied before the target can validly proceed.", "lexical_cues": ["prerequisite", "require", "requires", "required", "necessary", "precedes", "prior", "before", "depends"]},
+    {"id": "prevents", "definition": "Blocks the target under the declared conditions.", "lexical_cues": ["prevent", "prevents", "blocks", "avoids", "stops", "excludes"]},
+    {"id": "qualifies", "definition": "Restricts the strength, scope, interpretation, or conditions of the target.", "lexical_cues": ["qualify", "qualifies", "limits", "constrains", "depends", "conditional", "uncertainty", "alone"]},
+    {"id": "supports", "definition": "Provides defeasible evidence, structure, or capacity in favor of the target.", "lexical_cues": ["support", "supports", "evidence", "strengthens", "supplies", "contributes"]},
+    {"id": "transforms_to", "definition": "Maps or changes the source representation or state into the target.", "lexical_cues": ["transform", "transforms", "transformation", "becomes", "converts", "maps", "yields"]},
+    {"id": "undercuts", "definition": "Weakens the warrant or connection supporting the target without directly negating it.", "lexical_cues": ["undercut", "undercuts", "weakens", "defeats"]}
+  ]
+}

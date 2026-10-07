@@ -1,0 +1,2016 @@
+{
+  "edges": [
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "deduction",
+      "cause_feature": "philosophy:deduction_premise_set",
+      "direction": 1,
+      "edge_id": "philosophy-deduction-0",
+      "effect_feature": "philosophy:deduction_formalization",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "deduction",
+      "cause_feature": "philosophy:deduction_formalization",
+      "direction": 1,
+      "edge_id": "philosophy-deduction-1",
+      "effect_feature": "philosophy:deduction_validity_check",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "deduction",
+      "cause_feature": "philosophy:deduction_validity_check",
+      "direction": 1,
+      "edge_id": "philosophy-deduction-2",
+      "effect_feature": "philosophy:deduction_valid_derivation",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "deduction",
+      "cause_feature": "philosophy:deduction_valid_derivation",
+      "direction": 1,
+      "edge_id": "philosophy-deduction-3",
+      "effect_feature": "philosophy:deduction_conclusion_warrant",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "soundness",
+      "cause_feature": "philosophy:soundness_candidate_argument",
+      "direction": 1,
+      "edge_id": "philosophy-soundness-0",
+      "effect_feature": "philosophy:soundness_valid_form",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "soundness",
+      "cause_feature": "philosophy:soundness_valid_form",
+      "direction": 1,
+      "edge_id": "philosophy-soundness-1",
+      "effect_feature": "philosophy:soundness_premise_truth_check",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "soundness",
+      "cause_feature": "philosophy:soundness_premise_truth_check",
+      "direction": 1,
+      "edge_id": "philosophy-soundness-2",
+      "effect_feature": "philosophy:soundness_sound_argument",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "soundness",
+      "cause_feature": "philosophy:soundness_sound_argument",
+      "direction": 1,
+      "edge_id": "philosophy-soundness-3",
+      "effect_feature": "philosophy:soundness_conclusion_warrant",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "consistency",
+      "cause_feature": "philosophy:consistency_belief_set",
+      "direction": 1,
+      "edge_id": "philosophy-consistency-0",
+      "effect_feature": "philosophy:consistency_formal_constraints",
+      "source_ids": [
+        "open-logic",
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "consistency",
+      "cause_feature": "philosophy:consistency_formal_constraints",
+      "direction": 1,
+      "edge_id": "philosophy-consistency-1",
+      "effect_feature": "philosophy:consistency_consistency_check",
+      "source_ids": [
+        "open-logic",
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "consistency",
+      "cause_feature": "philosophy:consistency_consistency_check",
+      "direction": 1,
+      "edge_id": "philosophy-consistency-2",
+      "effect_feature": "philosophy:consistency_satisfiable_interpretation",
+      "source_ids": [
+        "open-logic",
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "consistency",
+      "cause_feature": "philosophy:consistency_satisfiable_interpretation",
+      "direction": 1,
+      "edge_id": "philosophy-consistency-3",
+      "effect_feature": "philosophy:consistency_coherence_warrant",
+      "source_ids": [
+        "open-logic",
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "reductio",
+      "cause_feature": "philosophy:reductio_target_assumption",
+      "direction": 1,
+      "edge_id": "philosophy-reductio-0",
+      "effect_feature": "philosophy:reductio_derived_consequences",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "reductio",
+      "cause_feature": "philosophy:reductio_derived_consequences",
+      "direction": 1,
+      "edge_id": "philosophy-reductio-1",
+      "effect_feature": "philosophy:reductio_contradiction_detection",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "contradicts",
+      "branch_id": "reductio",
+      "cause_feature": "philosophy:reductio_contradiction_detection",
+      "direction": -1,
+      "edge_id": "philosophy-reductio-2",
+      "effect_feature": "philosophy:reductio_assumption_warrant",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "defeats",
+      "branch_id": "reductio",
+      "cause_feature": "philosophy:reductio_assumption_warrant",
+      "direction": -1,
+      "edge_id": "philosophy-reductio-3",
+      "effect_feature": "philosophy:reductio_rejection_warrant",
+      "source_ids": [
+        "open-logic"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "counterexample",
+      "cause_feature": "philosophy:counterexample_universal_claim",
+      "direction": 1,
+      "edge_id": "philosophy-counterexample-0",
+      "effect_feature": "philosophy:counterexample_counterexample_search",
+      "source_ids": [
+        "open-logic",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "counterexample",
+      "cause_feature": "philosophy:counterexample_counterexample_search",
+      "direction": 1,
+      "edge_id": "philosophy-counterexample-1",
+      "effect_feature": "philosophy:counterexample_counterexample_found",
+      "source_ids": [
+        "open-logic",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "counterexample",
+      "branch_id": "counterexample",
+      "cause_feature": "philosophy:counterexample_counterexample_found",
+      "direction": -1,
+      "edge_id": "philosophy-counterexample-2",
+      "effect_feature": "philosophy:counterexample_universal_warrant",
+      "source_ids": [
+        "open-logic",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "counterexample",
+      "cause_feature": "philosophy:counterexample_universal_warrant",
+      "direction": 1,
+      "edge_id": "philosophy-counterexample-3",
+      "effect_feature": "philosophy:counterexample_calibrated_conclusion",
+      "source_ids": [
+        "open-logic",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "induction",
+      "cause_feature": "philosophy:induction_observed_cases",
+      "direction": 1,
+      "edge_id": "philosophy-induction-0",
+      "effect_feature": "philosophy:induction_sample_assessment",
+      "source_ids": [
+        "sep-epistemology",
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "induction",
+      "cause_feature": "philosophy:induction_sample_assessment",
+      "direction": 1,
+      "edge_id": "philosophy-induction-1",
+      "effect_feature": "philosophy:induction_pattern_support",
+      "source_ids": [
+        "sep-epistemology",
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "induction",
+      "cause_feature": "philosophy:induction_pattern_support",
+      "direction": 1,
+      "edge_id": "philosophy-induction-2",
+      "effect_feature": "philosophy:induction_generalization_strength",
+      "source_ids": [
+        "sep-epistemology",
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "induction",
+      "cause_feature": "philosophy:induction_generalization_strength",
+      "direction": 1,
+      "edge_id": "philosophy-induction-3",
+      "effect_feature": "philosophy:induction_inductive_warrant",
+      "source_ids": [
+        "sep-epistemology",
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "abduction",
+      "cause_feature": "philosophy:abduction_surprising_observation",
+      "direction": 1,
+      "edge_id": "philosophy-abduction-0",
+      "effect_feature": "philosophy:abduction_candidate_explanations",
+      "source_ids": [
+        "sep-abduction"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "abduction",
+      "cause_feature": "philosophy:abduction_candidate_explanations",
+      "direction": 1,
+      "edge_id": "philosophy-abduction-1",
+      "effect_feature": "philosophy:abduction_rival_comparison",
+      "source_ids": [
+        "sep-abduction"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "abduction",
+      "cause_feature": "philosophy:abduction_rival_comparison",
+      "direction": 1,
+      "edge_id": "philosophy-abduction-2",
+      "effect_feature": "philosophy:abduction_best_explanation",
+      "source_ids": [
+        "sep-abduction"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "abduction",
+      "cause_feature": "philosophy:abduction_best_explanation",
+      "direction": 1,
+      "edge_id": "philosophy-abduction-3",
+      "effect_feature": "philosophy:abduction_provisional_warrant",
+      "source_ids": [
+        "sep-abduction"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "analogy",
+      "cause_feature": "philosophy:analogy_source_case",
+      "direction": 1,
+      "edge_id": "philosophy-analogy-0",
+      "effect_feature": "philosophy:analogy_structural_mapping",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "analogy",
+      "cause_feature": "philosophy:analogy_structural_mapping",
+      "direction": 1,
+      "edge_id": "philosophy-analogy-1",
+      "effect_feature": "philosophy:analogy_relevant_similarity",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "analogy",
+      "cause_feature": "philosophy:analogy_relevant_similarity",
+      "direction": 1,
+      "edge_id": "philosophy-analogy-2",
+      "effect_feature": "philosophy:analogy_target_projection",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "analogy",
+      "cause_feature": "philosophy:analogy_target_projection",
+      "direction": 1,
+      "edge_id": "philosophy-analogy-3",
+      "effect_feature": "philosophy:analogy_analogical_warrant",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "causal",
+      "cause_feature": "philosophy:causal_covariation",
+      "direction": 1,
+      "edge_id": "philosophy-causal-0",
+      "effect_feature": "philosophy:causal_alternative_cause_control",
+      "source_ids": [
+        "sep-counterfactuals",
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "causal",
+      "cause_feature": "philosophy:causal_alternative_cause_control",
+      "direction": 1,
+      "edge_id": "philosophy-causal-1",
+      "effect_feature": "philosophy:causal_mechanism_support",
+      "source_ids": [
+        "sep-counterfactuals",
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "causal",
+      "cause_feature": "philosophy:causal_mechanism_support",
+      "direction": 1,
+      "edge_id": "philosophy-causal-2",
+      "effect_feature": "philosophy:causal_causal_attribution",
+      "source_ids": [
+        "sep-counterfactuals",
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "causal",
+      "cause_feature": "philosophy:causal_causal_attribution",
+      "direction": 1,
+      "edge_id": "philosophy-causal-3",
+      "effect_feature": "philosophy:causal_causal_warrant",
+      "source_ids": [
+        "sep-counterfactuals",
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "counterfactual",
+      "cause_feature": "philosophy:counterfactual_actual_case",
+      "direction": 1,
+      "edge_id": "philosophy-counterfactual-0",
+      "effect_feature": "philosophy:counterfactual_alternative_specification",
+      "source_ids": [
+        "sep-counterfactuals"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "counterfactual",
+      "cause_feature": "philosophy:counterfactual_alternative_specification",
+      "direction": 1,
+      "edge_id": "philosophy-counterfactual-1",
+      "effect_feature": "philosophy:counterfactual_similarity_control",
+      "source_ids": [
+        "sep-counterfactuals"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "counterfactual",
+      "cause_feature": "philosophy:counterfactual_similarity_control",
+      "direction": 1,
+      "edge_id": "philosophy-counterfactual-2",
+      "effect_feature": "philosophy:counterfactual_difference_making",
+      "source_ids": [
+        "sep-counterfactuals"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "counterfactual",
+      "cause_feature": "philosophy:counterfactual_difference_making",
+      "direction": 1,
+      "edge_id": "philosophy-counterfactual-3",
+      "effect_feature": "philosophy:counterfactual_counterfactual_warrant",
+      "source_ids": [
+        "sep-counterfactuals"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "probability",
+      "cause_feature": "philosophy:probability_possibility_space",
+      "direction": 1,
+      "edge_id": "philosophy-probability-0",
+      "effect_feature": "philosophy:probability_probability_assignment",
+      "source_ids": [
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "probability",
+      "cause_feature": "philosophy:probability_probability_assignment",
+      "direction": 1,
+      "edge_id": "philosophy-probability-1",
+      "effect_feature": "philosophy:probability_coherence_check",
+      "source_ids": [
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "probability",
+      "cause_feature": "philosophy:probability_coherence_check",
+      "direction": 1,
+      "edge_id": "philosophy-probability-2",
+      "effect_feature": "philosophy:probability_uncertainty_calibration",
+      "source_ids": [
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "probability",
+      "cause_feature": "philosophy:probability_uncertainty_calibration",
+      "direction": 1,
+      "edge_id": "philosophy-probability-3",
+      "effect_feature": "philosophy:probability_probabilistic_warrant",
+      "source_ids": [
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "bayesian",
+      "cause_feature": "philosophy:bayesian_prior_credence",
+      "direction": 1,
+      "edge_id": "philosophy-bayesian-0",
+      "effect_feature": "philosophy:bayesian_new_evidence",
+      "source_ids": [
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "bayesian",
+      "cause_feature": "philosophy:bayesian_new_evidence",
+      "direction": 1,
+      "edge_id": "philosophy-bayesian-1",
+      "effect_feature": "philosophy:bayesian_likelihood_assessment",
+      "source_ids": [
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "bayesian",
+      "cause_feature": "philosophy:bayesian_likelihood_assessment",
+      "direction": 1,
+      "edge_id": "philosophy-bayesian-2",
+      "effect_feature": "philosophy:bayesian_posterior_update",
+      "source_ids": [
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "bayesian",
+      "cause_feature": "philosophy:bayesian_posterior_update",
+      "direction": 1,
+      "edge_id": "philosophy-bayesian-3",
+      "effect_feature": "philosophy:bayesian_revised_warrant",
+      "source_ids": [
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "decision",
+      "cause_feature": "philosophy:decision_option_set",
+      "direction": 1,
+      "edge_id": "philosophy-decision-0",
+      "effect_feature": "philosophy:decision_outcome_model",
+      "source_ids": [
+        "sep-decision-theory"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "decision",
+      "cause_feature": "philosophy:decision_outcome_model",
+      "direction": 1,
+      "edge_id": "philosophy-decision-1",
+      "effect_feature": "philosophy:decision_preference_consistency",
+      "source_ids": [
+        "sep-decision-theory"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "decision",
+      "cause_feature": "philosophy:decision_preference_consistency",
+      "direction": 1,
+      "edge_id": "philosophy-decision-2",
+      "effect_feature": "philosophy:decision_expected_choice_value",
+      "source_ids": [
+        "sep-decision-theory"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "decision",
+      "cause_feature": "philosophy:decision_expected_choice_value",
+      "direction": 1,
+      "edge_id": "philosophy-decision-3",
+      "effect_feature": "philosophy:decision_decision_warrant",
+      "source_ids": [
+        "sep-decision-theory"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "argument_mapping",
+      "cause_feature": "philosophy:argument_mapping_discourse",
+      "direction": 1,
+      "edge_id": "philosophy-argument_mapping-0",
+      "effect_feature": "philosophy:argument_mapping_claim_extraction",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "argument_mapping",
+      "cause_feature": "philosophy:argument_mapping_claim_extraction",
+      "direction": 1,
+      "edge_id": "philosophy-argument_mapping-1",
+      "effect_feature": "philosophy:argument_mapping_premise_linking",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "argument_mapping",
+      "cause_feature": "philosophy:argument_mapping_premise_linking",
+      "direction": 1,
+      "edge_id": "philosophy-argument_mapping-2",
+      "effect_feature": "philosophy:argument_mapping_support_defeat_map",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "argument_mapping",
+      "cause_feature": "philosophy:argument_mapping_support_defeat_map",
+      "direction": 1,
+      "edge_id": "philosophy-argument_mapping-3",
+      "effect_feature": "philosophy:argument_mapping_argument_comprehension",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "assumptions",
+      "cause_feature": "philosophy:assumptions_enthymematic_argument",
+      "direction": 1,
+      "edge_id": "philosophy-assumptions-0",
+      "effect_feature": "philosophy:assumptions_missing_premise_search",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "assumptions",
+      "cause_feature": "philosophy:assumptions_missing_premise_search",
+      "direction": 1,
+      "edge_id": "philosophy-assumptions-1",
+      "effect_feature": "philosophy:assumptions_assumption_exposure",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "assumptions",
+      "cause_feature": "philosophy:assumptions_assumption_exposure",
+      "direction": 1,
+      "edge_id": "philosophy-assumptions-2",
+      "effect_feature": "philosophy:assumptions_premise_assessment",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "assumptions",
+      "cause_feature": "philosophy:assumptions_premise_assessment",
+      "direction": 1,
+      "edge_id": "philosophy-assumptions-3",
+      "effect_feature": "philosophy:assumptions_argument_warrant",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "relevance",
+      "cause_feature": "philosophy:relevance_candidate_premise",
+      "direction": 1,
+      "edge_id": "philosophy-relevance-0",
+      "effect_feature": "philosophy:relevance_relevance_test",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "relevance",
+      "cause_feature": "philosophy:relevance_relevance_test",
+      "direction": 1,
+      "edge_id": "philosophy-relevance-1",
+      "effect_feature": "philosophy:relevance_inferential_connection",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "relevance",
+      "cause_feature": "philosophy:relevance_inferential_connection",
+      "direction": 1,
+      "edge_id": "philosophy-relevance-2",
+      "effect_feature": "philosophy:relevance_support_strength",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "relevance",
+      "cause_feature": "philosophy:relevance_support_strength",
+      "direction": 1,
+      "edge_id": "philosophy-relevance-3",
+      "effect_feature": "philosophy:relevance_argument_warrant",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "burden",
+      "cause_feature": "philosophy:burden_asserted_claim",
+      "direction": 1,
+      "edge_id": "philosophy-burden-0",
+      "effect_feature": "philosophy:burden_burden_assignment",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "burden",
+      "cause_feature": "philosophy:burden_burden_assignment",
+      "direction": 1,
+      "edge_id": "philosophy-burden-1",
+      "effect_feature": "philosophy:burden_evidence_demand",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "burden",
+      "cause_feature": "philosophy:burden_evidence_demand",
+      "direction": 1,
+      "edge_id": "philosophy-burden-2",
+      "effect_feature": "philosophy:burden_unsupported_assertion",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "undercuts",
+      "branch_id": "burden",
+      "cause_feature": "philosophy:burden_unsupported_assertion",
+      "direction": -1,
+      "edge_id": "philosophy-burden-3",
+      "effect_feature": "philosophy:burden_claim_warrant",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "fallacies",
+      "cause_feature": "philosophy:fallacies_persuasive_argument",
+      "direction": 1,
+      "edge_id": "philosophy-fallacies-0",
+      "effect_feature": "philosophy:fallacies_structural_inspection",
+      "source_ids": [
+        "sep-fallacies",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "fallacies",
+      "cause_feature": "philosophy:fallacies_structural_inspection",
+      "direction": 1,
+      "edge_id": "philosophy-fallacies-1",
+      "effect_feature": "philosophy:fallacies_fallacy_detection",
+      "source_ids": [
+        "sep-fallacies",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "undercuts",
+      "branch_id": "fallacies",
+      "cause_feature": "philosophy:fallacies_fallacy_detection",
+      "direction": -1,
+      "edge_id": "philosophy-fallacies-2",
+      "effect_feature": "philosophy:fallacies_apparent_support",
+      "source_ids": [
+        "sep-fallacies",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "fallacies",
+      "cause_feature": "philosophy:fallacies_apparent_support",
+      "direction": 1,
+      "edge_id": "philosophy-fallacies-3",
+      "effect_feature": "philosophy:fallacies_calibrated_warrant",
+      "source_ids": [
+        "sep-fallacies",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "ambiguity",
+      "cause_feature": "philosophy:ambiguity_repeated_term",
+      "direction": 1,
+      "edge_id": "philosophy-ambiguity-0",
+      "effect_feature": "philosophy:ambiguity_sense_tracking",
+      "source_ids": [
+        "iep-critical-thinking",
+        "sep-fallacies"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "ambiguity",
+      "cause_feature": "philosophy:ambiguity_sense_tracking",
+      "direction": 1,
+      "edge_id": "philosophy-ambiguity-1",
+      "effect_feature": "philosophy:ambiguity_equivocation_detection",
+      "source_ids": [
+        "iep-critical-thinking",
+        "sep-fallacies"
+      ]
+    },
+    {
+      "argument_relation": "undercuts",
+      "branch_id": "ambiguity",
+      "cause_feature": "philosophy:ambiguity_equivocation_detection",
+      "direction": -1,
+      "edge_id": "philosophy-ambiguity-2",
+      "effect_feature": "philosophy:ambiguity_inferential_support",
+      "source_ids": [
+        "iep-critical-thinking",
+        "sep-fallacies"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "ambiguity",
+      "cause_feature": "philosophy:ambiguity_inferential_support",
+      "direction": 1,
+      "edge_id": "philosophy-ambiguity-3",
+      "effect_feature": "philosophy:ambiguity_argument_warrant",
+      "source_ids": [
+        "iep-critical-thinking",
+        "sep-fallacies"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "rhetoric",
+      "cause_feature": "philosophy:rhetoric_persuasive_framing",
+      "direction": 1,
+      "edge_id": "philosophy-rhetoric-0",
+      "effect_feature": "philosophy:rhetoric_emotional_force",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "undercuts",
+      "branch_id": "rhetoric",
+      "cause_feature": "philosophy:rhetoric_emotional_force",
+      "direction": -1,
+      "edge_id": "philosophy-rhetoric-1",
+      "effect_feature": "philosophy:rhetoric_truth_tracking",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "rhetoric",
+      "cause_feature": "philosophy:rhetoric_truth_tracking",
+      "direction": 1,
+      "edge_id": "philosophy-rhetoric-2",
+      "effect_feature": "philosophy:rhetoric_epistemic_warrant",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "rhetoric",
+      "cause_feature": "philosophy:rhetoric_epistemic_warrant",
+      "direction": 1,
+      "edge_id": "philosophy-rhetoric-3",
+      "effect_feature": "philosophy:rhetoric_responsible_persuasion",
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "steelmanning",
+      "cause_feature": "philosophy:steelmanning_opposing_position",
+      "direction": 1,
+      "edge_id": "philosophy-steelmanning-0",
+      "effect_feature": "philosophy:steelmanning_charitable_reconstruction",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "steelmanning",
+      "cause_feature": "philosophy:steelmanning_charitable_reconstruction",
+      "direction": 1,
+      "edge_id": "philosophy-steelmanning-1",
+      "effect_feature": "philosophy:steelmanning_strongest_form",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "steelmanning",
+      "cause_feature": "philosophy:steelmanning_strongest_form",
+      "direction": 1,
+      "edge_id": "philosophy-steelmanning-2",
+      "effect_feature": "philosophy:steelmanning_substantive_objection",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "steelmanning",
+      "cause_feature": "philosophy:steelmanning_substantive_objection",
+      "direction": 1,
+      "edge_id": "philosophy-steelmanning-3",
+      "effect_feature": "philosophy:steelmanning_dialectical_progress",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "dialectic",
+      "cause_feature": "philosophy:dialectic_initial_thesis",
+      "direction": 1,
+      "edge_id": "philosophy-dialectic-0",
+      "effect_feature": "philosophy:dialectic_serious_objection",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "dialectic",
+      "cause_feature": "philosophy:dialectic_serious_objection",
+      "direction": 1,
+      "edge_id": "philosophy-dialectic-1",
+      "effect_feature": "philosophy:dialectic_reasoned_response",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "dialectic",
+      "cause_feature": "philosophy:dialectic_reasoned_response",
+      "direction": 1,
+      "edge_id": "philosophy-dialectic-2",
+      "effect_feature": "philosophy:dialectic_revised_thesis",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "dialectic",
+      "cause_feature": "philosophy:dialectic_revised_thesis",
+      "direction": 1,
+      "edge_id": "philosophy-dialectic-3",
+      "effect_feature": "philosophy:dialectic_dialectical_progress",
+      "source_ids": [
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "disagreement",
+      "cause_feature": "philosophy:disagreement_peer_disagreement",
+      "direction": 1,
+      "edge_id": "philosophy-disagreement-0",
+      "effect_feature": "philosophy:disagreement_perspective_review",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "disagreement",
+      "cause_feature": "philosophy:disagreement_perspective_review",
+      "direction": 1,
+      "edge_id": "philosophy-disagreement-1",
+      "effect_feature": "philosophy:disagreement_shared_evidence_check",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "disagreement",
+      "cause_feature": "philosophy:disagreement_shared_evidence_check",
+      "direction": 1,
+      "edge_id": "philosophy-disagreement-2",
+      "effect_feature": "philosophy:disagreement_credence_revision",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "disagreement",
+      "cause_feature": "philosophy:disagreement_credence_revision",
+      "direction": 1,
+      "edge_id": "philosophy-disagreement-3",
+      "effect_feature": "philosophy:disagreement_epistemic_calibration",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "testimony",
+      "cause_feature": "philosophy:testimony_speaker_claim",
+      "direction": 1,
+      "edge_id": "philosophy-testimony-0",
+      "effect_feature": "philosophy:testimony_competence_check",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "testimony",
+      "cause_feature": "philosophy:testimony_competence_check",
+      "direction": 1,
+      "edge_id": "philosophy-testimony-1",
+      "effect_feature": "philosophy:testimony_sincerity_check",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "testimony",
+      "cause_feature": "philosophy:testimony_sincerity_check",
+      "direction": 1,
+      "edge_id": "philosophy-testimony-2",
+      "effect_feature": "philosophy:testimony_testimonial_reliability",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "testimony",
+      "cause_feature": "philosophy:testimony_testimonial_reliability",
+      "direction": 1,
+      "edge_id": "philosophy-testimony-3",
+      "effect_feature": "philosophy:testimony_hearer_warrant",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "justification",
+      "cause_feature": "philosophy:justification_belief",
+      "direction": 1,
+      "edge_id": "philosophy-justification-0",
+      "effect_feature": "philosophy:justification_reason_identification",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "justification",
+      "cause_feature": "philosophy:justification_reason_identification",
+      "direction": 1,
+      "edge_id": "philosophy-justification-1",
+      "effect_feature": "philosophy:justification_defeater_search",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "justification",
+      "cause_feature": "philosophy:justification_defeater_search",
+      "direction": 1,
+      "edge_id": "philosophy-justification-2",
+      "effect_feature": "philosophy:justification_undefeated_support",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "justification",
+      "cause_feature": "philosophy:justification_undefeated_support",
+      "direction": 1,
+      "edge_id": "philosophy-justification-3",
+      "effect_feature": "philosophy:justification_justified_credence",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "skepticism",
+      "cause_feature": "philosophy:skepticism_knowledge_claim",
+      "direction": 1,
+      "edge_id": "philosophy-skepticism-0",
+      "effect_feature": "philosophy:skepticism_error_possibility",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "skepticism",
+      "cause_feature": "philosophy:skepticism_error_possibility",
+      "direction": 1,
+      "edge_id": "philosophy-skepticism-1",
+      "effect_feature": "philosophy:skepticism_underdetermination",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "undercuts",
+      "branch_id": "skepticism",
+      "cause_feature": "philosophy:skepticism_underdetermination",
+      "direction": -1,
+      "edge_id": "philosophy-skepticism-2",
+      "effect_feature": "philosophy:skepticism_knowledge_warrant",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "skepticism",
+      "cause_feature": "philosophy:skepticism_knowledge_warrant",
+      "direction": 1,
+      "edge_id": "philosophy-skepticism-3",
+      "effect_feature": "philosophy:skepticism_calibrated_confidence",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "humility",
+      "cause_feature": "philosophy:humility_uncertain_question",
+      "direction": 1,
+      "edge_id": "philosophy-humility-0",
+      "effect_feature": "philosophy:humility_limitation_recognition",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "humility",
+      "cause_feature": "philosophy:humility_limitation_recognition",
+      "direction": 1,
+      "edge_id": "philosophy-humility-1",
+      "effect_feature": "philosophy:humility_confidence_calibration",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "defeats",
+      "branch_id": "humility",
+      "cause_feature": "philosophy:humility_confidence_calibration",
+      "direction": -1,
+      "edge_id": "philosophy-humility-2",
+      "effect_feature": "philosophy:humility_overclaim_risk",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "undercuts",
+      "branch_id": "humility",
+      "cause_feature": "philosophy:humility_overclaim_risk",
+      "direction": -1,
+      "edge_id": "philosophy-humility-3",
+      "effect_feature": "philosophy:humility_epistemic_reliability",
+      "source_ids": [
+        "sep-epistemology"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "explanation",
+      "cause_feature": "philosophy:explanation_phenomenon",
+      "direction": 1,
+      "edge_id": "philosophy-explanation-0",
+      "effect_feature": "philosophy:explanation_explanatory_hypothesis",
+      "source_ids": [
+        "sep-abduction",
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "explanation",
+      "cause_feature": "philosophy:explanation_explanatory_hypothesis",
+      "direction": 1,
+      "edge_id": "philosophy-explanation-1",
+      "effect_feature": "philosophy:explanation_scope_and_unification",
+      "source_ids": [
+        "sep-abduction",
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "explanation",
+      "cause_feature": "philosophy:explanation_scope_and_unification",
+      "direction": 1,
+      "edge_id": "philosophy-explanation-2",
+      "effect_feature": "philosophy:explanation_explanatory_power",
+      "source_ids": [
+        "sep-abduction",
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "explanation",
+      "cause_feature": "philosophy:explanation_explanatory_power",
+      "direction": 1,
+      "edge_id": "philosophy-explanation-3",
+      "effect_feature": "philosophy:explanation_understanding",
+      "source_ids": [
+        "sep-abduction",
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "hypothesis",
+      "cause_feature": "philosophy:hypothesis_testable_hypothesis",
+      "direction": 1,
+      "edge_id": "philosophy-hypothesis-0",
+      "effect_feature": "philosophy:hypothesis_discriminating_prediction",
+      "source_ids": [
+        "sep-scientific-method",
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "hypothesis",
+      "cause_feature": "philosophy:hypothesis_discriminating_prediction",
+      "direction": 1,
+      "edge_id": "philosophy-hypothesis-1",
+      "effect_feature": "philosophy:hypothesis_controlled_observation",
+      "source_ids": [
+        "sep-scientific-method",
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "corroborates",
+      "branch_id": "hypothesis",
+      "cause_feature": "philosophy:hypothesis_controlled_observation",
+      "direction": 1,
+      "edge_id": "philosophy-hypothesis-2",
+      "effect_feature": "philosophy:hypothesis_hypothesis_support",
+      "source_ids": [
+        "sep-scientific-method",
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "hypothesis",
+      "cause_feature": "philosophy:hypothesis_hypothesis_support",
+      "direction": 1,
+      "edge_id": "philosophy-hypothesis-3",
+      "effect_feature": "philosophy:hypothesis_scientific_warrant",
+      "source_ids": [
+        "sep-scientific-method",
+        "sep-bayesian"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "models",
+      "cause_feature": "philosophy:models_target_system",
+      "direction": 1,
+      "edge_id": "philosophy-models-0",
+      "effect_feature": "philosophy:models_model_assumptions",
+      "source_ids": [
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "models",
+      "cause_feature": "philosophy:models_model_assumptions",
+      "direction": 1,
+      "edge_id": "philosophy-models-1",
+      "effect_feature": "philosophy:models_model_consequences",
+      "source_ids": [
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "corroborates",
+      "branch_id": "models",
+      "cause_feature": "philosophy:models_model_consequences",
+      "direction": 1,
+      "edge_id": "philosophy-models-2",
+      "effect_feature": "philosophy:models_empirical_fit",
+      "source_ids": [
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "models",
+      "cause_feature": "philosophy:models_empirical_fit",
+      "direction": 1,
+      "edge_id": "philosophy-models-3",
+      "effect_feature": "philosophy:models_model_warrant",
+      "source_ids": [
+        "sep-scientific-method"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "consequences",
+      "cause_feature": "philosophy:consequences_candidate_action",
+      "direction": 1,
+      "edge_id": "philosophy-consequences-0",
+      "effect_feature": "philosophy:consequences_affected_parties",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "consequences",
+      "cause_feature": "philosophy:consequences_affected_parties",
+      "direction": 1,
+      "edge_id": "philosophy-consequences-1",
+      "effect_feature": "philosophy:consequences_outcome_assessment",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "consequences",
+      "cause_feature": "philosophy:consequences_outcome_assessment",
+      "direction": 1,
+      "edge_id": "philosophy-consequences-2",
+      "effect_feature": "philosophy:consequences_aggregate_consequences",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "consequences",
+      "cause_feature": "philosophy:consequences_aggregate_consequences",
+      "direction": 1,
+      "edge_id": "philosophy-consequences-3",
+      "effect_feature": "philosophy:consequences_consequentialist_warrant",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "duties",
+      "cause_feature": "philosophy:duties_candidate_action",
+      "direction": 1,
+      "edge_id": "philosophy-duties-0",
+      "effect_feature": "philosophy:duties_applicable_duties",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "duties",
+      "cause_feature": "philosophy:duties_applicable_duties",
+      "direction": 1,
+      "edge_id": "philosophy-duties-1",
+      "effect_feature": "philosophy:duties_rights_constraints",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "duties",
+      "cause_feature": "philosophy:duties_rights_constraints",
+      "direction": 1,
+      "edge_id": "philosophy-duties-2",
+      "effect_feature": "philosophy:duties_permissibility_assessment",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "duties",
+      "cause_feature": "philosophy:duties_permissibility_assessment",
+      "direction": 1,
+      "edge_id": "philosophy-duties-3",
+      "effect_feature": "philosophy:duties_deontological_warrant",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "virtues",
+      "cause_feature": "philosophy:virtues_practical_situation",
+      "direction": 1,
+      "edge_id": "philosophy-virtues-0",
+      "effect_feature": "philosophy:virtues_salient_virtues",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "virtues",
+      "cause_feature": "philosophy:virtues_salient_virtues",
+      "direction": 1,
+      "edge_id": "philosophy-virtues-1",
+      "effect_feature": "philosophy:virtues_character_response",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "virtues",
+      "cause_feature": "philosophy:virtues_character_response",
+      "direction": 1,
+      "edge_id": "philosophy-virtues-2",
+      "effect_feature": "philosophy:virtues_practical_wisdom",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "virtues",
+      "cause_feature": "philosophy:virtues_practical_wisdom",
+      "direction": 1,
+      "edge_id": "philosophy-virtues-3",
+      "effect_feature": "philosophy:virtues_virtue_ethical_warrant",
+      "source_ids": [
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "moral_uncertainty",
+      "cause_feature": "philosophy:moral_uncertainty_moral_problem",
+      "direction": 1,
+      "edge_id": "philosophy-moral_uncertainty-0",
+      "effect_feature": "philosophy:moral_uncertainty_competing_frameworks",
+      "source_ids": [
+        "sep-ethics",
+        "sep-decision-theory"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "moral_uncertainty",
+      "cause_feature": "philosophy:moral_uncertainty_competing_frameworks",
+      "direction": 1,
+      "edge_id": "philosophy-moral_uncertainty-1",
+      "effect_feature": "philosophy:moral_uncertainty_framework_disagreement",
+      "source_ids": [
+        "sep-ethics",
+        "sep-decision-theory"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "moral_uncertainty",
+      "cause_feature": "philosophy:moral_uncertainty_framework_disagreement",
+      "direction": 1,
+      "edge_id": "philosophy-moral_uncertainty-2",
+      "effect_feature": "philosophy:moral_uncertainty_robust_option",
+      "source_ids": [
+        "sep-ethics",
+        "sep-decision-theory"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "moral_uncertainty",
+      "cause_feature": "philosophy:moral_uncertainty_robust_option",
+      "direction": 1,
+      "edge_id": "philosophy-moral_uncertainty-3",
+      "effect_feature": "philosophy:moral_uncertainty_all_things_considered_warrant",
+      "source_ids": [
+        "sep-ethics",
+        "sep-decision-theory"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "political",
+      "cause_feature": "philosophy:political_institutional_proposal",
+      "direction": 1,
+      "edge_id": "philosophy-political-0",
+      "effect_feature": "philosophy:political_liberty_effects",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "political",
+      "cause_feature": "philosophy:political_liberty_effects",
+      "direction": 1,
+      "edge_id": "philosophy-political-1",
+      "effect_feature": "philosophy:political_equality_effects",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "political",
+      "cause_feature": "philosophy:political_equality_effects",
+      "direction": 1,
+      "edge_id": "philosophy-political-2",
+      "effect_feature": "philosophy:political_public_justification",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "political",
+      "cause_feature": "philosophy:political_public_justification",
+      "direction": 1,
+      "edge_id": "philosophy-political-3",
+      "effect_feature": "philosophy:political_political_legitimacy",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "mind",
+      "cause_feature": "philosophy:mind_mental_phenomenon",
+      "direction": 1,
+      "edge_id": "philosophy-mind-0",
+      "effect_feature": "philosophy:mind_candidate_realization",
+      "source_ids": [
+        "sep-mind"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "mind",
+      "cause_feature": "philosophy:mind_candidate_realization",
+      "direction": 1,
+      "edge_id": "philosophy-mind-1",
+      "effect_feature": "philosophy:mind_multiple_realizability_test",
+      "source_ids": [
+        "sep-mind"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "mind",
+      "cause_feature": "philosophy:mind_multiple_realizability_test",
+      "direction": 1,
+      "edge_id": "philosophy-mind-2",
+      "effect_feature": "philosophy:mind_theory_fit",
+      "source_ids": [
+        "sep-mind"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "mind",
+      "cause_feature": "philosophy:mind_theory_fit",
+      "direction": 1,
+      "edge_id": "philosophy-mind-3",
+      "effect_feature": "philosophy:mind_mind_theory_warrant",
+      "source_ids": [
+        "sep-mind"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "language",
+      "cause_feature": "philosophy:language_utterance",
+      "direction": 1,
+      "edge_id": "philosophy-language-0",
+      "effect_feature": "philosophy:language_semantic_content",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "language",
+      "cause_feature": "philosophy:language_semantic_content",
+      "direction": 1,
+      "edge_id": "philosophy-language-1",
+      "effect_feature": "philosophy:language_pragmatic_context",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "language",
+      "cause_feature": "philosophy:language_pragmatic_context",
+      "direction": 1,
+      "edge_id": "philosophy-language-2",
+      "effect_feature": "philosophy:language_speaker_meaning",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "language",
+      "cause_feature": "philosophy:language_speaker_meaning",
+      "direction": 1,
+      "edge_id": "philosophy-language-3",
+      "effect_feature": "philosophy:language_interpretive_warrant",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "metaphysics",
+      "cause_feature": "philosophy:metaphysics_ontological_claim",
+      "direction": 1,
+      "edge_id": "philosophy-metaphysics-0",
+      "effect_feature": "philosophy:metaphysics_category_analysis",
+      "source_ids": [
+        "sep-metaphysics"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "metaphysics",
+      "cause_feature": "philosophy:metaphysics_category_analysis",
+      "direction": 1,
+      "edge_id": "philosophy-metaphysics-1",
+      "effect_feature": "philosophy:metaphysics_grounding_relations",
+      "source_ids": [
+        "sep-metaphysics"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "metaphysics",
+      "cause_feature": "philosophy:metaphysics_grounding_relations",
+      "direction": 1,
+      "edge_id": "philosophy-metaphysics-2",
+      "effect_feature": "philosophy:metaphysics_modal_consistency",
+      "source_ids": [
+        "sep-metaphysics"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "metaphysics",
+      "cause_feature": "philosophy:metaphysics_modal_consistency",
+      "direction": 1,
+      "edge_id": "philosophy-metaphysics-3",
+      "effect_feature": "philosophy:metaphysics_metaphysical_warrant",
+      "source_ids": [
+        "sep-metaphysics"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "identity",
+      "cause_feature": "philosophy:identity_entity_description",
+      "direction": 1,
+      "edge_id": "philosophy-identity-0",
+      "effect_feature": "philosophy:identity_identity_criterion",
+      "source_ids": [
+        "sep-metaphysics"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "identity",
+      "cause_feature": "philosophy:identity_identity_criterion",
+      "direction": 1,
+      "edge_id": "philosophy-identity-1",
+      "effect_feature": "philosophy:identity_change_over_time",
+      "source_ids": [
+        "sep-metaphysics"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "identity",
+      "cause_feature": "philosophy:identity_change_over_time",
+      "direction": 1,
+      "edge_id": "philosophy-identity-2",
+      "effect_feature": "philosophy:identity_persistence_assessment",
+      "source_ids": [
+        "sep-metaphysics"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "identity",
+      "cause_feature": "philosophy:identity_persistence_assessment",
+      "direction": 1,
+      "edge_id": "philosophy-identity-3",
+      "effect_feature": "philosophy:identity_identity_warrant",
+      "source_ids": [
+        "sep-metaphysics"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "technology_ai",
+      "cause_feature": "philosophy:technology_ai_technical_system",
+      "direction": 1,
+      "edge_id": "philosophy-technology_ai-0",
+      "effect_feature": "philosophy:technology_ai_capability_evidence",
+      "source_ids": [
+        "sep-domains",
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "technology_ai",
+      "cause_feature": "philosophy:technology_ai_capability_evidence",
+      "direction": 1,
+      "edge_id": "philosophy-technology_ai-1",
+      "effect_feature": "philosophy:technology_ai_social_impact",
+      "source_ids": [
+        "sep-domains",
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "technology_ai",
+      "cause_feature": "philosophy:technology_ai_social_impact",
+      "direction": 1,
+      "edge_id": "philosophy-technology_ai-2",
+      "effect_feature": "philosophy:technology_ai_normative_constraints",
+      "source_ids": [
+        "sep-domains",
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "technology_ai",
+      "cause_feature": "philosophy:technology_ai_normative_constraints",
+      "direction": 1,
+      "edge_id": "philosophy-technology_ai-3",
+      "effect_feature": "philosophy:technology_ai_responsible_judgment",
+      "source_ids": [
+        "sep-domains",
+        "sep-ethics"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "aesthetics",
+      "cause_feature": "philosophy:aesthetics_artistic_object",
+      "direction": 1,
+      "edge_id": "philosophy-aesthetics-0",
+      "effect_feature": "philosophy:aesthetics_formal_features",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "aesthetics",
+      "cause_feature": "philosophy:aesthetics_formal_features",
+      "direction": 1,
+      "edge_id": "philosophy-aesthetics-1",
+      "effect_feature": "philosophy:aesthetics_interpretive_context",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "aesthetics",
+      "cause_feature": "philosophy:aesthetics_interpretive_context",
+      "direction": 1,
+      "edge_id": "philosophy-aesthetics-2",
+      "effect_feature": "philosophy:aesthetics_aesthetic_reasons",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "aesthetics",
+      "cause_feature": "philosophy:aesthetics_aesthetic_reasons",
+      "direction": 1,
+      "edge_id": "philosophy-aesthetics-3",
+      "effect_feature": "philosophy:aesthetics_aesthetic_warrant",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "religion",
+      "cause_feature": "philosophy:religion_religious_claim",
+      "direction": 1,
+      "edge_id": "philosophy-religion-0",
+      "effect_feature": "philosophy:religion_conceptual_coherence",
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "religion",
+      "cause_feature": "philosophy:religion_conceptual_coherence",
+      "direction": 1,
+      "edge_id": "philosophy-religion-1",
+      "effect_feature": "philosophy:religion_argument_evidence",
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "religion",
+      "cause_feature": "philosophy:religion_argument_evidence",
+      "direction": 1,
+      "edge_id": "philosophy-religion-2",
+      "effect_feature": "philosophy:religion_counterargument_review",
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "religion",
+      "cause_feature": "philosophy:religion_counterargument_review",
+      "direction": 1,
+      "edge_id": "philosophy-religion-3",
+      "effect_feature": "philosophy:religion_religious_claim_warrant",
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "law",
+      "cause_feature": "philosophy:law_legal_rule",
+      "direction": 1,
+      "edge_id": "philosophy-law-0",
+      "effect_feature": "philosophy:law_case_facts",
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "law",
+      "cause_feature": "philosophy:law_case_facts",
+      "direction": 1,
+      "edge_id": "philosophy-law-1",
+      "effect_feature": "philosophy:law_interpretive_principles",
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "law",
+      "cause_feature": "philosophy:law_interpretive_principles",
+      "direction": 1,
+      "edge_id": "philosophy-law-2",
+      "effect_feature": "philosophy:law_rule_application",
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "supports",
+      "branch_id": "law",
+      "cause_feature": "philosophy:law_rule_application",
+      "direction": 1,
+      "edge_id": "philosophy-law-3",
+      "effect_feature": "philosophy:law_legal_reasoning_warrant",
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ]
+    },
+    {
+      "argument_relation": "enables",
+      "branch_id": "phenomenology",
+      "cause_feature": "philosophy:phenomenology_lived_experience",
+      "direction": 1,
+      "edge_id": "philosophy-phenomenology-0",
+      "effect_feature": "philosophy:phenomenology_presupposition_bracketing",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "clarifies",
+      "branch_id": "phenomenology",
+      "cause_feature": "philosophy:phenomenology_presupposition_bracketing",
+      "direction": 1,
+      "edge_id": "philosophy-phenomenology-1",
+      "effect_feature": "philosophy:phenomenology_structural_description",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "grounds",
+      "branch_id": "phenomenology",
+      "cause_feature": "philosophy:phenomenology_structural_description",
+      "direction": 1,
+      "edge_id": "philosophy-phenomenology-2",
+      "effect_feature": "philosophy:phenomenology_invariant_feature",
+      "source_ids": [
+        "sep-domains"
+      ]
+    },
+    {
+      "argument_relation": "qualifies",
+      "branch_id": "phenomenology",
+      "cause_feature": "philosophy:phenomenology_invariant_feature",
+      "direction": 1,
+      "edge_id": "philosophy-phenomenology-3",
+      "effect_feature": "philosophy:phenomenology_phenomenological_warrant",
+      "source_ids": [
+        "sep-domains"
+      ]
+    }
+  ],
+  "manifest_hash": "bef252281605b3e365adbd9b2bc7761006c67e598b86b85053c4a37d02d4ad52",
+  "relation_vocabulary": [
+    "clarifies",
+    "contradicts",
+    "corroborates",
+    "counterexample",
+    "defeats",
+    "enables",
+    "grounds",
+    "qualifies",
+    "supports",
+    "undercuts"
+  ],
+  "runtime": "atom-philosophy-argument-relation-manifest-v1",
+  "schema": 1,
+  "semantics": "typed support/defeat overlay over signed effects on conclusion warrant"
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "axes": [
+    {"id": "definitions_scope", "label": "Definitions and scope"},
+    {"id": "primitives_invariants", "label": "Primitives and invariants"},
+    {"id": "mechanisms_causal_laws", "label": "Mechanisms and causal laws"},
+    {"id": "representations_transformations", "label": "Representations and transformations"},
+    {"id": "deductions_predictions_execution", "label": "Deductions, predictions, and executable consequences"},
+    {"id": "assumptions_prerequisites", "label": "Assumptions and prerequisites"},
+    {"id": "exceptions_boundaries", "label": "Exceptions, counterexamples, and boundary conditions"},
+    {"id": "uncertainty_competing_hypotheses", "label": "Uncertainty, competing hypotheses, and evidence quality"},
+    {"id": "errors_adversarial_misuse", "label": "Common errors, adversarial framings, and misuse"},
+    {"id": "applications_toolchains", "label": "Applications and toolchains"},
+    {"id": "history_versions", "label": "History and version-dependent change"},
+    {"id": "within_domain_composition", "label": "Within-domain composition"},
+    {"id": "cross_domain_composition", "label": "Cross-domain composition"},
+    {"id": "unknown_abstention", "label": "Unknown and out-of-scope abstention"},
+    {"id": "adapter_accessibility", "label": "Accessibility through supported model adapters"}
+  ]
+}
+

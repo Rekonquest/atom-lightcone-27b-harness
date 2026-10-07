@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "world_id": "foundation-lanes-v0",
+  "world_version": "0.1.0",
+  "scope": "Foundational anatomy and controls for 21 required lanes; not exhaustive subject coverage.",
+  "status": "passed_with_recorded_limitations",
+  "accepted": true,
+  "manifest_sha256": "663c116748789aaf88e7689fce1ff68a55d3441e05cf929204d2b43ef0fadf96",
+  "training": {
+    "run_id": "foundation-lanes-v0-20260903T071113Z",
+    "source_revision": "ce83b437cd4ac70931436d30993603ab687e7a35",
+    "source_dirty": false,
+    "kaggle_kernel": "jessealicea/new-lightcone-foundation-tpu-v0",
+    "kernel_version": 3,
+    "accelerator": "8-device TPU",
+    "jax_version": "0.10.2",
+    "elapsed_seconds": 22.760986110999966,
+    "pre_registered_gates_passed": 12,
+    "pre_registered_gates_total": 12
+  },
+  "pack_verification": {
+    "runtime_source_revision": "706adb650701f426d184ab4aca8b7ab8cbddfa2b",
+    "hash_verification": true,
+    "adapter_independent": true,
+    "nodes": 187,
+    "edges": 203,
+    "sources": 18,
+    "lexicon_terms": 366,
+    "coordinate_dimensions": 48
+  },
+  "admission_checks": [
+    {
+      "query": "deductive reasoning validity",
+      "seed_count": 1,
+      "admitted_count": 13,
+      "edge_count": 12,
+      "receipt_hash": "e0ec403434188f7479a98f3ba5a0af15b03b0542e887a29a399b02534128cf5a"
+    },
+    {
+      "query": "rhetorical analysis audience framing",
+      "seed_count": 1,
+      "admitted_count": 24,
+      "edge_count": 23,
+      "receipt_hash": "bd71620c47a6c07f2a57ab3c6058b722c1bd2026cb8e59521e6b4a73cdbceb8e"
+    },
+    {
+      "query": "structural geometry invariants",
+      "seed_count": 2,
+      "admitted_count": 19,
+      "edge_count": 17,
+      "receipt_hash": "19e7ed11ce53cbd2cb264837045297d01727438fe4b9246e2b11337d97aa2fec",
+      "deterministic_repeat": true
+    },
+    {
+      "query": "unrepresented martian election",
+      "seed_count": 0,
+      "admitted_count": 0,
+      "edge_count": 0,
+      "receipt_hash": "125c03d9bae3e091bff46e4adcf695e9fb0aa1ee4471dc11b6c2230d7945cae6",
+      "unknown_control_passed": true
+    }
+  ],
+  "limitations": [
+    "Cross-domain holdout recovery was 1/3 within the top 10; cross-domain direction accuracy was 0/3 and was not a pre-registered gate.",
+    "Validation and sealed transition top-1 recovery were 0; the accepted gates were top-10 recovery plus sealed direction accuracy.",
+    "The world trains lane anatomy and controls, not the complete contents of any science, art, engineering, writing, psychology, neuroscience, philosophy, rhetoric, or geometry domain.",
+    "No local-LLM adapter has yet passed live model conformance."
+  ],
+  "verified_at": "2026-09-03T07:15:48Z"
+}
+

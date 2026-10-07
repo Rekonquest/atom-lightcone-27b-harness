@@ -1,0 +1,1379 @@
+{
+  "argument_manifest_hash": "bef252281605b3e365adbd9b2bc7761006c67e598b86b85053c4a37d02d4ad52",
+  "argument_manifest_path": "world_packs/philosophy-reasoning-foundation-v1/atom_philosophy_argument_manifest.json",
+  "argument_relations": [
+    "clarifies",
+    "contradicts",
+    "corroborates",
+    "counterexample",
+    "defeats",
+    "enables",
+    "grounds",
+    "qualifies",
+    "supports",
+    "undercuts"
+  ],
+  "branch_count": 44,
+  "branches": [
+    {
+      "branch_id": "deduction",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:deduction_premise_set",
+        "philosophy:deduction_formalization",
+        "philosophy:deduction_validity_check",
+        "philosophy:deduction_valid_derivation",
+        "philosophy:deduction_conclusion_warrant"
+      ],
+      "relations": [
+        "clarifies",
+        "enables",
+        "supports",
+        "supports"
+      ],
+      "source_ids": [
+        "open-logic"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Deductive validity"
+    },
+    {
+      "branch_id": "soundness",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:soundness_candidate_argument",
+        "philosophy:soundness_valid_form",
+        "philosophy:soundness_premise_truth_check",
+        "philosophy:soundness_sound_argument",
+        "philosophy:soundness_conclusion_warrant"
+      ],
+      "relations": [
+        "clarifies",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "open-logic"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Validity and soundness"
+    },
+    {
+      "branch_id": "consistency",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:consistency_belief_set",
+        "philosophy:consistency_formal_constraints",
+        "philosophy:consistency_consistency_check",
+        "philosophy:consistency_satisfiable_interpretation",
+        "philosophy:consistency_coherence_warrant"
+      ],
+      "relations": [
+        "clarifies",
+        "enables",
+        "supports",
+        "supports"
+      ],
+      "source_ids": [
+        "open-logic",
+        "sep-epistemology"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Consistency and satisfiability"
+    },
+    {
+      "branch_id": "reductio",
+      "directions": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:reductio_target_assumption",
+        "philosophy:reductio_derived_consequences",
+        "philosophy:reductio_contradiction_detection",
+        "philosophy:reductio_assumption_warrant",
+        "philosophy:reductio_rejection_warrant"
+      ],
+      "relations": [
+        "enables",
+        "supports",
+        "contradicts",
+        "defeats"
+      ],
+      "source_ids": [
+        "open-logic"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Reductio reasoning"
+    },
+    {
+      "branch_id": "counterexample",
+      "directions": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:counterexample_universal_claim",
+        "philosophy:counterexample_counterexample_search",
+        "philosophy:counterexample_counterexample_found",
+        "philosophy:counterexample_universal_warrant",
+        "philosophy:counterexample_calibrated_conclusion"
+      ],
+      "relations": [
+        "enables",
+        "supports",
+        "counterexample",
+        "qualifies"
+      ],
+      "source_ids": [
+        "open-logic",
+        "sep-argument"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Counterexample reasoning"
+    },
+    {
+      "branch_id": "induction",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:induction_observed_cases",
+        "philosophy:induction_sample_assessment",
+        "philosophy:induction_pattern_support",
+        "philosophy:induction_generalization_strength",
+        "philosophy:induction_inductive_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "supports",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-epistemology",
+        "sep-bayesian"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Inductive generalization"
+    },
+    {
+      "branch_id": "abduction",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:abduction_surprising_observation",
+        "philosophy:abduction_candidate_explanations",
+        "philosophy:abduction_rival_comparison",
+        "philosophy:abduction_best_explanation",
+        "philosophy:abduction_provisional_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "supports",
+        "qualifies"
+      ],
+      "source_ids": [
+        "sep-abduction"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Abductive inference"
+    },
+    {
+      "branch_id": "analogy",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:analogy_source_case",
+        "philosophy:analogy_structural_mapping",
+        "philosophy:analogy_relevant_similarity",
+        "philosophy:analogy_target_projection",
+        "philosophy:analogy_analogical_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "supports",
+        "qualifies"
+      ],
+      "source_ids": [
+        "sep-argument"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Analogical reasoning"
+    },
+    {
+      "branch_id": "causal",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:causal_covariation",
+        "philosophy:causal_alternative_cause_control",
+        "philosophy:causal_mechanism_support",
+        "philosophy:causal_causal_attribution",
+        "philosophy:causal_causal_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "supports",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-counterfactuals",
+        "sep-scientific-method"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Causal reasoning"
+    },
+    {
+      "branch_id": "counterfactual",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:counterfactual_actual_case",
+        "philosophy:counterfactual_alternative_specification",
+        "philosophy:counterfactual_similarity_control",
+        "philosophy:counterfactual_difference_making",
+        "philosophy:counterfactual_counterfactual_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-counterfactuals"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Counterfactual reasoning"
+    },
+    {
+      "branch_id": "probability",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:probability_possibility_space",
+        "philosophy:probability_probability_assignment",
+        "philosophy:probability_coherence_check",
+        "philosophy:probability_uncertainty_calibration",
+        "philosophy:probability_probabilistic_warrant"
+      ],
+      "relations": [
+        "clarifies",
+        "enables",
+        "supports",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-bayesian"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Probabilistic reasoning"
+    },
+    {
+      "branch_id": "bayesian",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:bayesian_prior_credence",
+        "philosophy:bayesian_new_evidence",
+        "philosophy:bayesian_likelihood_assessment",
+        "philosophy:bayesian_posterior_update",
+        "philosophy:bayesian_revised_warrant"
+      ],
+      "relations": [
+        "qualifies",
+        "enables",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-bayesian"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Bayesian updating"
+    },
+    {
+      "branch_id": "decision",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:decision_option_set",
+        "philosophy:decision_outcome_model",
+        "philosophy:decision_preference_consistency",
+        "philosophy:decision_expected_choice_value",
+        "philosophy:decision_decision_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-decision-theory"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Decision theory"
+    },
+    {
+      "branch_id": "argument_mapping",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "philosophy:argument_mapping_discourse",
+        "philosophy:argument_mapping_claim_extraction",
+        "philosophy:argument_mapping_premise_linking",
+        "philosophy:argument_mapping_support_defeat_map",
+        "philosophy:argument_mapping_argument_comprehension"
+      ],
+      "relations": [
+        "clarifies",
+        "enables",
+        "supports",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-argument"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Argument mapping"
+    },
+    {
+      "branch_id": "assumptions",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "philosophy:assumptions_enthymematic_argument",
+        "philosophy:assumptions_missing_premise_search",
+        "philosophy:assumptions_assumption_exposure",
+        "philosophy:assumptions_premise_assessment",
+        "philosophy:assumptions_argument_warrant"
+      ],
+      "relations": [
+        "enables",
+        "clarifies",
+        "qualifies",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Hidden assumptions"
+    },
+    {
+      "branch_id": "relevance",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "philosophy:relevance_candidate_premise",
+        "philosophy:relevance_relevance_test",
+        "philosophy:relevance_inferential_connection",
+        "philosophy:relevance_support_strength",
+        "philosophy:relevance_argument_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Premise relevance"
+    },
+    {
+      "branch_id": "burden",
+      "directions": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "domain": "social",
+      "features": [
+        "philosophy:burden_asserted_claim",
+        "philosophy:burden_burden_assignment",
+        "philosophy:burden_evidence_demand",
+        "philosophy:burden_unsupported_assertion",
+        "philosophy:burden_claim_warrant"
+      ],
+      "relations": [
+        "qualifies",
+        "enables",
+        "supports",
+        "undercuts"
+      ],
+      "source_ids": [
+        "sep-argument"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Burden of proof"
+    },
+    {
+      "branch_id": "fallacies",
+      "directions": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "philosophy:fallacies_persuasive_argument",
+        "philosophy:fallacies_structural_inspection",
+        "philosophy:fallacies_fallacy_detection",
+        "philosophy:fallacies_apparent_support",
+        "philosophy:fallacies_calibrated_warrant"
+      ],
+      "relations": [
+        "enables",
+        "supports",
+        "undercuts",
+        "qualifies"
+      ],
+      "source_ids": [
+        "sep-fallacies",
+        "iep-critical-thinking"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Fallacy detection"
+    },
+    {
+      "branch_id": "ambiguity",
+      "directions": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "philosophy:ambiguity_repeated_term",
+        "philosophy:ambiguity_sense_tracking",
+        "philosophy:ambiguity_equivocation_detection",
+        "philosophy:ambiguity_inferential_support",
+        "philosophy:ambiguity_argument_warrant"
+      ],
+      "relations": [
+        "enables",
+        "supports",
+        "undercuts",
+        "qualifies"
+      ],
+      "source_ids": [
+        "iep-critical-thinking",
+        "sep-fallacies"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Ambiguity and equivocation"
+    },
+    {
+      "branch_id": "rhetoric",
+      "directions": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "philosophy:rhetoric_persuasive_framing",
+        "philosophy:rhetoric_emotional_force",
+        "philosophy:rhetoric_truth_tracking",
+        "philosophy:rhetoric_epistemic_warrant",
+        "philosophy:rhetoric_responsible_persuasion"
+      ],
+      "relations": [
+        "supports",
+        "undercuts",
+        "qualifies",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-argument",
+        "iep-critical-thinking"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Rhetoric and persuasion"
+    },
+    {
+      "branch_id": "steelmanning",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "philosophy:steelmanning_opposing_position",
+        "philosophy:steelmanning_charitable_reconstruction",
+        "philosophy:steelmanning_strongest_form",
+        "philosophy:steelmanning_substantive_objection",
+        "philosophy:steelmanning_dialectical_progress"
+      ],
+      "relations": [
+        "clarifies",
+        "supports",
+        "enables",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-argument"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Steelmanning"
+    },
+    {
+      "branch_id": "dialectic",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "philosophy:dialectic_initial_thesis",
+        "philosophy:dialectic_serious_objection",
+        "philosophy:dialectic_reasoned_response",
+        "philosophy:dialectic_revised_thesis",
+        "philosophy:dialectic_dialectical_progress"
+      ],
+      "relations": [
+        "qualifies",
+        "enables",
+        "supports",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-argument"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Dialectical reasoning"
+    },
+    {
+      "branch_id": "disagreement",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "philosophy:disagreement_peer_disagreement",
+        "philosophy:disagreement_perspective_review",
+        "philosophy:disagreement_shared_evidence_check",
+        "philosophy:disagreement_credence_revision",
+        "philosophy:disagreement_epistemic_calibration"
+      ],
+      "relations": [
+        "qualifies",
+        "enables",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-epistemology"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Epistemic disagreement"
+    },
+    {
+      "branch_id": "testimony",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "philosophy:testimony_speaker_claim",
+        "philosophy:testimony_competence_check",
+        "philosophy:testimony_sincerity_check",
+        "philosophy:testimony_testimonial_reliability",
+        "philosophy:testimony_hearer_warrant"
+      ],
+      "relations": [
+        "qualifies",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-epistemology"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Testimonial knowledge"
+    },
+    {
+      "branch_id": "justification",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:justification_belief",
+        "philosophy:justification_reason_identification",
+        "philosophy:justification_defeater_search",
+        "philosophy:justification_undefeated_support",
+        "philosophy:justification_justified_credence"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-epistemology"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Epistemic justification"
+    },
+    {
+      "branch_id": "skepticism",
+      "directions": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:skepticism_knowledge_claim",
+        "philosophy:skepticism_error_possibility",
+        "philosophy:skepticism_underdetermination",
+        "philosophy:skepticism_knowledge_warrant",
+        "philosophy:skepticism_calibrated_confidence"
+      ],
+      "relations": [
+        "qualifies",
+        "supports",
+        "undercuts",
+        "qualifies"
+      ],
+      "source_ids": [
+        "sep-epistemology"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Skeptical challenge"
+    },
+    {
+      "branch_id": "humility",
+      "directions": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:humility_uncertain_question",
+        "philosophy:humility_limitation_recognition",
+        "philosophy:humility_confidence_calibration",
+        "philosophy:humility_overclaim_risk",
+        "philosophy:humility_epistemic_reliability"
+      ],
+      "relations": [
+        "clarifies",
+        "supports",
+        "defeats",
+        "undercuts"
+      ],
+      "source_ids": [
+        "sep-epistemology"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Epistemic humility"
+    },
+    {
+      "branch_id": "explanation",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:explanation_phenomenon",
+        "philosophy:explanation_explanatory_hypothesis",
+        "philosophy:explanation_scope_and_unification",
+        "philosophy:explanation_explanatory_power",
+        "philosophy:explanation_understanding"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-abduction",
+        "sep-scientific-method"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Explanatory reasoning"
+    },
+    {
+      "branch_id": "hypothesis",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:hypothesis_testable_hypothesis",
+        "philosophy:hypothesis_discriminating_prediction",
+        "philosophy:hypothesis_controlled_observation",
+        "philosophy:hypothesis_hypothesis_support",
+        "philosophy:hypothesis_scientific_warrant"
+      ],
+      "relations": [
+        "enables",
+        "grounds",
+        "corroborates",
+        "qualifies"
+      ],
+      "source_ids": [
+        "sep-scientific-method",
+        "sep-bayesian"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Hypothesis testing"
+    },
+    {
+      "branch_id": "models",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:models_target_system",
+        "philosophy:models_model_assumptions",
+        "philosophy:models_model_consequences",
+        "philosophy:models_empirical_fit",
+        "philosophy:models_model_warrant"
+      ],
+      "relations": [
+        "clarifies",
+        "enables",
+        "corroborates",
+        "qualifies"
+      ],
+      "source_ids": [
+        "sep-scientific-method"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Model-based reasoning"
+    },
+    {
+      "branch_id": "consequences",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:consequences_candidate_action",
+        "philosophy:consequences_affected_parties",
+        "philosophy:consequences_outcome_assessment",
+        "philosophy:consequences_aggregate_consequences",
+        "philosophy:consequences_consequentialist_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-ethics"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Consequentialist reasoning"
+    },
+    {
+      "branch_id": "duties",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:duties_candidate_action",
+        "philosophy:duties_applicable_duties",
+        "philosophy:duties_rights_constraints",
+        "philosophy:duties_permissibility_assessment",
+        "philosophy:duties_deontological_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-ethics"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Deontological reasoning"
+    },
+    {
+      "branch_id": "virtues",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:virtues_practical_situation",
+        "philosophy:virtues_salient_virtues",
+        "philosophy:virtues_character_response",
+        "philosophy:virtues_practical_wisdom",
+        "philosophy:virtues_virtue_ethical_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-ethics"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Virtue-ethical reasoning"
+    },
+    {
+      "branch_id": "moral_uncertainty",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:moral_uncertainty_moral_problem",
+        "philosophy:moral_uncertainty_competing_frameworks",
+        "philosophy:moral_uncertainty_framework_disagreement",
+        "philosophy:moral_uncertainty_robust_option",
+        "philosophy:moral_uncertainty_all_things_considered_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "supports",
+        "qualifies"
+      ],
+      "source_ids": [
+        "sep-ethics",
+        "sep-decision-theory"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Moral uncertainty"
+    },
+    {
+      "branch_id": "political",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "philosophy:political_institutional_proposal",
+        "philosophy:political_liberty_effects",
+        "philosophy:political_equality_effects",
+        "philosophy:political_public_justification",
+        "philosophy:political_political_legitimacy"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-domains"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Political philosophy"
+    },
+    {
+      "branch_id": "mind",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:mind_mental_phenomenon",
+        "philosophy:mind_candidate_realization",
+        "philosophy:mind_multiple_realizability_test",
+        "philosophy:mind_theory_fit",
+        "philosophy:mind_mind_theory_warrant"
+      ],
+      "relations": [
+        "enables",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-mind"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Philosophy of mind"
+    },
+    {
+      "branch_id": "language",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "philosophy:language_utterance",
+        "philosophy:language_semantic_content",
+        "philosophy:language_pragmatic_context",
+        "philosophy:language_speaker_meaning",
+        "philosophy:language_interpretive_warrant"
+      ],
+      "relations": [
+        "clarifies",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-domains"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Philosophy of language"
+    },
+    {
+      "branch_id": "metaphysics",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:metaphysics_ontological_claim",
+        "philosophy:metaphysics_category_analysis",
+        "philosophy:metaphysics_grounding_relations",
+        "philosophy:metaphysics_modal_consistency",
+        "philosophy:metaphysics_metaphysical_warrant"
+      ],
+      "relations": [
+        "clarifies",
+        "grounds",
+        "qualifies",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-metaphysics"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Metaphysical reasoning"
+    },
+    {
+      "branch_id": "identity",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:identity_entity_description",
+        "philosophy:identity_identity_criterion",
+        "philosophy:identity_change_over_time",
+        "philosophy:identity_persistence_assessment",
+        "philosophy:identity_identity_warrant"
+      ],
+      "relations": [
+        "clarifies",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-metaphysics"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Identity and persistence"
+    },
+    {
+      "branch_id": "technology_ai",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "philosophy:technology_ai_technical_system",
+        "philosophy:technology_ai_capability_evidence",
+        "philosophy:technology_ai_social_impact",
+        "philosophy:technology_ai_normative_constraints",
+        "philosophy:technology_ai_responsible_judgment"
+      ],
+      "relations": [
+        "qualifies",
+        "enables",
+        "qualifies",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-domains",
+        "sep-ethics"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Philosophy of technology and AI"
+    },
+    {
+      "branch_id": "aesthetics",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "philosophy:aesthetics_artistic_object",
+        "philosophy:aesthetics_formal_features",
+        "philosophy:aesthetics_interpretive_context",
+        "philosophy:aesthetics_aesthetic_reasons",
+        "philosophy:aesthetics_aesthetic_warrant"
+      ],
+      "relations": [
+        "clarifies",
+        "qualifies",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-domains"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Aesthetics"
+    },
+    {
+      "branch_id": "religion",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "philosophy:religion_religious_claim",
+        "philosophy:religion_conceptual_coherence",
+        "philosophy:religion_argument_evidence",
+        "philosophy:religion_counterargument_review",
+        "philosophy:religion_religious_claim_warrant"
+      ],
+      "relations": [
+        "qualifies",
+        "grounds",
+        "qualifies",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Philosophy of religion"
+    },
+    {
+      "branch_id": "law",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "philosophy:law_legal_rule",
+        "philosophy:law_case_facts",
+        "philosophy:law_interpretive_principles",
+        "philosophy:law_rule_application",
+        "philosophy:law_legal_reasoning_warrant"
+      ],
+      "relations": [
+        "qualifies",
+        "enables",
+        "grounds",
+        "supports"
+      ],
+      "source_ids": [
+        "sep-domains",
+        "sep-argument"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Philosophy of law"
+    },
+    {
+      "branch_id": "phenomenology",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "philosophy:phenomenology_lived_experience",
+        "philosophy:phenomenology_presupposition_bracketing",
+        "philosophy:phenomenology_structural_description",
+        "philosophy:phenomenology_invariant_feature",
+        "philosophy:phenomenology_phenomenological_warrant"
+      ],
+      "relations": [
+        "enables",
+        "clarifies",
+        "grounds",
+        "qualifies"
+      ],
+      "source_ids": [
+        "sep-domains"
+      ],
+      "status": "source-structured-contestable-curriculum-hypothesis",
+      "title": "Phenomenological reasoning"
+    }
+  ],
+  "claim_boundary": "Source-structured synthetic reasoning curriculum. It tests signed support/defeat composition; it does not establish that contested positions are true or grant moral or political authority.",
+  "consolidation": {
+    "crystallized_laws": 176,
+    "hypothesis_laws": 0,
+    "retired_laws": 0,
+    "runtime": "atom-causal-topological-persistence-v1",
+    "threshold_count": 48
+  },
+  "contested_position_truth_authority": false,
+  "direction_placebo": false,
+  "excluded_branches": [],
+  "heldout_composed_paths_seen_during_training": 0,
+  "language_model_training": false,
+  "law_count": 176,
+  "model_hash": "f0f3d739c8533ee801828e573791acfb1ee0143e91d71c19bab41c276140b2b8",
+  "model_path": "world_packs/philosophy-reasoning-foundation-v1/atom_philosophy_world_model.json",
+  "moral_authority": false,
+  "observation_count": 2112,
+  "political_authority": false,
+  "report_hash": "68b6a82534d38f4df68a07c475ac6f068b8fad6e5003fd5fd935b80420ee67a3",
+  "runtime": "atom-philosophy-argument-world-v1",
+  "schema": 1,
+  "scope": "broad philosophy, argumentation, and epistemic reasoning foundation",
+  "source_manifest_hash": "d3c48117f1303c66f72834f97fd1de1dc09d3157cb817be67ce766d955803be1",
+  "sources": {
+    "iep-critical-thinking": {
+      "authority": "Internet Encyclopedia of Philosophy",
+      "role": "argument evaluation, fallacies, ambiguity, and missing premises",
+      "title": "Critical Thinking",
+      "url": "https://iep.utm.edu/critical-thinking/"
+    },
+    "open-logic": {
+      "authority": "Open Logic Project",
+      "role": "consequence, validity, consistency, proof, and countermodels",
+      "title": "forall x: Calgary and the Open Logic Text",
+      "url": "https://forallx.openlogicproject.org/"
+    },
+    "sep-abduction": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "explanatory hypotheses and rival comparison",
+      "title": "Abduction",
+      "url": "https://plato.stanford.edu/entries/abduction/"
+    },
+    "sep-argument": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "argument structure, premise-conclusion relations, and dialectic",
+      "title": "Argument and Argumentation",
+      "url": "https://plato.stanford.edu/entries/argument/"
+    },
+    "sep-bayesian": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "credence coherence and evidence-responsive updating",
+      "title": "Bayesian Epistemology",
+      "url": "https://plato.stanford.edu/entries/epistemology-bayesian/"
+    },
+    "sep-counterfactuals": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "hypothetical alternatives, dependence, and causation",
+      "title": "Counterfactuals",
+      "url": "https://plato.stanford.edu/entries/counterfactuals/"
+    },
+    "sep-decision-theory": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "options, uncertainty, preferences, and choice",
+      "title": "Decision Theory",
+      "url": "https://plato.stanford.edu/entries/decision-theory/"
+    },
+    "sep-domains": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "language, politics, law, aesthetics, religion, and phenomenology",
+      "title": "Philosophy domain entries",
+      "url": "https://plato.stanford.edu/"
+    },
+    "sep-epistemology": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "knowledge, justification, evidence, testimony, and defeaters",
+      "title": "Epistemology",
+      "url": "https://plato.stanford.edu/entries/epistemology/"
+    },
+    "sep-ethics": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "plural normative frameworks without choosing a privileged doctrine",
+      "title": "Deontological Ethics, Consequentialism, and Virtue Ethics",
+      "url": "https://plato.stanford.edu/entries/ethics-deontological/"
+    },
+    "sep-fallacies": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "formal and informal failure modes of argument",
+      "title": "Fallacies",
+      "url": "https://plato.stanford.edu/entries/fallacies/"
+    },
+    "sep-metaphysics": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "existence, identity, grounding, modality, and persistence",
+      "title": "Metaphysics",
+      "url": "https://plato.stanford.edu/entries/metaphysics/"
+    },
+    "sep-mind": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "mind, realization, identity, and competing explanations",
+      "title": "The Mind/Brain Identity Theory",
+      "url": "https://plato.stanford.edu/entries/mind-identity/"
+    },
+    "sep-scientific-method": {
+      "authority": "Stanford Encyclopedia of Philosophy",
+      "role": "hypothesis testing, evidence, models, and scientific inference",
+      "title": "Scientific Method",
+      "url": "https://plato.stanford.edu/entries/scientific-method/"
+    }
+  },
+  "training_edge_count": 176,
+  "training_examples_per_edge": 12,
+  "world_id": "philosophy-reasoning-foundation-v1"
+}

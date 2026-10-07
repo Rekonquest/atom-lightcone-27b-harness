@@ -1,0 +1,45 @@
+{
+  "brief": {
+    "id": "menu-design-development",
+    "required": ["cost", "clarity"],
+    "preferred": ["seasonality"],
+    "forbidden_pairs": [["clarity", "seasonality"]],
+    "seed_ids": ["concept.candidate-generation"],
+    "frames": [
+      {
+        "id": "reframe-as-investment",
+        "aliases": [["cost", "investment"]],
+        "bonus_attributes": ["seasonality"]
+      }
+    ],
+    "tensions": [
+      { "left": "cost", "right": "clarity", "bridge": "value" }
+    ]
+  },
+  "concepts": [
+    {
+      "id": "concept.candidate-generation",
+      "space": "creativity",
+      "attributes": ["cost", "clarity"],
+      "value": 0.7,
+      "memory": false
+    },
+    {
+      "id": "concept.selection",
+      "space": "operations",
+      "attributes": ["clarity", "consistency"],
+      "value": 0.8,
+      "memory": true
+    },
+    {
+      "id": "concept.seasonality",
+      "space": "sourcing",
+      "attributes": ["seasonality", "cost"],
+      "value": 0.6,
+      "memory": true
+    }
+  ],
+  "max_blend": 3,
+  "max_candidates": 32,
+  "frontier_limit": 6
+}

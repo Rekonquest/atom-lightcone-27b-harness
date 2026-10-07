@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lightcone.local/schemas/world-manifest.schema.json",
+  "title": "Immutable Lightcone causal-world pack manifest",
+  "type": "object",
+  "required": [
+    "schema_version", "world_id", "version", "created_at", "adapter_independent",
+    "ontology_hash", "domains", "lanes", "node_count", "edge_count", "files",
+    "training_receipt", "validation_receipts"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "world_id": { "$ref": "#/$defs/id" },
+    "version": { "type": "string", "minLength": 1 },
+    "created_at": { "type": "string", "format": "date-time" },
+    "adapter_independent": { "const": true },
+    "ontology_hash": { "$ref": "#/$defs/sha256" },
+    "domains": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+    "lanes": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+    "node_count": { "type": "integer", "minimum": 1 },
+    "edge_count": { "type": "integer", "minimum": 0 },
+    "coordinate_dimensions": { "type": ["integer", "null"], "minimum": 1 },
+    "shadow": {
+      "type": "object",
+      "required": [
+        "dimensions", "projection", "coordinates", "observers",
+        "observer_only", "used_for_admission", "all_spatial", "has_time_axis"
+      ],
+      "properties": {
+        "dimensions": { "const": 4 },
+        "projection": { "type": "string", "minLength": 1 },
+        "coordinates": { "type": "string", "minLength": 1 },
+        "observers": { "type": "string", "minLength": 1 },
+        "observer_only": { "const": true },
+        "used_for_admission": { "const": false },
+        "all_spatial": { "const": true },
+        "has_time_axis": { "const": false }
+      },
+      "additionalProperties": false
+    },
+    "files": {
+      "type": "object",
+      "minProperties": 2,
+      "additionalProperties": { "$ref": "#/$defs/sha256" }
+    },
+    "training_receipt": { "type": "string", "minLength": 1 },
+    "validation_receipts": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+    "limitations": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

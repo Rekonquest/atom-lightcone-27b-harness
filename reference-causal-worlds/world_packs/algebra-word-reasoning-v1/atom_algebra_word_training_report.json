@@ -1,0 +1,968 @@
+{
+  "branch_count": 40,
+  "branches": [
+    {
+      "branch_id": "quantity_extraction",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:quantity_extraction_story_conditions",
+        "algebra_word:quantity_extraction_quantity_identification",
+        "algebra_word:quantity_extraction_role_assignment",
+        "algebra_word:quantity_extraction_structured_quantities",
+        "algebra_word:quantity_extraction_model_readiness"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "gsm8k"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Quantity extraction"
+    },
+    {
+      "branch_id": "unknown_definition",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:unknown_definition_question_target",
+        "algebra_word:unknown_definition_unknown_selection",
+        "algebra_word:unknown_definition_variable_definition",
+        "algebra_word:unknown_definition_relation_alignment",
+        "algebra_word:unknown_definition_equation_readiness"
+      ],
+      "source_ids": [
+        "openstax-models"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Unknown definition"
+    },
+    {
+      "branch_id": "units",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:units_measured_quantities",
+        "algebra_word:units_unit_normalization",
+        "algebra_word:units_dimension_check",
+        "algebra_word:units_equation_consistency",
+        "algebra_word:units_solution_validity"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "openstax-functions"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Units and dimensional consistency"
+    },
+    {
+      "branch_id": "translation",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:translation_verbal_relation",
+        "algebra_word:translation_operator_identification",
+        "algebra_word:translation_expression_construction",
+        "algebra_word:translation_equation_fidelity",
+        "algebra_word:translation_solution_validity"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "svamp"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Language-to-expression translation"
+    },
+    {
+      "branch_id": "equation_system",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:equation_system_linked_conditions",
+        "algebra_word:equation_system_independent_relations",
+        "algebra_word:equation_system_equation_system",
+        "algebra_word:equation_system_solvable_structure",
+        "algebra_word:equation_system_solution_validity"
+      ],
+      "source_ids": [
+        "openstax-functions",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Equation-system construction"
+    },
+    {
+      "branch_id": "constraints",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:constraints_story_domain",
+        "algebra_word:constraints_constraint_extraction",
+        "algebra_word:constraints_candidate_filtering",
+        "algebra_word:constraints_feasible_solution",
+        "algebra_word:constraints_answer_validity"
+      ],
+      "source_ids": [
+        "openstax-functions",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Domain and feasibility constraints"
+    },
+    {
+      "branch_id": "verification",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:verification_candidate_solution",
+        "algebra_word:verification_constraint_substitution",
+        "algebra_word:verification_residual_check",
+        "algebra_word:verification_verified_solution",
+        "algebra_word:verification_answer_reliability"
+      ],
+      "source_ids": [
+        "gsm8k",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Back-substitution verification"
+    },
+    {
+      "branch_id": "distractors",
+      "directions": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:distractors_story_data",
+        "algebra_word:distractors_relevance_filter",
+        "algebra_word:distractors_distractor_inclusion",
+        "algebra_word:distractors_model_fidelity",
+        "algebra_word:distractors_answer_validity"
+      ],
+      "source_ids": [
+        "svamp"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Irrelevant-number resistance"
+    },
+    {
+      "branch_id": "underdetermined",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:underdetermined_independent_constraints",
+        "algebra_word:underdetermined_matrix_rank",
+        "algebra_word:underdetermined_solution_identifiability",
+        "algebra_word:underdetermined_justified_answer",
+        "algebra_word:underdetermined_answer_reliability"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Underdetermined systems"
+    },
+    {
+      "branch_id": "inconsistent",
+      "directions": [
+        -1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:inconsistent_conflicting_constraints",
+        "algebra_word:inconsistent_system_consistency",
+        "algebra_word:inconsistent_solution_existence",
+        "algebra_word:inconsistent_warranted_answer",
+        "algebra_word:inconsistent_answer_reliability"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Inconsistent systems"
+    },
+    {
+      "branch_id": "linear_one",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:linear_one_story_relations",
+        "algebra_word:linear_one_affine_expression",
+        "algebra_word:linear_one_linear_equation",
+        "algebra_word:linear_one_exact_solution",
+        "algebra_word:linear_one_contextual_answer"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "gsm8k"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Multi-step one-variable linear problems"
+    },
+    {
+      "branch_id": "linear_systems",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:linear_systems_multiple_unknowns",
+        "algebra_word:linear_systems_independent_equations",
+        "algebra_word:linear_systems_elimination_structure",
+        "algebra_word:linear_systems_exact_solution_vector",
+        "algebra_word:linear_systems_contextual_answer"
+      ],
+      "source_ids": [
+        "openstax-functions",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Multi-variable linear systems"
+    },
+    {
+      "branch_id": "inequalities",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:inequalities_resource_limit",
+        "algebra_word:inequalities_inequality_direction",
+        "algebra_word:inequalities_feasible_interval",
+        "algebra_word:inequalities_boundary_check",
+        "algebra_word:inequalities_valid_decision"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Inequality word problems"
+    },
+    {
+      "branch_id": "absolute_value",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:absolute_value_distance_condition",
+        "algebra_word:absolute_value_absolute_expression",
+        "algebra_word:absolute_value_case_split",
+        "algebra_word:absolute_value_candidate_set",
+        "algebra_word:absolute_value_constraint_validated_answer"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Absolute-value and distance constraints"
+    },
+    {
+      "branch_id": "ratio",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:ratio_ratio_statement",
+        "algebra_word:ratio_proportion_model",
+        "algebra_word:ratio_cross_product_constraint",
+        "algebra_word:ratio_exact_unknown",
+        "algebra_word:ratio_ratio_consistency"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "gsm8k"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Ratios and proportions"
+    },
+    {
+      "branch_id": "direct_variation",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:direct_variation_paired_observation",
+        "algebra_word:direct_variation_variation_constant",
+        "algebra_word:direct_variation_direct_model",
+        "algebra_word:direct_variation_target_substitution",
+        "algebra_word:direct_variation_predicted_quantity"
+      ],
+      "source_ids": [
+        "openstax-functions"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Direct variation"
+    },
+    {
+      "branch_id": "inverse_variation",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:inverse_variation_paired_observation",
+        "algebra_word:inverse_variation_product_invariant",
+        "algebra_word:inverse_variation_inverse_model",
+        "algebra_word:inverse_variation_target_substitution",
+        "algebra_word:inverse_variation_predicted_quantity"
+      ],
+      "source_ids": [
+        "openstax-functions",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Inverse variation"
+    },
+    {
+      "branch_id": "percent_chain",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:percent_chain_initial_quantity",
+        "algebra_word:percent_chain_successive_multipliers",
+        "algebra_word:percent_chain_net_factor",
+        "algebra_word:percent_chain_final_quantity",
+        "algebra_word:percent_chain_percent_consistency"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "gsm8k"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Chained percentage changes"
+    },
+    {
+      "branch_id": "mixture",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:mixture_component_amounts",
+        "algebra_word:mixture_mass_balance",
+        "algebra_word:mixture_solute_balance",
+        "algebra_word:mixture_mixture_solution",
+        "algebra_word:mixture_concentration_check"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Mixture and concentration systems"
+    },
+    {
+      "branch_id": "work_rates",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:work_rates_individual_times",
+        "algebra_word:work_rates_reciprocal_rates",
+        "algebra_word:work_rates_rate_sum",
+        "algebra_word:work_rates_combined_time",
+        "algebra_word:work_rates_work_conservation_check"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "gsm8k"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Combined-work rate problems"
+    },
+    {
+      "branch_id": "relative_motion",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:relative_motion_motion_conditions",
+        "algebra_word:relative_motion_signed_velocities",
+        "algebra_word:relative_motion_distance_equations",
+        "algebra_word:relative_motion_meeting_solution",
+        "algebra_word:relative_motion_trajectory_check"
+      ],
+      "source_ids": [
+        "openstax-functions",
+        "gsm8k"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Relative-motion problems"
+    },
+    {
+      "branch_id": "current_wind",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:current_wind_ambient_flow",
+        "algebra_word:current_wind_relative_speed",
+        "algebra_word:current_wind_outbound_return_equations",
+        "algebra_word:current_wind_intrinsic_speed",
+        "algebra_word:current_wind_travel_check"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Current and wind problems"
+    },
+    {
+      "branch_id": "age",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:age_time_relations",
+        "algebra_word:age_age_variables",
+        "algebra_word:age_shifted_age_equations",
+        "algebra_word:age_age_solution",
+        "algebra_word:age_chronology_check"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "gsm8k"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Multi-person age problems"
+    },
+    {
+      "branch_id": "finance",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:finance_capital_allocation",
+        "algebra_word:finance_rate_assignment",
+        "algebra_word:finance_return_equations",
+        "algebra_word:finance_investment_solution",
+        "algebra_word:finance_return_check"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "gsm8k"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Investment and interest allocation"
+    },
+    {
+      "branch_id": "pricing",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:pricing_usage_conditions",
+        "algebra_word:pricing_fixed_variable_costs",
+        "algebra_word:pricing_piecewise_cost_model",
+        "algebra_word:pricing_bill_solution",
+        "algebra_word:pricing_tariff_check"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "svamp"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Tiered pricing and tariffs"
+    },
+    {
+      "branch_id": "break_even",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:break_even_cost_revenue_conditions",
+        "algebra_word:break_even_linear_models",
+        "algebra_word:break_even_equality_condition",
+        "algebra_word:break_even_break_even_quantity",
+        "algebra_word:break_even_profit_sign_check"
+      ],
+      "source_ids": [
+        "openstax-functions"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Break-even systems"
+    },
+    {
+      "branch_id": "perimeter",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:perimeter_dimension_relations",
+        "algebra_word:perimeter_perimeter_invariant",
+        "algebra_word:perimeter_linear_constraint",
+        "algebra_word:perimeter_dimensions",
+        "algebra_word:perimeter_geometry_check"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "gsm8k"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Perimeter geometry problems"
+    },
+    {
+      "branch_id": "area",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:area_dimension_relations",
+        "algebra_word:area_area_invariant",
+        "algebra_word:area_quadratic_constraint",
+        "algebra_word:area_candidate_dimensions",
+        "algebra_word:area_geometry_check"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Area-constrained geometry"
+    },
+    {
+      "branch_id": "volume",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:volume_solid_dimensions",
+        "algebra_word:volume_volume_invariant",
+        "algebra_word:volume_scaling_equation",
+        "algebra_word:volume_unknown_dimension",
+        "algebra_word:volume_volume_check"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Volume and scaling problems"
+    },
+    {
+      "branch_id": "quadratic_motion",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:quadratic_motion_motion_model",
+        "algebra_word:quadratic_motion_target_height",
+        "algebra_word:quadratic_motion_quadratic_equation",
+        "algebra_word:quadratic_motion_time_candidates",
+        "algebra_word:quadratic_motion_physical_time_solution"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Quadratic motion stories"
+    },
+    {
+      "branch_id": "quadratic_geometry",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:quadratic_geometry_geometric_relation",
+        "algebra_word:quadratic_geometry_area_constraint",
+        "algebra_word:quadratic_geometry_quadratic_equation",
+        "algebra_word:quadratic_geometry_root_candidates",
+        "algebra_word:quadratic_geometry_feasible_dimension"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Quadratic geometry stories"
+    },
+    {
+      "branch_id": "exponential",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:exponential_initial_state",
+        "algebra_word:exponential_multiplicative_rate",
+        "algebra_word:exponential_exponential_model",
+        "algebra_word:exponential_time_or_quantity_solution",
+        "algebra_word:exponential_growth_check"
+      ],
+      "source_ids": [
+        "openstax-functions",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Growth and decay stories"
+    },
+    {
+      "branch_id": "sequences",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:sequences_pattern_conditions",
+        "algebra_word:sequences_sequence_class",
+        "algebra_word:sequences_term_formula",
+        "algebra_word:sequences_target_term",
+        "algebra_word:sequences_pattern_check"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Sequence word problems"
+    },
+    {
+      "branch_id": "digit_number",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:digit_number_digit_conditions",
+        "algebra_word:digit_number_place_value_model",
+        "algebra_word:digit_number_integer_equations",
+        "algebra_word:digit_number_digit_solution",
+        "algebra_word:digit_number_number_check"
+      ],
+      "source_ids": [
+        "openstax-models",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Digit and number-reversal problems"
+    },
+    {
+      "branch_id": "integer_constraints",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:integer_constraints_count_conditions",
+        "algebra_word:integer_constraints_integer_equations",
+        "algebra_word:integer_constraints_divisibility_constraints",
+        "algebra_word:integer_constraints_integer_solution",
+        "algebra_word:integer_constraints_count_check"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Integer and Diophantine constraints"
+    },
+    {
+      "branch_id": "allocation",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:allocation_total_resources",
+        "algebra_word:allocation_category_constraints",
+        "algebra_word:allocation_allocation_system",
+        "algebra_word:allocation_allocation_solution",
+        "algebra_word:allocation_conservation_check"
+      ],
+      "source_ids": [
+        "gsm8k",
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Multi-category allocation"
+    },
+    {
+      "branch_id": "flow",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:flow_network_conditions",
+        "algebra_word:flow_node_balances",
+        "algebra_word:flow_flow_system",
+        "algebra_word:flow_unknown_flows",
+        "algebra_word:flow_global_conservation"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Flow and conservation networks"
+    },
+    {
+      "branch_id": "expected_value",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:expected_value_outcome_space",
+        "algebra_word:expected_value_probability_assignment",
+        "algebra_word:expected_value_payoff_weighting",
+        "algebra_word:expected_value_expected_value",
+        "algebra_word:expected_value_probability_check"
+      ],
+      "source_ids": [
+        "math-dataset"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Probability and expected value"
+    },
+    {
+      "branch_id": "counterfactual",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:counterfactual_baseline_model",
+        "algebra_word:counterfactual_declared_intervention",
+        "algebra_word:counterfactual_recomputed_solution",
+        "algebra_word:counterfactual_target_difference",
+        "algebra_word:counterfactual_counterfactual_prediction"
+      ],
+      "source_ids": [
+        "openstax-functions",
+        "svamp"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Algebraic counterfactuals"
+    },
+    {
+      "branch_id": "causal_direction",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "algebra_word:causal_direction_intervention_semantics",
+        "algebra_word:causal_direction_directed_dependency",
+        "algebra_word:causal_direction_controlled_recalculation",
+        "algebra_word:causal_direction_effect_sign",
+        "algebra_word:causal_direction_causal_warrant"
+      ],
+      "source_ids": [
+        "openstax-functions",
+        "svamp"
+      ],
+      "status": "source-structured-synthetic-modeling-hypothesis",
+      "title": "Causal direction versus algebraic reversibility"
+    }
+  ],
+  "claim_boundary": "Source-structured synthetic reasoning curriculum. The graph controls modeling strategy and causal dependency; exact arithmetic is checked by a separate executor. Arbitrary natural-language translation is not claimed by the graph benchmark.",
+  "consolidation": {
+    "crystallized_laws": 160,
+    "hypothesis_laws": 0,
+    "retired_laws": 0,
+    "runtime": "atom-causal-topological-persistence-v1",
+    "threshold_count": 48
+  },
+  "direction_placebo": false,
+  "exact_arithmetic_authority": "atom-algebra-word-exact-v1",
+  "excluded_branches": [],
+  "heldout_composed_paths_seen_during_training": 0,
+  "language_model_training": false,
+  "law_count": 160,
+  "model_hash": "3ecab0d2f06d994457c50cec3d7c7c604e3e3729d641d3446dae6ce666d14dfd",
+  "model_path": "world_packs/algebra-word-reasoning-v1/atom_algebra_word_world_model.json",
+  "numeric_challenge_cases_seen_during_training": 0,
+  "observation_count": 1920,
+  "report_hash": "3b763572f480cd92670d9876e07182d05eb06fb0858a2ab3f5d5478309664938",
+  "runtime": "atom-algebra-word-causal-world-v1",
+  "schema": 1,
+  "scope": "hard algebra word-problem modeling, verification, and causal sensitivity",
+  "source_manifest_hash": "4f0d834340d09feaa96e2c5ba29d7a00905041c803b5e5569696d2c01679fcab",
+  "sources": {
+    "gsm8k": {
+      "authority": "OpenAI research",
+      "role": "linguistically diverse multi-step word problems and verification",
+      "title": "Training Verifiers to Solve Math Word Problems",
+      "url": "https://arxiv.org/abs/2110.14168"
+    },
+    "math-dataset": {
+      "authority": "Hendrycks et al.",
+      "role": "challenging multi-stage algebra and competition-level problem structure",
+      "title": "Measuring Mathematical Problem Solving With the MATH Dataset",
+      "url": "https://arxiv.org/abs/2103.03874"
+    },
+    "openstax-functions": {
+      "authority": "OpenStax",
+      "role": "rates, domains, units, models, and linear systems",
+      "title": "Algebra and Trigonometry 2e: Modeling with Linear Functions",
+      "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/4-2-modeling-with-linear-functions"
+    },
+    "openstax-models": {
+      "authority": "OpenStax",
+      "role": "known quantities, unknowns, equations, units, and answer interpretation",
+      "title": "Algebra and Trigonometry 2e: Models and Applications",
+      "url": "https://openstax.org/books/algebra-and-trigonometry-2e/pages/2-3-models-and-applications"
+    },
+    "svamp": {
+      "authority": "Patel et al.",
+      "role": "adversarial changes to question, quantities, and reasoning structure",
+      "title": "Are NLP Models Really Able to Solve Simple Math Word Problems?",
+      "url": "https://aclanthology.org/2021.naacl-main.168/"
+    }
+  },
+  "training_edge_count": 160,
+  "training_examples_per_edge": 12,
+  "world_id": "algebra-word-reasoning-v1"
+}

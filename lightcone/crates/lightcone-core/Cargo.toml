@@ -1,0 +1,16 @@
+[package]
+name = "lightcone-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Passive, model-independent causal-cone admission with hash-verified world packs"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true
+

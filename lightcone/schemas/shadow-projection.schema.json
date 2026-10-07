@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lightcone.local/schemas/shadow-projection.schema.json",
+  "title": "Observer-only all-spatial Lightcone shadow projection",
+  "type": "object",
+  "required": [
+    "schema_version", "projection_id", "world_id", "observer_only",
+    "used_for_admission", "all_spatial", "has_time_axis", "source_dimensions",
+    "target_dimensions", "axis_names", "metric", "method", "fit_split",
+    "fit_node_count", "fit_node_ids_sha256", "source_coordinates_sha256",
+    "basis_sha256", "center", "basis", "train_rank",
+    "explained_variance_ratio", "cell_quantization", "reach_radius",
+    "random_basis_placebo_seed", "axis_shuffle_placebo_seed",
+    "axis_shuffle_permutation", "certificate", "deterministic_replay",
+    "deterministic_replay_sha256"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "projection_id": { "type": "string", "minLength": 1 },
+    "world_id": { "type": "string", "minLength": 1 },
+    "observer_only": { "const": true },
+    "used_for_admission": { "const": false },
+    "all_spatial": { "const": true },
+    "has_time_axis": { "const": false },
+    "source_dimensions": { "type": "integer", "minimum": 4 },
+    "target_dimensions": { "const": 4 },
+    "axis_names": { "const": ["x", "y", "z", "w"] },
+    "metric": { "const": "euclidean_l2" },
+    "method": { "const": "train_split_centered_pca_with_orthonormal_rows" },
+    "fit_split": { "const": "train" },
+    "fit_node_count": { "type": "integer", "minimum": 2 },
+    "fit_node_ids_sha256": { "$ref": "#/$defs/sha256" },
+    "source_coordinates_sha256": { "$ref": "#/$defs/sha256" },
+    "basis_sha256": { "$ref": "#/$defs/sha256" },
+    "center": { "type": "array", "minItems": 4, "items": { "type": "number" } },
+    "basis": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": { "type": "array", "minItems": 4, "items": { "type": "number" } }
+    },
+    "train_rank": { "type": "integer", "minimum": 0 },
+    "explained_variance_ratio": {
+      "type": "array", "minItems": 4, "maxItems": 4,
+      "items": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "cell_quantization": { "type": "object" },
+    "reach_radius": { "type": "number", "exclusiveMinimum": 0 },
+    "random_basis_placebo_seed": { "type": "integer", "minimum": 0 },
+    "axis_shuffle_placebo_seed": { "type": "integer", "minimum": 0 },
+    "axis_shuffle_permutation": {
+      "type": "array", "minItems": 4, "uniqueItems": true,
+      "items": { "type": "integer", "minimum": 0 }
+    },
+    "deterministic_replay": { "const": true },
+    "deterministic_replay_sha256": { "$ref": "#/$defs/sha256" },
+    "certificate": { "type": "object" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  }
+}

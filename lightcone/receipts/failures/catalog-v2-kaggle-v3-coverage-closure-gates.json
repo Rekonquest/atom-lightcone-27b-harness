@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "attempt_id": "new-complete-lightcone-catalog-v2-kaggle-kernel-v3",
+  "status": "failed",
+  "seal_applied": false,
+  "source_revision": "7de7d9d928baffb3e2d0ee8e9e1932c3bd878a23",
+  "source_dirty": false,
+  "archive_sha256": "412af71ba60da71cda03d5a030567216f73cbc68efa121564279d30bd871b500",
+  "catalog_summary_sha256": "f1da11e669c3c3155ce7f7ef9d7284283a8b199658a6dd6b1515e24a20919666",
+  "kaggle": {
+    "kernel_ref": "jessealicea/new-lightcone-catalog-tpu-v0",
+    "kernel_version": 3,
+    "accelerator": "eight-device TPU",
+    "world_count": 178,
+    "passed_count": 177,
+    "failed_count": 1
+  },
+  "failure": {
+    "world_id": "coverage-closure-v0",
+    "run_id": "coverage-closure-v0-20260921T081243Z",
+    "class": "curriculum_target_alignment",
+    "training_receipt_created": true,
+    "elapsed_seconds": 1096.9568950210005,
+    "failed_gates": {
+      "train_edge_recovery": {
+        "metric": "edges.train.hits_at_5",
+        "observed": 0.2591235526894328,
+        "threshold": 0.7
+      },
+      "shadow_validation_beats_random": {
+        "metric": "shadow.evaluation.validation.beats_random_basis",
+        "observed": false,
+        "threshold": true,
+        "neighbor_recall_at_k": 0.5712121212121213,
+        "random_basis_neighbor_recall_at_k": 0.5913223140495868
+      }
+    },
+    "cause": "Generated depth relations reused generic closure-control nodes as endpoints, so relation evidence named a domain subject while the target node text named a generic control. This weakened evidence-to-target recovery and structured semantic variance."
+  },
+  "preserved_evidence": {
+    "downloaded_summary": "artifacts/kaggle/catalog-v3/lightcone-output/catalog-summary.json",
+    "training_output": "artifacts/kaggle/catalog-v3/lightcone-output/coverage-closure-v0",
+    "training_receipt_sha256": "52d69aee69be3a736aea37fb9c1740ce4bf995b250cd01377dd2e876d3e2b328"
+  },
+  "correction": {
+    "strategy": "Create two source-bound train anchors per subfield, route within-domain relations through their subject anchors, name/cite actual targets, add an exact authored-label retrieval feature, and retain the 44D optimization residual at a coverage-world-specific 0.005 scale so near-tie noise does not dominate the four semantic observer coordinates.",
+    "thresholds_changed": false,
+    "requires_new_source_revision": true,
+    "requires_new_kernel_version": true
+  },
+  "notes": [
+    "The memory-bounded trainer succeeded on the real TPU and removed the kernel-v2 resource failure.",
+    "The 177 passing worlds remain historical evidence for this attempt but cannot seal catalog v2."
+  ]
+}

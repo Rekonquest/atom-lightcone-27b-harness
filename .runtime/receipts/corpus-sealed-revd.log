@@ -1,0 +1,26 @@
+=== corpus gate, revision d (frozen expectations) ===
+2026-09-24T17:30:11-04:00
+development corpus development-2026-09-24d — 9 cases
+note: wiring and failure-mode gates only; no correctness scoring, no effectiveness claim
+PASS deduction-direct-edge [grounded] verdict=NotApplicable admitted_links=2 reinforced=false arms_identical=true fires=16 deflections=0
+PASS induction-single-cone [generalization] verdict=Consistent admitted_links=3 reinforced=true arms_identical=true fires=17 deflections=0
+PASS abduction-rival-causes [explanation] verdict=Consistent admitted_links=2 reinforced=true arms_identical=false fires=45 deflections=0
+PASS causal-trace [causal] verdict=Contradicts admitted_links=3 reinforced=false arms_identical=true fires=55 deflections=0
+PASS counterfactual-removed-link [counterfactual] verdict=NotApplicable admitted_links=2 reinforced=false arms_identical=true fires=16 deflections=0
+PASS analogy-transfer [transfer] verdict=NotApplicable admitted_links=5 reinforced=false arms_identical=false fires=42 deflections=1
+PASS probabilistic-no-weight [estimation] verdict=NotApplicable admitted_links=3 reinforced=false arms_identical=true fires=53 deflections=0
+PASS unknown-term-control [unknown] verdict=NotApplicable admitted_links=0 reinforced=false arms_identical=true fires=0 deflections=0
+PASS out-of-cone-control [out-of-cone] verdict=Ungrounded admitted_links=0 reinforced=false arms_identical=true fires=0 deflections=0
+--- per class (never blended) ---
+class=causal passed=1 failed=0
+class=counterfactual passed=1 failed=0
+class=estimation passed=1 failed=0
+class=explanation passed=1 failed=0
+class=generalization passed=1 failed=0
+class=grounded passed=1 failed=0
+class=out-of-cone passed=1 failed=0
+class=transfer passed=1 failed=0
+class=unknown passed=1 failed=0
+total passed=9 failed=0
+corpus_exit=0
+2026-09-24T17:33:07-04:00

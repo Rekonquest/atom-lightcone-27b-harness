@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "revision": "correctness-flagship-2026-09-24",
+  "note": "The same correctness gate, run against the atom lightcone's own pack (network-security-browser-v0/0.2.0: 353 nodes, 305 established, 52 causal edges) instead of the 100-node creative placeholder. Ground truth is that pack's typed edges. The connected case names the cause only, because the admission drops an edge whose target is already a seed. Revision b of the instrument: the connected check requires the answer to name the subject (the cause), not both ends, since the question names one end.",
+  "cases": [
+    {
+      "id": "enables-established",
+      "truth": "connected",
+      "direction": "supports",
+      "query": "Explain what a TCP acknowledgment does.",
+      "cause": "net.tcp-ack",
+      "effect": "net.retransmission",
+      "goal": "causal",
+      "terms": ["tcp acknowledgment"]
+    },
+    {
+      "id": "unconnected-novel",
+      "truth": "unconnected",
+      "query": "Why does bread dough rise in a warm kitchen?",
+      "cause": "kitchen.warmth",
+      "effect": "dough.rise",
+      "goal": "causal",
+      "terms": []
+    }
+  ]
+}

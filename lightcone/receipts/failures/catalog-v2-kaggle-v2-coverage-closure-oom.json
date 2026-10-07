@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "attempt_id": "new-complete-lightcone-catalog-v2-kaggle-kernel-v2",
+  "status": "failed",
+  "seal_applied": false,
+  "source_revision": "a7eb2670c45e4ae4c8a6aa4f8e16495a75dbd78c",
+  "source_dirty": false,
+  "archive_sha256": "518f7edb006f1a7200b5485de2c8a89eb23fdb3283893cd813692a0dca912cae",
+  "catalog_summary_sha256": "b801f04e3cce301c1dba6bbec0f023062b90ba64e2623246dc14bbc4e00e30eb",
+  "kaggle": {
+    "kernel_ref": "jessealicea/new-lightcone-catalog-tpu-v0",
+    "kernel_version": 2,
+    "accelerator": "TPU",
+    "world_count": 178,
+    "passed_count": 177,
+    "failed_count": 1
+  },
+  "failure": {
+    "world_id": "coverage-closure-v0",
+    "class": "resource_exhaustion",
+    "training_receipt_created": false,
+    "message": "RESOURCE_EXHAUSTED while allocating a 17.18 GiB device buffer with 15.72 GiB free",
+    "owning_boundary": "trainer edge softmax pairwise-distance construction",
+    "cause": "The broadcast query[:, None, :] - node[None, :, :] materialized a query-by-node-by-48 tensor for the depth-complete world."
+  },
+  "preserved_evidence": {
+    "downloaded_summary": "artifacts/kaggle/catalog-v2/lightcone-output/catalog-summary.json",
+    "kernel_logs": "Kaggle kernel version 2 immutable logs",
+    "local_reproduction": "artifacts/smoke/cuda13-20260920/coverage-closure-v0"
+  },
+  "correction": {
+    "strategy": "Use the exact squared-distance algebra ||q||^2 + ||n||^2 - 2 q@n^T so working memory scales with query-by-node rather than query-by-node-by-coordinate.",
+    "thresholds_changed": false,
+    "requires_new_source_revision": true,
+    "requires_new_kernel_version": true
+  },
+  "notes": [
+    "The 177 passing world receipts remain historical evidence for this failed catalog attempt but cannot seal catalog v2.",
+    "A completed Kaggle job is not an accepted catalog when one required world lacks a passing receipt."
+  ]
+}

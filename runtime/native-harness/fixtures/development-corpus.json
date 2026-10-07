@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "revision": "development-2026-09-26g",
+  "note": "Development corpus for wiring and failure-mode gates only. Not a held-out effectiveness corpus, not scored for correctness, and no model-performance claim is licensed by it. Cases are frozen before their first run under a revision; failed runs stay in evidence. Every reasoning lane appears at least once: deduction, induction, abduction, analogy, causal, counterfactual, probabilistic. Revision c re-authors the cases on a sealed cone: Authored against a sealed cone, not the removed placeholder. Pack: network-security-browser-v0/0.2.0 (353 nodes, 305 established, 200 non-membership edges) at manifest SHA-256 2588a0290eb3118206f0d8fbb427a2b025a74d8eb4ef6b55cba940606e175602. The previous revision's cases named creativity-thinking-v0 vocabulary and are kept verbatim in development-corpus-placeholder-era-2026-09-24b.json. Every query here names the cause side only: the admission drops an edge whose target is already a seed (reproduced 2026-09-24), so naming both ends loses exactly the relation asked about. Expectations in this revision are the ones the lightcone geometry fixes without a model: admitted volume and each lane's own status, read from the harness-cli run of 2026-09-24. Revisions d onwards add the model-side quantities (release verdict, reinforcement, ledger) from that run's recorded values. Revision d adds the model-side quantities observed in the first sealed-cone run of revision c (log .runtime/receipts/corpus-sealed-revc.log, 2026-09-24, exit 0, 9/9): the release verdict, reinforcement, arm identity and that the post-weights hook fires. Fire counts are asserted as at-least-one rather than as frozen integers, because one observation cannot license a range. The causal-trace case freezes verdict=Contradicts: on this cone the released text contradicts the admitted causal edge, and that is recorded as the open defect rather than smoothed over. Revision e repairs an inert check: revision d supplied lane_weight_absent as an object, but the runner parses an array of lane names (corpus.rs), so the check evaluated zero lanes and could not fail. Revision e uses the array form, which makes 'no lane reports a weight' a real gate. Revision f is the brief-on configuration: the atom arm's context carries the admitted geometry (typed claims with provenance) followed by the lanes artifact, via --brief. Values were observed in the first brief-on run of 2026-09-26 (.runtime/receipts/corpus-brief-revf-first.log) and carry the same authorship caveat as revision d: they are re-observation, not independent verification. What changed and why: arms_identical is false everywhere, including the controls, because the artifact is always rendered \u2014 this makes the expectation a real check that the brief reached the arm; the grounded, counterfactual and estimation verdicts moved NotApplicable->Consistent; causal-trace moved Contradicts->Consistent, closing the defect revision d froze; and the analogy case's counterfactual deflection count fell to zero under the brief, so that expectation was removed rather than kept failing. Reinforcement corrected to true for the grounded, causal, counterfactual and estimation cases: the first brief-on run reported reinforced=false under Consistent verdicts, which is internally inconsistent with reinforces() (reinforce follows a Consistent verdict by construction) and was contradicted by the second corpus run and by two independent single-case reproductions with the exact bin invocation. The anomalous first run is recorded in corpus-brief-revf-first.log and left unexplained rather than smoothed over. Revision g follows two mechanical corrections, both verified before this run: (1) the lightcone admission no longer drops an edge whose target is already a seed (the defect that made both-ends queries lose the asked-about relation), which raised admitted_links across these cases and surfaced counterfactual deflections; (2) the causal lane reports a declared direction without declared calibration as Provisional and weightless instead of folding over the empty strength iterator, so Causal answers Provisional on this pack while the no-invented-calibration rule holds (probability stays None). Values observed in the first revision-g run (.runtime/receipts/corpus-revg-first.log).",
+  "cases": [
+    {
+      "id": "deduction-direct-edge",
+      "class": "grounded",
+      "lane": "Deduction",
+      "query": "Explain what a TCP acknowledgment does on a lossy link in one sentence.",
+      "cause": "net.tcp-ack",
+      "effect": "net.retransmission",
+      "goal": "prove",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Deduction",
+        "lane_status_in": {
+          "Deduction": [
+            "SupportedPath"
+          ]
+        },
+        "lane_weight_absent": [
+          "Deduction"
+        ],
+        "out_lane_verdict_in": [
+          "Consistent"
+        ],
+        "reinforced": true,
+        "arms_identical": false,
+        "lightcone_token_binding": true,
+        "lightcone_fires_at_least": 1
+      }
+    },
+    {
+      "id": "induction-single-cone",
+      "class": "generalization",
+      "lane": "Induction",
+      "query": "Explain what a network queue does in one sentence.",
+      "cause": "net.queue",
+      "effect": "net.latency",
+      "goal": "generalize",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Induction",
+        "lane_status_in": {
+          "Induction": [
+            "Provisional",
+            "Unknown"
+          ]
+        },
+        "lane_weight_absent": [
+          "Induction"
+        ],
+        "out_lane_verdict_in": [
+          "Consistent"
+        ],
+        "reinforced": true,
+        "arms_identical": false,
+        "lightcone_token_binding": true,
+        "lightcone_fires_at_least": 1
+      }
+    },
+    {
+      "id": "abduction-rival-causes",
+      "class": "explanation",
+      "lane": "Abduction",
+      "query": "Explain what wireless interference produces.",
+      "cause": "net.wireless-interference",
+      "effect": "net.loss",
+      "goal": "explain",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Abduction",
+        "lane_status_in": {
+          "Abduction": [
+            "Provisional"
+          ]
+        },
+        "out_lane_verdict_in": [
+          "Consistent"
+        ],
+        "reinforced": true,
+        "arms_identical": false,
+        "lightcone_token_binding": true,
+        "lightcone_fires_at_least": 1
+      }
+    },
+    {
+      "id": "causal-trace",
+      "class": "causal",
+      "lane": "Causal",
+      "query": "Explain what a network queue produces.",
+      "cause": "net.queue",
+      "effect": "net.loss",
+      "goal": "causal",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Causal",
+        "lanes_include": [
+          "Deduction"
+        ],
+        "lane_status_in": {
+          "Causal": [
+            "Provisional"
+          ],
+          "Deduction": [
+            "SupportedPath"
+          ]
+        },
+        "out_lane_verdict_in": [
+          "Consistent"
+        ],
+        "reinforced": true,
+        "arms_identical": false,
+        "lightcone_token_binding": true,
+        "lightcone_fires_at_least": 1
+      }
+    },
+    {
+      "id": "counterfactual-removed-link",
+      "class": "counterfactual",
+      "lane": "Counterfactual",
+      "query": "Explain what a TCP acknowledgment does on a lossy link in one sentence.",
+      "cause": "net.tcp-ack",
+      "effect": "net.retransmission",
+      "goal": "counterfactual",
+      "removed_link": "nsb.relation.net-ack-retransmit",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Counterfactual",
+        "lane_status_in": {
+          "Counterfactual": [
+            "Provisional"
+          ]
+        },
+        "out_lane_verdict_in": [
+          "Consistent"
+        ],
+        "reinforced": true,
+        "arms_identical": false,
+        "lightcone_token_binding": true,
+        "lightcone_fires_at_least": 1
+      }
+    },
+    {
+      "id": "analogy-transfer",
+      "class": "transfer",
+      "lane": "Analogy",
+      "query": "Explain how an HTTP request is answered.",
+      "cause": "net.http-request",
+      "effect": "net.http-response",
+      "goal": "transfer",
+      "analogy": [
+        "net.http-request",
+        "web.fetch-request"
+      ],
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Analogy",
+        "lane_status_in": {
+          "Analogy": [
+            "Provisional"
+          ]
+        },
+        "out_lane_verdict_in": [
+          "NotApplicable"
+        ],
+        "reinforced": false,
+        "arms_identical": false,
+        "lightcone_token_binding": true,
+        "lightcone_fires_at_least": 1
+      }
+    },
+    {
+      "id": "probabilistic-no-weight",
+      "class": "estimation",
+      "lane": "Probabilistic",
+      "query": "Estimate what a network queue does to loss.",
+      "cause": "net.queue",
+      "effect": "net.loss",
+      "goal": "estimate",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Probabilistic",
+        "lane_status_in": {
+          "Probabilistic": [
+            "Provisional",
+            "Unknown"
+          ]
+        },
+        "lane_weight_absent": [
+          "Probabilistic"
+        ],
+        "out_lane_verdict_in": [
+          "Consistent"
+        ],
+        "reinforced": true,
+        "arms_identical": false,
+        "lightcone_token_binding": true,
+        "lightcone_fires_at_least": 1
+      }
+    },
+    {
+      "id": "unknown-term-control",
+      "class": "unknown",
+      "lane": "Deduction",
+      "query": "What does a nonexistent concept called zqx-777 mean? Answer in one sentence.",
+      "cause": "net.tcp-ack",
+      "effect": "net.retransmission",
+      "goal": "prove",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_most": 0,
+        "out_lane_verdict_in": [
+          "NotApplicable"
+        ],
+        "reinforced": false,
+        "arms_identical": false,
+        "lightcone_token_binding": false,
+        "lightcone_fires_at_most": 0,
+        "warrant_ledger_total": 0,
+        "lane_ran": "Deduction",
+        "lane_status_in": {
+          "Deduction": [
+            "Unknown"
+          ]
+        }
+      }
+    },
+    {
+      "id": "out-of-cone-control",
+      "class": "out-of-cone",
+      "lane": "Deduction",
+      "query": "Why does a star fuse hydrogen into helium? Answer in one sentence.",
+      "cause": "astro.fusion",
+      "effect": "astro.helium",
+      "goal": "prove",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_most": 0,
+        "out_lane_verdict_in": [
+          "Ungrounded",
+          "NotApplicable"
+        ],
+        "reinforced": false,
+        "arms_identical": false,
+        "lightcone_token_binding": false,
+        "lightcone_fires_at_most": 0,
+        "warrant_ledger_total": 0,
+        "lane_ran": "Deduction"
+      }
+    }
+  ]
+}

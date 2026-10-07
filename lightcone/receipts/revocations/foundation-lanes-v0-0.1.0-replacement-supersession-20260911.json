@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "supersession_id": "foundation-lanes-v0-0.1.0-replacement-evidence-20260911-thinking-lanes",
+  "supersedes_revocation": "foundation-lanes-v0-0.1.0-replacement-evidence-20260904",
+  "superseded_receipt_sha256": "4349ba446c43ee92a888c4d3f6be56f8fc2cca8e7c91e94975f391b9cb6c7cdf",
+  "world_id": "foundation-lanes-v0",
+  "world_version": "0.1.0",
+  "created_at": "2026-09-11",
+  "reason_class": "replacement_curriculum_evolved",
+  "affected_source_ids": [
+    "openstax-precalculus-2e",
+    "openstax-psychology-2e"
+  ],
+  "decision": "replacement_evidence_rebound",
+  "replacement_curriculum": "curricula/foundation/lane-foundations.jsonl",
+  "replacement_curriculum_sha256": "504829c7cf0be1a4c018318ee50059b7982e1db294b0f264e075242e85c0c99b",
+  "replacement_status": "authored",
+  "excluded_source_overlap": [],
+  "notes": [
+    "The original revocation and the 2026-09-04 supersession remain immutable historical receipts.",
+    "The rights-clean replacement added separate vertical-linear and nonlinear thinking lanes, their stage contracts, controls, examples, and bridges.",
+    "The changed curriculum includes no excluded source and passed fresh local JAX and shadow diagnostics.",
+    "This receipt does not restore accelerator acceptance; a clean source-bound Kaggle TPU run remains required."
+  ]
+}

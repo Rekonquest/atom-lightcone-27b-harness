@@ -1,0 +1,16 @@
+[package]
+name = "lightcone-adapter"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Model-neutral local-LLM adapter and host-boundary contract for Lightcone"
+
+[dependencies]
+lightcone-core = { path = "../lightcone-core" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true
+

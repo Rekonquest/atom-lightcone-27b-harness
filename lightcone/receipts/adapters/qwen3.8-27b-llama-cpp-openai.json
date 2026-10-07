@@ -1,0 +1,116 @@
+{
+  "adapter_id": "llama-cpp-openai-v1",
+  "boundary_mode": "host_input_output",
+  "created_at": "2026-09-17T02:28:30.997938+00:00",
+  "gates": {
+    "bounded_context": {
+      "observed": {
+        "declared_context_limit": 4096,
+        "text": "LC_CONTEXT_OK"
+      },
+      "passed": true
+    },
+    "context_injection_boundary": {
+      "observed": "LC_BOUNDARY_OK",
+      "passed": true
+    },
+    "deterministic_replay": {
+      "observed": [
+        {
+          "content": "LC_DETERMINISTIC",
+          "tool_calls": []
+        },
+        {
+          "content": "LC_DETERMINISTIC",
+          "tool_calls": []
+        }
+      ],
+      "passed": true
+    },
+    "grammar_constraint": {
+      "observed": "{\n  \"token\": \"LC_GRAMMAR_OK\"\n}",
+      "passed": true
+    },
+    "malformed_output_rejection": {
+      "observed": true,
+      "passed": true
+    },
+    "model_identity": {
+      "observed": [
+        "Qwen/Qwen3.8-27B"
+      ],
+      "passed": true
+    },
+    "output_limit": {
+      "observed": {
+        "completion_tokens": 1,
+        "finish_reason": "length"
+      },
+      "passed": true
+    },
+    "response_model_identity": {
+      "observed": "Qwen/Qwen3.8-27B",
+      "passed": true
+    },
+    "restart_recovery": {
+      "observed": {
+        "current_instance": "qwen38-b",
+        "prior_instance": "qwen38-a"
+      },
+      "passed": true
+    },
+    "role_passthrough": {
+      "observed": "LC_IDENTITY_OK",
+      "passed": true
+    },
+    "streaming": {
+      "observed": {
+        "done": true,
+        "text": "LC_STREAM_OK"
+      },
+      "passed": true
+    },
+    "tool_call_syntax": {
+      "observed": [
+        {
+          "function": {
+            "arguments": "{\"token\":\"LC_TOOL_OK\"}",
+            "name": "lightcone_echo"
+          },
+          "id": "sj7Si5r93CQuQFCyKqeT0HzbZKDn5VU6",
+          "type": "function"
+        }
+      ],
+      "passed": true
+    },
+    "unknown_abstention": {
+      "observed": "LC_UNKNOWN",
+      "passed": true
+    }
+  },
+  "limitations": [
+    "Model-quality results apply to the declared quantization, not the BF16 checkpoint.",
+    "This receipt validates one exact local runtime route; other declared profiles require their own receipts.",
+    "Tool calls remain proposals and do not authorize or execute host side effects."
+  ],
+  "model": {
+    "file": "artifacts/models/qwen3.8-27b/Qwen3.8-27B-UD-Q2_K_XL.gguf",
+    "quantization": "unsloth/Qwen3.8-27B-GGUF@4ca720788d1e01f1bff70c033e0d0028fd02e502:UD-Q2_K_XL",
+    "requested_id": "Qwen/Qwen3.8-27B",
+    "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "sha256": "fd4730dd8aad070517978752b63d530aeb1740d2283cab9fa24f1e404032ddb0"
+  },
+  "profile_sha256": "687516ba726ff3fce6f60bc28d8fd4720e8633fa77545100505b9d33f3f7ed94",
+  "receipt_id": "qwen3.8-27b-llama-cpp-openai-v1-qwen38-b",
+  "runtime": {
+    "base_url": "http://127.0.0.1:18080/v1",
+    "family": "llama.cpp",
+    "instance_id": "qwen38-b",
+    "version": "llama.cpp-10360-90e6a9131"
+  },
+  "schema_version": 1,
+  "status": "passed",
+  "target_id": "qwen3.8-27b",
+  "target_sha256": "24f2e8bf754abd00ebadf3a137671b838f3c88a1080f9f6d1bcd07c7dfd49d15",
+  "transport": "http_openai"
+}

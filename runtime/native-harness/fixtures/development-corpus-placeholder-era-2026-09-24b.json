@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "revision": "development-2026-09-24b",
+  "note": "Development corpus for wiring and failure-mode gates only. Not a held-out effectiveness corpus, not scored for correctness, and no model-performance claim is licensed by it. Cases are frozen before their first run under a revision; failed runs stay in evidence. Every reasoning lane appears at least once: deduction, induction, abduction, analogy, causal, counterfactual, probabilistic.",
+  "cases": [
+    {
+      "id": "deduction-direct-edge",
+      "class": "grounded",
+      "lane": "Deduction",
+      "query": "Explain the relationship between candidate generation and creative selection in one sentence.",
+      "cause": "creative.generation",
+      "effect": "creative.selection",
+      "goal": "prove",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "out_lane_verdict_in": ["Consistent"],
+        "reinforced": true,
+        "arms_identical": false,
+        "lightcone_token_binding": true,
+        "lightcone_fires_at_least": 1,
+        "warrant_ledger_total": 1,
+        "lane_ran": "Deduction",
+        "lane_status_in": {"Deduction": ["Unknown"]}
+      }
+    },
+    {
+      "id": "induction-single-world",
+      "class": "generalization",
+      "lane": "Induction",
+      "query": "Explain how an association edge reaches a bounded feedback loop.",
+      "cause": "nonlinear.feedback",
+      "effect": "nonlinear.recursion",
+      "goal": "generalize",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Induction",
+        "lane_status_in": {"Induction": ["Unknown"]}
+      }
+    },
+    {
+      "id": "abduction-rival-causes",
+      "class": "explanation",
+      "lane": "Abduction",
+      "query": "Explain how an association edge reaches a bounded feedback loop.",
+      "cause": "nonlinear.feedback",
+      "effect": "nonlinear.recursion",
+      "goal": "explain",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Abduction",
+        "lane_status_in": {"Abduction": ["Provisional"]}
+      }
+    },
+    {
+      "id": "causal-trace",
+      "class": "causal",
+      "lane": "Causal",
+      "query": "Explain how an association edge reaches a bounded feedback loop.",
+      "cause": "nonlinear.feedback",
+      "effect": "nonlinear.recursion",
+      "goal": "causal",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lanes_include": ["Causal", "Deduction"],
+        "lane_status_in": {"Causal": ["Unknown", "SupportedPath"]}
+      }
+    },
+    {
+      "id": "counterfactual-removed-link",
+      "class": "counterfactual",
+      "lane": "Counterfactual",
+      "query": "Explain how an association edge reaches a bounded feedback loop.",
+      "cause": "nonlinear.feedback",
+      "effect": "nonlinear.recursion",
+      "goal": "counterfactual",
+      "budget": 128,
+      "removed_link": "relation.feedback-recursion",
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Counterfactual",
+        "lane_status_in": {"Counterfactual": ["Provisional"]}
+      }
+    },
+    {
+      "id": "analogy-transfer",
+      "class": "transfer",
+      "lane": "Analogy",
+      "query": "Explain how an association edge reaches a bounded feedback loop.",
+      "cause": "nonlinear.feedback",
+      "effect": "nonlinear.recursion",
+      "goal": "transfer",
+      "budget": 128,
+      "analogy": ["nonlinear.feedback", "nonlinear.recursion"],
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Analogy",
+        "lane_status_in": {"Analogy": ["Provisional", "Unknown"]}
+      }
+    },
+    {
+      "id": "probabilistic-no-weight",
+      "class": "estimation",
+      "lane": "Probabilistic",
+      "query": "Explain how an association edge reaches a bounded feedback loop.",
+      "cause": "nonlinear.feedback",
+      "effect": "nonlinear.recursion",
+      "goal": "estimate",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_least": 1,
+        "lane_ran": "Probabilistic",
+        "lane_status_in": {"Probabilistic": ["Unknown"]},
+        "lane_weight_absent": ["Probabilistic"]
+      }
+    },
+    {
+      "id": "unknown-term-control",
+      "class": "unknown",
+      "lane": "Deduction",
+      "query": "What does a nonexistent concept called zqx-777 mean? Answer in one sentence.",
+      "cause": "creative.generation",
+      "effect": "creative.selection",
+      "goal": "prove",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_most": 0,
+        "out_lane_verdict_in": ["NotApplicable"],
+        "reinforced": false,
+        "arms_identical": true,
+        "lightcone_token_binding": false,
+        "lightcone_fires_at_most": 0,
+        "warrant_ledger_total": 0,
+        "lane_ran": "Deduction",
+        "lane_status_in": {"Deduction": ["Unknown"]}
+      }
+    },
+    {
+      "id": "out-of-cone-control",
+      "class": "out-of-cone",
+      "lane": "Deduction",
+      "query": "Why are hard constraints applied before creative selection? Answer in one sentence.",
+      "cause": "creative.constraints",
+      "effect": "creative.selection",
+      "goal": "prove",
+      "budget": 128,
+      "expect": {
+        "admitted_links_at_most": 0,
+        "out_lane_verdict_in": ["Ungrounded", "NotApplicable"],
+        "reinforced": false,
+        "arms_identical": true,
+        "lightcone_token_binding": false,
+        "lightcone_fires_at_most": 0,
+        "warrant_ledger_total": 0,
+        "lane_ran": "Deduction"
+      }
+    }
+  ]
+}

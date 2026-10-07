@@ -1,0 +1,1005 @@
+{
+  "branch_count": 40,
+  "branches": [
+    {
+      "branch_id": "requirements",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "coding:requirements_stakeholder_need",
+        "coding:requirements_requirement_clarity",
+        "coding:requirements_acceptance_criteria",
+        "coding:requirements_implementation_alignment",
+        "coding:requirements_delivered_value"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software requirements"
+    },
+    {
+      "branch_id": "architecture",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:architecture_quality_attributes",
+        "coding:architecture_architecture_decisions",
+        "coding:architecture_component_boundaries",
+        "coding:architecture_dependency_control",
+        "coding:architecture_system_evolvability"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software architecture"
+    },
+    {
+      "branch_id": "design",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:design_responsibility_assignment",
+        "coding:design_interface_cohesion",
+        "coding:design_coupling_control",
+        "coding:design_change_isolation",
+        "coding:design_maintainability"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software design"
+    },
+    {
+      "branch_id": "construction",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:construction_typed_representation",
+        "coding:construction_invariant_preservation",
+        "coding:construction_control_flow_correctness",
+        "coding:construction_executable_behavior",
+        "coding:construction_result_correctness"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4",
+        "python-reference",
+        "rust-book"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software construction"
+    },
+    {
+      "branch_id": "testing",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:testing_behavioral_requirement",
+        "coding:testing_test_oracle",
+        "coding:testing_test_coverage",
+        "coding:testing_defect_detection",
+        "coding:testing_release_confidence"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4",
+        "rust-book"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software testing"
+    },
+    {
+      "branch_id": "operations",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:operations_structured_telemetry",
+        "coding:operations_anomaly_detection",
+        "coding:operations_incident_localization",
+        "coding:operations_recovery_speed",
+        "coding:operations_service_availability"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4",
+        "opentelemetry-spec"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software engineering operations"
+    },
+    {
+      "branch_id": "maintenance",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:maintenance_change_understanding",
+        "coding:maintenance_impact_analysis",
+        "coding:maintenance_scoped_modification",
+        "coding:maintenance_regression_control",
+        "coding:maintenance_maintained_reliability"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software maintenance"
+    },
+    {
+      "branch_id": "configuration",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "coding:configuration_atomic_change",
+        "coding:configuration_version_traceability",
+        "coding:configuration_merge_control",
+        "coding:configuration_build_reproducibility",
+        "coding:configuration_release_integrity"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4",
+        "git-docs",
+        "reproducible-builds"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Configuration management"
+    },
+    {
+      "branch_id": "management",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "coding:management_scope_visibility",
+        "coding:management_risk_detection",
+        "coding:management_priority_alignment",
+        "coding:management_delivery_coordination",
+        "coding:management_outcome_predictability"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software engineering management"
+    },
+    {
+      "branch_id": "process",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:process_feedback_cycle",
+        "coding:process_process_measurement",
+        "coding:process_bottleneck_detection",
+        "coding:process_process_adaptation",
+        "coding:process_delivery_flow"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software engineering process"
+    },
+    {
+      "branch_id": "models_methods",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:models_methods_domain_model",
+        "coding:models_methods_formal_constraints",
+        "coding:models_methods_design_reasoning",
+        "coding:models_methods_implementation_traceability",
+        "coding:models_methods_verification_strength"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software engineering models and methods"
+    },
+    {
+      "branch_id": "quality",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:quality_quality_goal",
+        "coding:quality_measurable_attribute",
+        "coding:quality_quality_evaluation",
+        "coding:quality_defect_prevention",
+        "coding:quality_product_quality"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software quality"
+    },
+    {
+      "branch_id": "security",
+      "directions": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:security_threat_model",
+        "coding:security_trust_boundary",
+        "coding:security_input_validation",
+        "coding:security_exploitability",
+        "coding:security_security_assurance"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4",
+        "nist-ssdf"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software security"
+    },
+    {
+      "branch_id": "professional",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "coding:professional_ethical_constraints",
+        "coding:professional_decision_accountability",
+        "coding:professional_review_discipline",
+        "coding:professional_stakeholder_trust",
+        "coding:professional_sustainable_practice"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Professional practice"
+    },
+    {
+      "branch_id": "economics",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:economics_cost_model",
+        "coding:economics_option_comparison",
+        "coding:economics_tradeoff_quality",
+        "coding:economics_investment_alignment",
+        "coding:economics_lifecycle_value"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software engineering economics"
+    },
+    {
+      "branch_id": "algorithms",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:algorithms_problem_decomposition",
+        "coding:algorithms_algorithm_selection",
+        "coding:algorithms_correctness_argument",
+        "coding:algorithms_implementation_efficiency",
+        "coding:algorithms_result_quality"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Algorithms and problem solving"
+    },
+    {
+      "branch_id": "data_structures",
+      "directions": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:data_structures_access_pattern",
+        "coding:data_structures_structure_selection",
+        "coding:data_structures_operation_complexity",
+        "coding:data_structures_resource_cost",
+        "coding:data_structures_performance_quality"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Data structures"
+    },
+    {
+      "branch_id": "mathematical",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:mathematical_formal_specification",
+        "coding:mathematical_proof_obligation",
+        "coding:mathematical_invariant_verification",
+        "coding:mathematical_correctness_confidence",
+        "coding:mathematical_reliable_behavior"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Mathematical foundations"
+    },
+    {
+      "branch_id": "engineering",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "physical",
+      "features": [
+        "coding:engineering_measurement_plan",
+        "coding:engineering_empirical_observation",
+        "coding:engineering_model_calibration",
+        "coding:engineering_design_decision",
+        "coding:engineering_system_performance"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Engineering foundations"
+    },
+    {
+      "branch_id": "language_semantics",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "coding:language_semantics_grammar",
+        "coding:language_semantics_parsed_structure",
+        "coding:language_semantics_typed_ir",
+        "coding:language_semantics_valid_execution",
+        "coding:language_semantics_observable_result"
+      ],
+      "source_ids": [
+        "python-reference",
+        "rust-book",
+        "llvm-langref"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Programming language semantics"
+    },
+    {
+      "branch_id": "error_handling",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:error_handling_failure_detection",
+        "coding:error_handling_error_classification",
+        "coding:error_handling_propagation_control",
+        "coding:error_handling_recovery_policy",
+        "coding:error_handling_state_consistency"
+      ],
+      "source_ids": [
+        "python-reference",
+        "rust-book"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Error handling and recovery"
+    },
+    {
+      "branch_id": "memory_resources",
+      "directions": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:memory_resources_ownership_model",
+        "coding:memory_resources_lifetime_tracking",
+        "coding:memory_resources_release_correctness",
+        "coding:memory_resources_leak_risk",
+        "coding:memory_resources_runtime_stability"
+      ],
+      "source_ids": [
+        "rust-book"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Memory and resource management"
+    },
+    {
+      "branch_id": "concurrency",
+      "directions": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:concurrency_shared_state_model",
+        "coding:concurrency_synchronization_discipline",
+        "coding:concurrency_race_risk",
+        "coding:concurrency_state_consistency",
+        "coding:concurrency_parallel_correctness"
+      ],
+      "source_ids": [
+        "rust-book"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Concurrent programming"
+    },
+    {
+      "branch_id": "asynchronous",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:asynchronous_nonblocking_io",
+        "coding:asynchronous_task_scheduling",
+        "coding:asynchronous_latency_hiding",
+        "coding:asynchronous_responsiveness",
+        "coding:asynchronous_throughput"
+      ],
+      "source_ids": [
+        "python-reference",
+        "rust-book"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Asynchronous programming"
+    },
+    {
+      "branch_id": "networking",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "coding:networking_protocol_framing",
+        "coding:networking_message_validation",
+        "coding:networking_interoperability",
+        "coding:networking_delivery_reliability",
+        "coding:networking_service_correctness"
+      ],
+      "source_ids": [
+        "http-rfc9110"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Network programming"
+    },
+    {
+      "branch_id": "api_web",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "coding:api_web_contract_clarity",
+        "coding:api_web_boundary_validation",
+        "coding:api_web_compatibility_control",
+        "coding:api_web_integration_reliability",
+        "coding:api_web_service_maintainability"
+      ],
+      "source_ids": [
+        "http-rfc9110",
+        "nist-ssdf"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "API and web-service design"
+    },
+    {
+      "branch_id": "database",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:database_schema_constraints",
+        "coding:database_data_integrity",
+        "coding:database_query_correctness",
+        "coding:database_transaction_consistency",
+        "coding:database_application_reliability"
+      ],
+      "source_ids": [
+        "postgresql-docs"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Database programming"
+    },
+    {
+      "branch_id": "distributed",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "coding:distributed_idempotency",
+        "coding:distributed_retry_safety",
+        "coding:distributed_duplicate_suppression",
+        "coding:distributed_consistency",
+        "coding:distributed_system_reliability"
+      ],
+      "source_ids": [
+        "http-rfc9110",
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Distributed systems"
+    },
+    {
+      "branch_id": "frontend",
+      "directions": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "domain": "language",
+      "features": [
+        "coding:frontend_semantic_structure",
+        "coding:frontend_accessibility_support",
+        "coding:frontend_interaction_clarity",
+        "coding:frontend_user_error",
+        "coding:frontend_task_success"
+      ],
+      "source_ids": [
+        "wcag-2"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Frontend and accessibility"
+    },
+    {
+      "branch_id": "backend",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:backend_boundary_validation",
+        "coding:backend_domain_invariants",
+        "coding:backend_persistence_correctness",
+        "coding:backend_response_correctness",
+        "coding:backend_service_reliability"
+      ],
+      "source_ids": [
+        "http-rfc9110",
+        "postgresql-docs",
+        "nist-ssdf"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Backend services"
+    },
+    {
+      "branch_id": "performance",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "physical",
+      "features": [
+        "coding:performance_benchmark_quality",
+        "coding:performance_bottleneck_localization",
+        "coding:performance_optimization_relevance",
+        "coding:performance_resource_efficiency",
+        "coding:performance_throughput"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Performance engineering"
+    },
+    {
+      "branch_id": "compiler",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "coding:compiler_source_parsing",
+        "coding:compiler_typed_ir",
+        "coding:compiler_optimization_validity",
+        "coding:compiler_code_generation",
+        "coding:compiler_runtime_behavior"
+      ],
+      "source_ids": [
+        "llvm-langref"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Compilers and intermediate representations"
+    },
+    {
+      "branch_id": "deployment",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:deployment_artifact_immutability",
+        "coding:deployment_environment_parity",
+        "coding:deployment_rollout_control",
+        "coding:deployment_rollback_safety",
+        "coding:deployment_availability"
+      ],
+      "source_ids": [
+        "kubernetes-deployments",
+        "reproducible-builds"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Deployment and release engineering"
+    },
+    {
+      "branch_id": "supply_chain",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "coding:supply_chain_dependency_pinning",
+        "coding:supply_chain_provenance_visibility",
+        "coding:supply_chain_tamper_detection",
+        "coding:supply_chain_artifact_integrity",
+        "coding:supply_chain_deployment_trust"
+      ],
+      "source_ids": [
+        "nist-ssdf",
+        "reproducible-builds"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Software supply-chain integrity"
+    },
+    {
+      "branch_id": "data_engineering",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:data_engineering_schema_contract",
+        "coding:data_engineering_data_validation",
+        "coding:data_engineering_pipeline_correctness",
+        "coding:data_engineering_data_quality",
+        "coding:data_engineering_analysis_reliability"
+      ],
+      "source_ids": [
+        "postgresql-docs",
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Data engineering"
+    },
+    {
+      "branch_id": "ml_software",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:ml_software_data_separation",
+        "coding:ml_software_evaluation_validity",
+        "coding:ml_software_selection_integrity",
+        "coding:ml_software_deployment_monitoring",
+        "coding:ml_software_model_reliability"
+      ],
+      "source_ids": [
+        "nist-ssdf",
+        "opentelemetry-spec"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Machine-learning software engineering"
+    },
+    {
+      "branch_id": "numerical",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "coding:numerical_representation_choice",
+        "coding:numerical_stability_analysis",
+        "coding:numerical_error_bound",
+        "coding:numerical_numerical_reliability",
+        "coding:numerical_scientific_validity"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Numerical software"
+    },
+    {
+      "branch_id": "documentation",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "language",
+      "features": [
+        "coding:documentation_interface_contract",
+        "coding:documentation_example_accuracy",
+        "coding:documentation_usage_understanding",
+        "coding:documentation_integration_efficiency",
+        "coding:documentation_adoption_reliability"
+      ],
+      "source_ids": [
+        "ieee-swebok-v4"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Technical documentation"
+    },
+    {
+      "branch_id": "code_review",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "coding:code_review_change_scope",
+        "coding:code_review_reviewer_comprehension",
+        "coding:code_review_defect_discovery",
+        "coding:code_review_correction_quality",
+        "coding:code_review_merge_confidence"
+      ],
+      "source_ids": [
+        "git-docs",
+        "nist-ssdf"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Code review"
+    },
+    {
+      "branch_id": "debugging",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "coding:debugging_failure_observability",
+        "coding:debugging_fault_localization",
+        "coding:debugging_root_cause",
+        "coding:debugging_targeted_fix",
+        "coding:debugging_regression_prevention"
+      ],
+      "source_ids": [
+        "python-reference",
+        "opentelemetry-spec"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Debugging and fault localization"
+    }
+  ],
+  "claim_boundary": "Source-structured synthetic causal curriculum. It supports tested mechanism composition and does not establish unrestricted code generation, production correctness, or security certification.",
+  "code_execution_authority": false,
+  "consolidation": {
+    "crystallized_laws": 160,
+    "hypothesis_laws": 0,
+    "retired_laws": 0,
+    "runtime": "atom-causal-topological-persistence-v1",
+    "threshold_count": 48
+  },
+  "direction_placebo": false,
+  "excluded_branches": [],
+  "heldout_composed_paths_seen_during_training": 0,
+  "law_count": 160,
+  "model_hash": "17fc40139bef61f360c4755cb892cf9045f40eb12bd85cb81ad3f4a066958205",
+  "model_path": "world_packs/broad-coding-foundation-v1/atom_broad_coding_world_model.json",
+  "observation_count": 1920,
+  "report_hash": "e0d1846ffaa3874c0c2acde948252fcc3841d8d9c0b80d528dabe7574712f5be",
+  "runtime": "atom-broad-coding-causal-world-v1",
+  "schema": 1,
+  "scope": "broad coding, computer-science, and software-engineering causal foundation",
+  "security_certification_authority": false,
+  "source_manifest_hash": "8702b7a442f598e882c72262e730b49daa1c5abc976429cf8c8270abba37eba3",
+  "sources": {
+    "git-docs": {
+      "authority": "Git Project",
+      "role": "version control and configuration management",
+      "title": "Git Reference Manual",
+      "url": "https://git-scm.com/docs"
+    },
+    "http-rfc9110": {
+      "authority": "Internet Engineering Task Force",
+      "role": "web protocol semantics and interoperability",
+      "title": "RFC 9110: HTTP Semantics",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html"
+    },
+    "ieee-swebok-v4": {
+      "authority": "IEEE Computer Society",
+      "role": "broad software-engineering knowledge-area coverage",
+      "title": "Guide to the Software Engineering Body of Knowledge v4.0a",
+      "url": "https://ieeecs-media.computer.org/media/education/swebok/swebok-v4.pdf"
+    },
+    "kubernetes-deployments": {
+      "authority": "Kubernetes Project",
+      "role": "controlled rollout, replacement, and rollback",
+      "title": "Kubernetes Deployments",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+    },
+    "llvm-langref": {
+      "authority": "LLVM Project",
+      "role": "typed intermediate representation and code generation",
+      "title": "LLVM Language Reference Manual",
+      "url": "https://llvm.org/docs/LangRef.html"
+    },
+    "nist-ssdf": {
+      "authority": "National Institute of Standards and Technology",
+      "role": "secure development and software supply-chain practice",
+      "title": "Secure Software Development Framework 1.1",
+      "url": "https://csrc.nist.gov/projects/ssdf"
+    },
+    "opentelemetry-spec": {
+      "authority": "OpenTelemetry Project",
+      "role": "traces, metrics, logs, context propagation, and observability",
+      "title": "OpenTelemetry Specification",
+      "url": "https://opentelemetry.io/docs/specs/otel/"
+    },
+    "postgresql-docs": {
+      "authority": "PostgreSQL Global Development Group",
+      "role": "constraints, querying, and transaction behavior",
+      "title": "PostgreSQL Documentation",
+      "url": "https://www.postgresql.org/docs/current/"
+    },
+    "python-reference": {
+      "authority": "Python Software Foundation",
+      "role": "execution, language semantics, modules, and exceptions",
+      "title": "Python Language Reference",
+      "url": "https://docs.python.org/3/reference/"
+    },
+    "reproducible-builds": {
+      "authority": "Reproducible Builds Project",
+      "role": "build determinism and artifact verification",
+      "title": "Reproducible Builds documentation",
+      "url": "https://reproducible-builds.org/docs/"
+    },
+    "rust-book": {
+      "authority": "Rust Project",
+      "role": "ownership, testing, error handling, concurrency, and type safety",
+      "title": "The Rust Programming Language",
+      "url": "https://doc.rust-lang.org/book/"
+    },
+    "wcag-2": {
+      "authority": "World Wide Web Consortium",
+      "role": "accessible web-interface behavior",
+      "title": "Web Content Accessibility Guidelines 2",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+    }
+  },
+  "training_edge_count": 160,
+  "training_examples_per_edge": 12,
+  "world_id": "broad-coding-foundation-v1"
+}

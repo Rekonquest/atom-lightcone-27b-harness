@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "attempt_id": "catalog-seal-attempt-20260911T133639-0400",
+  "requested_at": "2026-09-11T13:36:39-04:00",
+  "status": "blocked",
+  "seal_applied": false,
+  "source": {
+    "revision": "80d8d52a494c3a9b2c31c6652bf9eaa02d09dc22",
+    "dirty": true,
+    "worktree_entry_count": 304,
+    "git_metadata_writable": false,
+    "failure_class": "read_only_git_metadata"
+  },
+  "coverage": {
+    "known_items": 640,
+    "mandatory_open_items": 640,
+    "mandatory_unsealed_axis_count": 9600,
+    "missing_axis_count": 1471,
+    "authored_axis_count": 8129,
+    "authoritative_discoveries": 37713,
+    "unresolved_discoveries": 0,
+    "exhaustive": false
+  },
+  "worlds": {
+    "configured_world_count": 177,
+    "current_accelerator_accepted_world_count": 0,
+    "kaggle_kernel_ref": "jessealicea/new-lightcone-catalog-tpu-v0",
+    "kaggle_request_submitted": false,
+    "failure_class": "dns_resolution",
+    "failure_detail": "api.kaggle.com could not be resolved; authentication and remote kernel status were not evaluated"
+  },
+  "adapters": {
+    "declared_profile_count": 6,
+    "conformance_passed_profile_count": 0,
+    "declared_target_count": 1,
+    "conformance_passed_target_count": 0
+  },
+  "required_before_seal": [
+    "commit the exact source from a workspace with writable Git metadata",
+    "close or explicitly justify every missing mandatory coverage axis",
+    "run all 177 worlds on a real Kaggle TPU and validate every hash-bound output receipt",
+    "finalize and reload every immutable world pack",
+    "pass the declared adapter and Qwen3.8-27B target conformance matrix",
+    "rerun the registry with --require-sealed and require zero open items"
+  ],
+  "notes": [
+    "No ledger status or axis was promoted without evidence.",
+    "Local CPU diagnostics were not substituted for accelerator acceptance.",
+    "This failure receipt preserves the seal attempt and is not itself a seal receipt."
+  ]
+}

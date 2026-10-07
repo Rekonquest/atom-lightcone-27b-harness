@@ -1,0 +1,920 @@
+{
+  "accelerator_accepted": false,
+  "configured_training_steps": 257600,
+  "created_at": "2026-09-17T03:01:48.574107+00:00",
+  "diagnostic_only": true,
+  "framework": {
+    "backend": "cpu",
+    "name": "jax",
+    "version": "0.11.1"
+  },
+  "limitations": [
+    "CPU diagnostics are not Kaggle TPU evidence and cannot advance accelerator status.",
+    "The source tree was dirty when these local diagnostics ran; a clean revision must reproduce them before accelerator acceptance.",
+    "Adapter conformance remains separate from world-training diagnostics."
+  ],
+  "non_tpu_failure_count": 0,
+  "non_tpu_pass_count": 178,
+  "receipt_id": "protocol-v3-current-cpu-20260917",
+  "runs": [
+    {
+      "run_id": "ai-development-v0-20260917T023221Z",
+      "shadow_projection_id": "ai-development-v0-all-spatial-shadow4-v1",
+      "world_id": "ai-development-v0"
+    },
+    {
+      "run_id": "computer-data-systems-v0-20260917T023243Z",
+      "shadow_projection_id": "computer-data-systems-v0-all-spatial-shadow4-v1",
+      "world_id": "computer-data-systems-v0"
+    },
+    {
+      "run_id": "coverage-closure-v0-20260917T025954Z",
+      "shadow_projection_id": "coverage-closure-v0-all-spatial-shadow4-v1",
+      "world_id": "coverage-closure-v0"
+    },
+    {
+      "run_id": "creativity-thinking-v0-20260917T023158Z",
+      "shadow_projection_id": "creativity-thinking-v0-all-spatial-shadow4-v1",
+      "world_id": "creativity-thinking-v0"
+    },
+    {
+      "run_id": "engineering-v0-20260917T023223Z",
+      "shadow_projection_id": "engineering-v0-all-spatial-shadow4-v1",
+      "world_id": "engineering-v0"
+    },
+    {
+      "run_id": "first-principles-v0-20260917T023229Z",
+      "shadow_projection_id": "first-principles-v0-all-spatial-shadow4-v1",
+      "world_id": "first-principles-v0"
+    },
+    {
+      "run_id": "foundation-lanes-v0-20260917T023154Z",
+      "shadow_projection_id": "foundation-lanes-v0-all-spatial-shadow4-v1",
+      "world_id": "foundation-lanes-v0"
+    },
+    {
+      "run_id": "geometry-foundation-v0-20260917T023154Z",
+      "shadow_projection_id": "geometry-foundation-v0-all-spatial-shadow4-v1",
+      "world_id": "geometry-foundation-v0"
+    },
+    {
+      "run_id": "health-agriculture-v0-20260917T023229Z",
+      "shadow_projection_id": "health-agriculture-v0-all-spatial-shadow4-v1",
+      "world_id": "health-agriculture-v0"
+    },
+    {
+      "run_id": "human-communication-learning-v0-20260917T023227Z",
+      "shadow_projection_id": "human-communication-learning-v0-all-spatial-shadow4-v1",
+      "world_id": "human-communication-learning-v0"
+    },
+    {
+      "run_id": "languages-compilers-v0-20260917T023202Z",
+      "shadow_projection_id": "languages-compilers-v0-all-spatial-shadow4-v1",
+      "world_id": "languages-compilers-v0"
+    },
+    {
+      "run_id": "literature-writing-v0-20260917T023204Z",
+      "shadow_projection_id": "literature-writing-v0-all-spatial-shadow4-v1",
+      "world_id": "literature-writing-v0"
+    },
+    {
+      "run_id": "math-probability-information-v0-20260917T023214Z",
+      "shadow_projection_id": "math-probability-information-v0-all-spatial-shadow4-v1",
+      "world_id": "math-probability-information-v0"
+    },
+    {
+      "run_id": "network-security-browser-v0-20260917T023203Z",
+      "shadow_projection_id": "network-security-browser-v0-all-spatial-shadow4-v1",
+      "world_id": "network-security-browser-v0"
+    },
+    {
+      "run_id": "operating-systems-v0-20260917T023216Z",
+      "shadow_projection_id": "operating-systems-v0-all-spatial-shadow4-v1",
+      "world_id": "operating-systems-v0"
+    },
+    {
+      "run_id": "philosophy-rhetoric-v0-20260917T023154Z",
+      "shadow_projection_id": "philosophy-rhetoric-v0-all-spatial-shadow4-v1",
+      "world_id": "philosophy-rhetoric-v0"
+    },
+    {
+      "run_id": "psychology-neuroscience-v0-20260917T023154Z",
+      "shadow_projection_id": "psychology-neuroscience-v0-all-spatial-shadow4-v1",
+      "world_id": "psychology-neuroscience-v0"
+    },
+    {
+      "run_id": "rust-orchestrator-apps-v0-20260917T023201Z",
+      "shadow_projection_id": "rust-orchestrator-apps-v0-all-spatial-shadow4-v1",
+      "world_id": "rust-orchestrator-apps-v0"
+    },
+    {
+      "run_id": "sciences-v0-20260917T023219Z",
+      "shadow_projection_id": "sciences-v0-all-spatial-shadow4-v1",
+      "world_id": "sciences-v0"
+    },
+    {
+      "run_id": "scientific-reasoning-v0-20260917T023200Z",
+      "shadow_projection_id": "scientific-reasoning-v0-all-spatial-shadow4-v1",
+      "world_id": "scientific-reasoning-v0"
+    },
+    {
+      "run_id": "society-culture-arts-v0-20260917T023233Z",
+      "shadow_projection_id": "society-culture-arts-v0-all-spatial-shadow4-v1",
+      "world_id": "society-culture-arts-v0"
+    },
+    {
+      "run_id": "software-app-development-v0-20260917T023202Z",
+      "shadow_projection_id": "software-app-development-v0-all-spatial-shadow4-v1",
+      "world_id": "software-app-development-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-agriculture-food-ecology-0001-v0-20260917T023248Z",
+      "shadow_projection_id": "taxonomy-mesh2026-agriculture-food-ecology-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-agriculture-food-ecology-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0001-v0-20260917T023231Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0002-v0-20260917T023233Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0003-v0-20260917T023240Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0003-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0003-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0004-v0-20260917T023328Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0004-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0004-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0005-v0-20260917T023312Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0005-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0005-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0006-v0-20260917T023315Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0006-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0006-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0007-v0-20260917T023323Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0007-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0007-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0008-v0-20260917T023414Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0008-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0008-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0009-v0-20260917T023358Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0009-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0009-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0010-v0-20260917T023359Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0010-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0010-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0011-v0-20260917T023409Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0011-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0011-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0012-v0-20260917T023502Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0012-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0012-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0013-v0-20260917T023446Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0013-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0013-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0014-v0-20260917T023448Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0014-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0014-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0015-v0-20260917T023456Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0015-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0015-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0016-v0-20260917T023549Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0016-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0016-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0017-v0-20260917T023537Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0017-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0017-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0018-v0-20260917T023539Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0018-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0018-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0019-v0-20260917T023542Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0019-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0019-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0020-v0-20260917T023640Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0020-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0020-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0021-v0-20260917T023624Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0021-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0021-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0022-v0-20260917T023632Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0022-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0022-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0023-v0-20260917T023633Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0023-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0023-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0024-v0-20260917T023719Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0024-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0024-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0025-v0-20260917T023701Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0025-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0025-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0026-v0-20260917T023710Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0026-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0026-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0027-v0-20260917T023710Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0027-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0027-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0028-v0-20260917T023805Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0028-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0028-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0029-v0-20260917T023743Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0029-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0029-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0030-v0-20260917T023756Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0030-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0030-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-biology-0031-v0-20260917T023757Z",
+      "shadow_projection_id": "taxonomy-mesh2026-biology-0031-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-biology-0031-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0001-v0-20260917T023853Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0002-v0-20260917T023828Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0003-v0-20260917T023841Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0003-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0003-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0004-v0-20260917T023804Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0004-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0004-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0005-v0-20260917T023946Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0005-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0005-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0006-v0-20260917T023918Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0006-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0006-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0007-v0-20260917T023936Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0007-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0007-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0008-v0-20260917T023859Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0008-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0008-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0009-v0-20260917T024034Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0009-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0009-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0010-v0-20260917T024009Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0010-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0010-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0011-v0-20260917T024024Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0011-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0011-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0012-v0-20260917T023951Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0012-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0012-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0013-v0-20260917T024123Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0013-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0013-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0014-v0-20260917T024100Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0014-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0014-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0015-v0-20260917T024113Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0015-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0015-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0016-v0-20260917T024040Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0016-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0016-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0017-v0-20260917T024211Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0017-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0017-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0018-v0-20260917T024149Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0018-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0018-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0019-v0-20260917T024201Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0019-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0019-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0020-v0-20260917T024131Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0020-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0020-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0021-v0-20260917T024301Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0021-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0021-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0022-v0-20260917T024238Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0022-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0022-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0023-v0-20260917T024249Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0023-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0023-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0024-v0-20260917T024221Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0024-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0024-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0025-v0-20260917T024350Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0025-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0025-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0026-v0-20260917T024327Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0026-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0026-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0027-v0-20260917T024340Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0027-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0027-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0028-v0-20260917T024313Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0028-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0028-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0029-v0-20260917T024438Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0029-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0029-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0030-v0-20260917T024416Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0030-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0030-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0031-v0-20260917T024432Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0031-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0031-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0032-v0-20260917T024359Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0032-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0032-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0033-v0-20260917T024529Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0033-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0033-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0034-v0-20260917T024504Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0034-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0034-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0035-v0-20260917T024515Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0035-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0035-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0036-v0-20260917T024446Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0036-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0036-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0037-v0-20260917T024617Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0037-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0037-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0038-v0-20260917T024547Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0038-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0038-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0039-v0-20260917T024558Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0039-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0039-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0040-v0-20260917T024531Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0040-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0040-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0041-v0-20260917T024700Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0041-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0041-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-chemistry-0042-v0-20260917T024631Z",
+      "shadow_projection_id": "taxonomy-mesh2026-chemistry-0042-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-chemistry-0042-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-computer-science-0001-v0-20260917T024641Z",
+      "shadow_projection_id": "taxonomy-mesh2026-computer-science-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-computer-science-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-computer-science-0002-v0-20260917T024617Z",
+      "shadow_projection_id": "taxonomy-mesh2026-computer-science-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-computer-science-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-history-geography-culture-0001-v0-20260917T024747Z",
+      "shadow_projection_id": "taxonomy-mesh2026-history-geography-culture-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-history-geography-culture-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-history-geography-culture-0002-v0-20260917T024653Z",
+      "shadow_projection_id": "taxonomy-mesh2026-history-geography-culture-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-history-geography-culture-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0001-v0-20260917T024718Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0002-v0-20260917T024623Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0003-v0-20260917T024828Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0003-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0003-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0004-v0-20260917T024706Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0004-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0004-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0005-v0-20260917T024816Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0005-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0005-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0006-v0-20260917T024713Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0006-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0006-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0007-v0-20260917T024925Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0007-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0007-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0008-v0-20260917T024757Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0008-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0008-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0009-v0-20260917T024910Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0009-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0009-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0010-v0-20260917T024812Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0010-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0010-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0011-v0-20260917T025021Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0011-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0011-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0012-v0-20260917T024848Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0012-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0012-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0013-v0-20260917T025007Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0013-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0013-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0014-v0-20260917T024905Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0014-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0014-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0015-v0-20260917T025114Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0015-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0015-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0016-v0-20260917T024941Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0016-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0016-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0017-v0-20260917T025059Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0017-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0017-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0018-v0-20260917T025002Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0018-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0018-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0019-v0-20260917T025210Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0019-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0019-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0020-v0-20260917T025035Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0020-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0020-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0021-v0-20260917T025152Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0021-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0021-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0022-v0-20260917T025058Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0022-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0022-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0023-v0-20260917T025306Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0023-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0023-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0024-v0-20260917T025130Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0024-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0024-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0025-v0-20260917T025246Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0025-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0025-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0026-v0-20260917T025156Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0026-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0026-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0027-v0-20260917T025403Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0027-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0027-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0028-v0-20260917T025226Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0028-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0028-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0029-v0-20260917T025343Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0029-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0029-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0030-v0-20260917T025251Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0030-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0030-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0031-v0-20260917T025458Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0031-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0031-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0032-v0-20260917T025323Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0032-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0032-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0033-v0-20260917T025434Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0033-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0033-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0034-v0-20260917T025348Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0034-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0034-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0035-v0-20260917T025553Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0035-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0035-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-medicine-health-0036-v0-20260917T025419Z",
+      "shadow_projection_id": "taxonomy-mesh2026-medicine-health-0036-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-medicine-health-0036-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-philosophy-0001-v0-20260917T025537Z",
+      "shadow_projection_id": "taxonomy-mesh2026-philosophy-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-philosophy-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-psychology-cognitive-science-0001-v0-20260917T025443Z",
+      "shadow_projection_id": "taxonomy-mesh2026-psychology-cognitive-science-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-psychology-cognitive-science-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-psychology-cognitive-science-0002-v0-20260917T025641Z",
+      "shadow_projection_id": "taxonomy-mesh2026-psychology-cognitive-science-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-psychology-cognitive-science-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-psychology-cognitive-science-0003-v0-20260917T025431Z",
+      "shadow_projection_id": "taxonomy-mesh2026-psychology-cognitive-science-0003-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-psychology-cognitive-science-0003-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-psychology-cognitive-science-0004-v0-20260917T025550Z",
+      "shadow_projection_id": "taxonomy-mesh2026-psychology-cognitive-science-0004-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-psychology-cognitive-science-0004-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-research-scientific-method-0001-v0-20260917T025535Z",
+      "shadow_projection_id": "taxonomy-mesh2026-research-scientific-method-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-research-scientific-method-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-research-scientific-method-0002-v0-20260917T025720Z",
+      "shadow_projection_id": "taxonomy-mesh2026-research-scientific-method-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-research-scientific-method-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-research-scientific-method-0003-v0-20260917T025511Z",
+      "shadow_projection_id": "taxonomy-mesh2026-research-scientific-method-0003-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-research-scientific-method-0003-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-social-behavioral-sciences-0001-v0-20260917T025635Z",
+      "shadow_projection_id": "taxonomy-mesh2026-social-behavioral-sciences-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-social-behavioral-sciences-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-social-behavioral-sciences-0002-v0-20260917T025615Z",
+      "shadow_projection_id": "taxonomy-mesh2026-social-behavioral-sciences-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-social-behavioral-sciences-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-social-behavioral-sciences-0003-v0-20260917T025756Z",
+      "shadow_projection_id": "taxonomy-mesh2026-social-behavioral-sciences-0003-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-social-behavioral-sciences-0003-v0"
+    },
+    {
+      "run_id": "taxonomy-mesh2026-social-behavioral-sciences-0004-v0-20260917T025526Z",
+      "shadow_projection_id": "taxonomy-mesh2026-social-behavioral-sciences-0004-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-mesh2026-social-behavioral-sciences-0004-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-biology-0001-v0-20260917T025713Z",
+      "shadow_projection_id": "taxonomy-msc2020-biology-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-biology-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-computer-science-0001-v0-20260917T025657Z",
+      "shadow_projection_id": "taxonomy-msc2020-computer-science-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-computer-science-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-economics-decision-operations-0001-v0-20260917T025834Z",
+      "shadow_projection_id": "taxonomy-msc2020-economics-decision-operations-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-economics-decision-operations-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0001-v0-20260917T025542Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0002-v0-20260917T025719Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0003-v0-20260917T025707Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0003-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0003-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0004-v0-20260917T025851Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0004-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0004-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0005-v0-20260917T025618Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0005-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0005-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0006-v0-20260917T025749Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0006-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0006-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0007-v0-20260917T025738Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0007-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0007-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0008-v0-20260917T025914Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0008-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0008-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0009-v0-20260917T025658Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0009-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0009-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0010-v0-20260917T025820Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0010-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0010-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0011-v0-20260917T025810Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0011-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0011-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0012-v0-20260917T025936Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0012-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0012-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0013-v0-20260917T025728Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0013-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0013-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0014-v0-20260917T025855Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0014-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0014-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0015-v0-20260917T025843Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0015-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0015-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0016-v0-20260917T025958Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0016-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0016-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0017-v0-20260917T025800Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0017-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0017-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0018-v0-20260917T025918Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0018-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0018-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0019-v0-20260917T025909Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0019-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0019-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-formal-mathematics-0020-v0-20260917T030018Z",
+      "shadow_projection_id": "taxonomy-msc2020-formal-mathematics-0020-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0020-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-information-communication-0001-v0-20260917T025835Z",
+      "shadow_projection_id": "taxonomy-msc2020-information-communication-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-information-communication-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-physics-0001-v0-20260917T025941Z",
+      "shadow_projection_id": "taxonomy-msc2020-physics-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-physics-0001-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-physics-0002-v0-20260917T025932Z",
+      "shadow_projection_id": "taxonomy-msc2020-physics-0002-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-physics-0002-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-physics-0003-v0-20260917T030025Z",
+      "shadow_projection_id": "taxonomy-msc2020-physics-0003-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-physics-0003-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-physics-0004-v0-20260917T025849Z",
+      "shadow_projection_id": "taxonomy-msc2020-physics-0004-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-physics-0004-v0"
+    },
+    {
+      "run_id": "taxonomy-msc2020-probability-statistics-0001-v0-20260917T030007Z",
+      "shadow_projection_id": "taxonomy-msc2020-probability-statistics-0001-v0-all-spatial-shadow4-v1",
+      "world_id": "taxonomy-msc2020-probability-statistics-0001-v0"
+    },
+    {
+      "run_id": "typography-color-v0-20260917T023158Z",
+      "shadow_projection_id": "typography-color-v0-all-spatial-shadow4-v1",
+      "world_id": "typography-color-v0"
+    }
+  ],
+  "schema_version": 1,
+  "shadow_failure_count": 0,
+  "shadow_pass_count": 178,
+  "source_dirty": true,
+  "source_revision": "80d8d52a494c3a9b2c31c6652bf9eaa02d09dc22",
+  "summary_hashes": {
+    "catalog": "1ee79ef5616575fda14a07a0ef8f0420f3be72de89c0b5f7dc8d0c51d1ac27a3"
+  },
+  "world_count": 178
+}

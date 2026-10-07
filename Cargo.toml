@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/atom-causal-primitives", "crates/atom-causal-laws", "crates/atom-creativity", "crates/atom-reasoning-engine", "crates/atom-orchestrator", "crates/atom-executive", "crates/atom-creative-paths", "crates/atom-executive-contracts", "crates/atom-lane-contracts"]
+resolver = "2"

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lightcone.local/schemas/source-registry.schema.json",
+  "title": "Lightcone evidence source registry",
+  "type": "object",
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "title", "locator", "publisher", "version", "retrieved_at", "rights", "trust_role"],
+        "properties": {
+          "source_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+          "title": { "type": "string", "minLength": 1 },
+          "locator": { "type": "string", "minLength": 1 },
+          "publisher": { "type": "string", "minLength": 1 },
+          "version": { "type": ["string", "null"] },
+          "retrieved_at": { "type": "string", "format": "date" },
+          "rights": { "enum": ["green:cc-by-4.0", "green:apache-2.0", "green:public-domain", "green:cc-by-sa-4.0", "green:cc-by-nc-sa-4.0", "green:nlm-mesh-terms", "citation_only", "restricted", "unknown"] },
+          "trust_role": { "enum": ["formal-library", "open-textbook", "scholarly-reference", "government-primary", "peer-reviewed-primary", "historical-primary", "standards-primary"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

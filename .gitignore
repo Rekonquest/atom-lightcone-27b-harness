@@ -1,0 +1,6 @@
+/target/
+/runtime/harness-cli/target/
+/lightcone/target/
+/lightcone/artifacts/worlds/
+/inference-engine/build-local/
+/runtime/native-harness/target/

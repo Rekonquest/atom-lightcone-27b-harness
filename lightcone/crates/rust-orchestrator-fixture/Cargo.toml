@@ -1,0 +1,10 @@
+[package]
+name = "rust-orchestrator-fixture"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Executable first-principles Rust orchestration curriculum fixture"
+
+[lints]
+workspace = true
+

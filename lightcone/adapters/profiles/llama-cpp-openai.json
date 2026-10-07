@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "adapter_id": "llama-cpp-openai-v1",
+  "runtime_family": "llama.cpp",
+  "transport": "http_openai",
+  "prompt_format": "plain",
+  "boundary_mode": "host_input_output",
+  "model_match": {},
+  "capabilities": {
+    "raw_logits": false,
+    "custom_sampler": false,
+    "grammar": true,
+    "tools": true,
+    "streaming": true,
+    "multimodal": false,
+    "deterministic": true,
+    "seed_control": true,
+    "embeddings": false
+  },
+  "context_limit": 4096,
+  "output_limit": 1024,
+  "conformance_status": "passed",
+  "conformance_receipt": "receipts/adapters/qwen3.8-27b-llama-cpp-openai.json"
+}

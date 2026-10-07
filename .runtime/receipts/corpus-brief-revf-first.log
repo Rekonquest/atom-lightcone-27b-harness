@@ -1,0 +1,40 @@
+development corpus development-2026-09-24e — 9 cases
+note: wiring and failure-mode gates only; no correctness scoring, no effectiveness claim
+brief: on (admitted geometry + lanes in the atom arm's context)
+FAIL deduction-direct-edge [grounded]
+     arms_identical false != true
+     out_lane_verdict Consistent not in ["NotApplicable"]
+     reinforced true != false
+FAIL induction-single-cone [generalization]
+     arms_identical false != true
+PASS abduction-rival-causes [explanation] verdict=Consistent admitted_links=2 reinforced=true arms_identical=false fires=39 deflections=0
+FAIL causal-trace [causal]
+     arms_identical false != true
+     out_lane_verdict Consistent not in ["Contradicts"]
+     reinforced true != false
+FAIL counterfactual-removed-link [counterfactual]
+     arms_identical false != true
+     out_lane_verdict Consistent not in ["NotApplicable"]
+     reinforced true != false
+FAIL analogy-transfer [transfer]
+     lightcone_deflections 0 < 1
+FAIL probabilistic-no-weight [estimation]
+     arms_identical false != true
+     out_lane_verdict Consistent not in ["NotApplicable"]
+     reinforced true != false
+FAIL unknown-term-control [unknown]
+     arms_identical false != true
+FAIL out-of-cone-control [out-of-cone]
+     arms_identical false != true
+--- per class (never blended) ---
+class=causal passed=0 failed=1
+class=counterfactual passed=0 failed=1
+class=estimation passed=0 failed=1
+class=explanation passed=1 failed=0
+class=generalization passed=0 failed=1
+class=grounded passed=0 failed=1
+class=out-of-cone passed=0 failed=1
+class=transfer passed=0 failed=1
+class=unknown passed=0 failed=1
+total passed=1 failed=8
+Error: "development corpus gates did not all pass"

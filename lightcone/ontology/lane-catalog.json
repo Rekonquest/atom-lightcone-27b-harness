@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "open_world": true,
+  "lanes": [
+    {
+      "id": "reasoning.deductive",
+      "label": "Deductive reasoning",
+      "kind": "reasoning",
+      "definition": "Derive conclusions that necessarily follow from explicit premises under a declared formal system.",
+      "required_stages": ["premise_set", "formalization", "validity_check", "derivation", "warrant"],
+      "required_controls": ["invalid_form", "false_premise", "equivocation", "missing_premise"]
+    },
+    {
+      "id": "reasoning.inductive",
+      "label": "Inductive reasoning",
+      "kind": "reasoning",
+      "definition": "Generalize from observations while retaining sample quality, uncertainty, and defeasibility.",
+      "required_stages": ["observations", "sample_assessment", "pattern", "generalization_strength", "provisional_warrant"],
+      "required_controls": ["selection_bias", "small_sample", "distribution_shift", "counterexample"]
+    },
+    {
+      "id": "reasoning.abductive",
+      "label": "Abductive reasoning",
+      "kind": "reasoning",
+      "definition": "Generate and compare candidate explanations for observations without promoting the best current explanation to certainty.",
+      "required_stages": ["observation", "candidate_explanations", "rival_comparison", "best_explanation", "provisional_warrant"],
+      "required_controls": ["unconsidered_alternative", "overfitting", "unfalsifiable_explanation", "base_rate_neglect"]
+    },
+    {
+      "id": "reasoning.analogical",
+      "label": "Analogical reasoning",
+      "kind": "reasoning",
+      "definition": "Transfer relational structure between source and target while separating deep correspondence from surface similarity.",
+      "required_stages": ["source_structure", "mapping", "relevant_similarity", "target_projection", "qualified_warrant"],
+      "required_controls": ["surface_only_match", "broken_correspondence", "negative_analogy", "scope_overreach"]
+    },
+    {
+      "id": "reasoning.causal",
+      "label": "Causal reasoning",
+      "kind": "reasoning",
+      "definition": "Reason from interventions, mechanisms, temporal order, and controlled alternatives rather than correlation alone.",
+      "required_stages": ["covariation", "temporal_order", "alternative_control", "mechanism", "causal_warrant"],
+      "required_controls": ["confounding", "reverse_causality", "collider_bias", "spurious_correlation"]
+    },
+    {
+      "id": "reasoning.counterfactual",
+      "label": "Counterfactual reasoning",
+      "kind": "reasoning",
+      "definition": "Compare an actual case with a minimally changed alternative while keeping simulated outcomes separate from observations.",
+      "required_stages": ["actual_case", "intervention", "similarity_control", "difference_making", "counterfactual_warrant"],
+      "required_controls": ["impossible_antecedent", "multiple_changes", "post_treatment_bias", "simulation_as_evidence"]
+    },
+    {
+      "id": "reasoning.probabilistic",
+      "label": "Probabilistic reasoning",
+      "kind": "reasoning",
+      "definition": "Represent uncertainty over a possibility space and update coherent probability assignments with declared evidence.",
+      "required_stages": ["possibility_space", "assignment", "coherence", "update", "calibrated_warrant"],
+      "required_controls": ["base_rate_neglect", "independence_error", "conditioning_error", "overconfidence"]
+    },
+    {
+      "id": "thinking.bottom_up",
+      "label": "Bottom-up thinking",
+      "kind": "thinking",
+      "definition": "Build higher abstractions from observations, primitives, and local mechanisms while preserving the derivation path.",
+      "required_stages": ["observations", "primitive_extraction", "local_relations", "composition", "abstraction"],
+      "required_controls": ["premature_abstraction", "top_down_overwrite", "missing_mechanism", "unsupported_generalization"]
+    },
+    {
+      "id": "thinking.vertical",
+      "label": "Vertical and linear thinking",
+      "kind": "thinking",
+      "definition": "Advance sequentially within a selected frame by filtering for relevance, validating each dependent step, and deepening or refining the most defensible path.",
+      "required_stages": ["frame_selection", "relevance_filter", "sequential_step", "step_validation", "convergence_check"],
+      "required_controls": ["tunnel_vision", "premature_convergence", "invalid_step", "assumption_lock_in"]
+    },
+    {
+      "id": "thinking.nonlinear",
+      "label": "Nonlinear thinking",
+      "kind": "thinking",
+      "definition": "Integrate branching, recursive, feedback-linked, intuitive, and holistic cues into a candidate structure, then externalize and verify the connections before releasing a claim.",
+      "required_stages": ["cue_field", "associative_topology", "feedback_iteration", "candidate_structure", "explicit_verification"],
+      "required_controls": ["intuition_as_fact", "opaque_jump", "runaway_feedback", "post_hoc_coherence"]
+    },
+    {
+      "id": "thinking.lateral",
+      "label": "Lateral thinking",
+      "kind": "thinking",
+      "definition": "Explore alternate framings and distant structural associations without relaxing evidence, safety, or hard constraints.",
+      "required_stages": ["frame_inventory", "perspective_shift", "remote_association", "constraint_check", "candidate_comparison"],
+      "required_controls": ["random_novelty", "constraint_evasion", "false_analogy", "unsafe_reframe"]
+    },
+    {
+      "id": "creativity.generation_selection",
+      "label": "Creative generation and selection",
+      "kind": "creativity",
+      "definition": "Generate traceable alternatives before selection.",
+      "required_stages": ["generation", "trace", "selection"],
+      "required_controls": ["single_candidate", "selection_before_generation"]
+    },
+    {
+      "id": "creativity.conceptual_blending",
+      "label": "Conceptual blending",
+      "kind": "creativity",
+      "definition": "Blend conceptual spaces while retaining every contributor and mapping.",
+      "required_stages": ["spaces", "mapping", "blend", "provenance"],
+      "required_controls": ["source_erasure", "incoherent_mapping"]
+    },
+    {
+      "id": "creativity.constraint_based",
+      "label": "Constraint-based creativity",
+      "kind": "creativity",
+      "definition": "Create within hard constraints that novelty cannot trade away.",
+      "required_stages": ["hard_constraints", "soft_preferences", "generation", "constraint_filter"],
+      "required_controls": ["constraint_poisoning", "unsatisfiable_brief"]
+    },
+    {
+      "id": "creativity.novelty_value",
+      "label": "Novelty-value balance",
+      "kind": "creativity",
+      "definition": "Preserve useful novelty without treating novelty or familiarity alone as sufficient.",
+      "required_stages": ["novelty", "value", "pareto_comparison"],
+      "required_controls": ["novelty_trap", "utility_only"]
+    },
+    {
+      "id": "creativity.problem_framing",
+      "label": "Problem framing",
+      "kind": "creativity",
+      "definition": "Explore alternate problem representations while retaining a link to original requirements.",
+      "required_stages": ["original_requirements", "frames", "mapping", "comparison"],
+      "required_controls": ["requirement_loss", "goal_substitution"]
+    },
+    {
+      "id": "creativity.tension_transformation",
+      "label": "Tension transformation",
+      "kind": "creativity",
+      "definition": "Resolve a declared tension through a traceable bridge rather than deleting one side.",
+      "required_stages": ["left", "right", "tension", "bridge"],
+      "required_controls": ["side_deletion", "false_compromise"]
+    },
+    {
+      "id": "creativity.memory_recombination",
+      "label": "Memory recombination",
+      "kind": "creativity",
+      "definition": "Use memory as candidate material without granting it causal or factual authority.",
+      "required_stages": ["memory_sources", "recombination", "novel_candidate", "verification"],
+      "required_controls": ["memory_as_truth", "provenance_loss"]
+    },
+    {
+      "id": "philosophy.analysis",
+      "label": "Philosophical analysis",
+      "kind": "analysis",
+      "definition": "Analyze concepts, arguments, assumptions, implications, positions, and objections with explicit interpretive status.",
+      "required_stages": ["concepts", "argument", "assumptions", "objections", "qualified_conclusion"],
+      "required_controls": ["position_as_fact", "straw_man", "authority_substitution", "false_consensus"]
+    },
+    {
+      "id": "rhetoric.analysis",
+      "label": "Rhetorical analysis",
+      "kind": "analysis",
+      "definition": "Analyze speaker, audience, purpose, context, appeals, framing, arrangement, style, evidence, omissions, and effects without confusing persuasion with truth.",
+      "required_stages": ["rhetorical_situation", "claims_evidence", "appeals", "framing_style", "effects_limitations"],
+      "required_controls": ["persuasion_as_truth", "intent_mind_reading", "context_erasure", "fallacy_label_shortcut"]
+    },
+    {
+      "id": "geometry.structural",
+      "label": "Structural geometry",
+      "kind": "foundation",
+      "definition": "Represent objects, relations, transformations, constraints, and invariants across spatial and abstract domains.",
+      "required_stages": ["objects", "relations", "transformation", "invariants", "boundary"],
+      "required_controls": ["dimension_confusion", "metric_topology_conflation", "projection_loss", "coordinate_invariance_failure"]
+    },
+    {
+      "id": "psychology.evidence",
+      "label": "Psychological evidence",
+      "kind": "domain",
+      "definition": "Represent psychological constructs, mechanisms, measurements, variation, and evidence without diagnosing individuals.",
+      "required_stages": ["construct", "operationalization", "evidence", "variation", "limitations"],
+      "required_controls": ["diagnosis", "population_to_individual", "replication_blindness", "construct_reification"]
+    },
+    {
+      "id": "neuroscience.evidence",
+      "label": "Neuroscience and neurology evidence",
+      "kind": "domain",
+      "definition": "Represent neural structures, functions, mechanisms, disorders, and evidence with medical scope and date boundaries.",
+      "required_stages": ["structure", "function", "mechanism", "evidence", "clinical_boundary"],
+      "required_controls": ["reverse_inference", "localization_overclaim", "medical_diagnosis", "stale_guidance"]
+    }
+  ]
+}

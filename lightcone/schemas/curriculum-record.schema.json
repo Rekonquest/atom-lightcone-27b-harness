@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lightcone.local/schemas/curriculum-record.schema.json",
+  "title": "Lightcone causal-world curriculum record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_id",
+    "world_id",
+    "domain_id",
+    "subject_id",
+    "lanes",
+    "record_kind",
+    "epistemic_class",
+    "statement",
+    "split_group",
+    "split",
+    "source_ids"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "record_id": { "$ref": "#/$defs/id" },
+    "world_id": { "$ref": "#/$defs/id" },
+    "domain_id": { "$ref": "#/$defs/id" },
+    "subject_id": { "$ref": "#/$defs/id" },
+    "lanes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/id" }
+    },
+    "record_kind": {
+      "enum": ["concept", "relation", "worked_example", "counterexample", "boundary", "synthetic_control"]
+    },
+    "epistemic_class": {
+      "enum": ["formal", "established", "provisional", "hypothesis", "contested", "interpretive", "creative", "synthetic_control"]
+    },
+    "label": { "type": "string", "minLength": 1 },
+    "statement": { "type": "string", "minLength": 1 },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "relation": {
+      "type": "object",
+      "required": ["source_node", "target_node", "kind", "polarity", "direction"],
+      "properties": {
+        "source_node": { "$ref": "#/$defs/id" },
+        "target_node": { "$ref": "#/$defs/id" },
+        "kind": {
+          "enum": [
+            "causes", "enables", "supports", "grounds", "clarifies",
+            "qualifies", "inhibits", "prevents", "contradicts", "undercuts",
+            "counterexample", "prerequisite", "part_of", "transforms_to",
+            "analogous_to", "predicts", "measures", "implements"
+          ]
+        },
+        "polarity": { "enum": [-1, 0, 1] },
+        "direction": { "enum": ["forward", "bidirectional"] },
+        "conditions": { "type": "array", "items": { "type": "string" } },
+        "exceptions": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "coverage_axes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/id" }
+    },
+    "source_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/id" }
+    },
+    "scope": { "type": "string" },
+    "limitations": { "type": "array", "items": { "type": "string" } },
+    "as_of": { "type": "string" },
+    "version_boundary": { "type": "string" },
+    "split_group": { "$ref": "#/$defs/id" },
+    "split": { "enum": ["train", "validation", "sealed_test", "cross_domain_holdout"] },
+    "synthetic": { "type": "boolean" },
+    "tags": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "record_kind": { "const": "relation" } } },
+      "then": { "required": ["relation"] }
+    },
+    {
+      "if": { "properties": { "epistemic_class": { "const": "synthetic_control" } } },
+      "then": {
+        "properties": {
+          "synthetic": { "const": true },
+          "source_ids": { "maxItems": 0 }
+        },
+        "required": ["synthetic"]
+      },
+      "else": { "properties": { "source_ids": { "minItems": 1 } } }
+    }
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" }
+  }
+}

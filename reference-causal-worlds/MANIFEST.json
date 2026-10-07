@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "source_checkout": "/home/jesse/Desktop/Projects/atom-harness",
+  "copied_at": "2026-09-23",
+  "copy_mode": "read-only source; copied bytes verified with rsync --checksum --dry-run",
+  "files": {
+    "world_packs/algebra-word-reasoning-v1/atom_algebra_word_training_report.json": "80a6da2e81ea5b2bd80f17076ce219438cb1a24fad90f5d78e75f606f6376bbf",
+    "world_packs/algebra-word-reasoning-v1/atom_algebra_word_world_model.json": "10395fc7c4cd7c828504509e8ffcd2c00ad53b7a6e4d9c85de27e8295f43c1e8",
+    "world_packs/broad-coding-foundation-v1/atom_broad_coding_training_report.json": "5af3596ea1984f17b544e9d53a29c5bef872ea566cf86a0b43d17062057dbbfc",
+    "world_packs/broad-coding-foundation-v1/atom_broad_coding_world_model.json": "7e3e795baf4db8122b7c72867d3c72ff8f6344e394cebfe0eeaa2f7af0c97f66",
+    "world_packs/philosophy-reasoning-foundation-v1/atom_philosophy_argument_manifest.json": "091cd50117fea720207dd1360cbb7d40b97d5964ccf3be1b071d0c80dcc7ef53",
+    "world_packs/philosophy-reasoning-foundation-v1/atom_philosophy_training_report.json": "4b6d9c6566d2f33e68aeea03c937b0579b23668a1c259cb15c76dd7e68b5cfdc",
+    "world_packs/philosophy-reasoning-foundation-v1/atom_philosophy_world_model.json": "0b7de23a4e08ccbc5decfa17bd4aecc91a8f0f71b9d082dfbb6fa9fa5fc4f79c",
+    "world_packs/psychology-foundation-v1/atom_psychology_training_report.json": "c5615f7bedb588493581e185df5df82383d0e6228efdc0a2618c632f0dfdd4a4",
+    "world_packs/psychology-foundation-v1/atom_psychology_world_model.json": "58f3a1315451e1c52301b48b0010d4659318da212a3707304f9b09c12e37add9",
+    "world_packs/safe-tool-use-v1/atom_tool_use_training_report.json": "76cdca082ba1799cebf076313ef993c920a0a2ee4410bcf8f72c28e78cacd55c",
+    "world_packs/safe-tool-use-v1/atom_tool_use_world_model.json": "ea07ed4ed4527851006a2d35f9d343284e7241ced5d4a614f2454c8fa9cdcf6d",
+    "causal_world_outputs/atom_causal_world_evidence.jsonl": "5932fdddd62a7cce488dcba9e101112692a12544262dbfff581ec75d89399529",
+    "causal_world_outputs/atom_causal_world_model.json": "cc4c3d5266e8142e0d3abb08542e6c4c8e13e2bdf9bc17d96f972f418969642c"
+  },
+  "reference_loader_validation": {
+    "world_packs": "five of five model payloads passed CausalGraph.from_model_payload against copied files",
+    "causal_world_outputs/atom_causal_world_model.json": "failed: causal graph payload is not an exact runtime round trip; archival only, not active"
+  }
+}

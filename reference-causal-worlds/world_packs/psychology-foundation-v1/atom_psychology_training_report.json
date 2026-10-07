@@ -1,0 +1,489 @@
+{
+  "branch_count": 19,
+  "branches": [
+    {
+      "branch_id": "brain_cognitive",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "attention_control",
+        "encoding_quality",
+        "working_memory_capacity",
+        "retrieval_accuracy",
+        "decision_quality"
+      ],
+      "source_ids": [
+        "apa-major-v3",
+        "apa-subfields-2025",
+        "nimh-rdoc-constructs"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Brain science and cognitive psychology"
+    },
+    {
+      "branch_id": "learning_behavior",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "reinforcement_contingency",
+        "prediction_update",
+        "habit_strength",
+        "behavioral_persistence",
+        "stimulus_generalization"
+      ],
+      "source_ids": [
+        "apa-major-v3",
+        "nimh-rdoc-constructs"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Learning and behavioral psychology"
+    },
+    {
+      "branch_id": "biological",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "biological",
+      "features": [
+        "sleep_regularity",
+        "arousal_regulation",
+        "attentional_stability",
+        "memory_consolidation",
+        "cognitive_performance"
+      ],
+      "source_ids": [
+        "apa-major-v3",
+        "nimh-rdoc-definitions"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Biological psychology"
+    },
+    {
+      "branch_id": "developmental",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "caregiver_responsiveness",
+        "felt_security",
+        "exploratory_behavior",
+        "skill_acquisition",
+        "autonomy"
+      ],
+      "source_ids": [
+        "apa-major-v3",
+        "apa-subfields-2025"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Developmental psychology"
+    },
+    {
+      "branch_id": "social",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "perspective_taking",
+        "social_prediction",
+        "interpersonal_coordination",
+        "interpersonal_trust",
+        "group_cohesion"
+      ],
+      "source_ids": [
+        "apa-major-v3",
+        "apa-subfields-2025",
+        "nimh-rdoc-constructs"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Social psychology"
+    },
+    {
+      "branch_id": "personality",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "self_monitoring",
+        "behavioral_adaptation",
+        "context_fit",
+        "social_effectiveness",
+        "identity_coherence"
+      ],
+      "source_ids": [
+        "apa-major-v3"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Personality and individual differences"
+    },
+    {
+      "branch_id": "negative_valence",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "threat_uncertainty",
+        "potential_threat",
+        "vigilance",
+        "avoidance",
+        "functional_impairment"
+      ],
+      "source_ids": [
+        "nimh-rdoc-constructs",
+        "nimh-rdoc-definitions"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Emotion and negative valence"
+    },
+    {
+      "branch_id": "positive_valence",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "reward_expectancy",
+        "goal_value",
+        "effort_allocation",
+        "goal_persistence",
+        "goal_attainment"
+      ],
+      "source_ids": [
+        "nimh-rdoc-constructs",
+        "nimh-rdoc-definitions"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Motivation and positive valence"
+    },
+    {
+      "branch_id": "arousal_regulatory",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "biological",
+      "features": [
+        "sleep_regularity",
+        "arousal_regulation",
+        "attention_control",
+        "working_memory_capacity",
+        "cognitive_performance"
+      ],
+      "source_ids": [
+        "nimh-rdoc-constructs",
+        "nimh-rdoc-definitions"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Arousal and regulation"
+    },
+    {
+      "branch_id": "clinical_health",
+      "directions": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "domain": "biological",
+      "features": [
+        "chronic_stress",
+        "sleep_disruption",
+        "arousal_regulation",
+        "coping_flexibility",
+        "functional_improvement"
+      ],
+      "source_ids": [
+        "apa-major-v3",
+        "apa-subfields-2025",
+        "nimh-rdoc-definitions"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Clinical and health psychology"
+    },
+    {
+      "branch_id": "counseling",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "therapeutic_alliance",
+        "treatment_engagement",
+        "strategy_practice",
+        "coping_flexibility",
+        "functional_improvement"
+      ],
+      "source_ids": [
+        "apa-subfields-2025"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Counseling psychology"
+    },
+    {
+      "branch_id": "rehabilitation",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "autonomy",
+        "treatment_engagement",
+        "strategy_practice",
+        "skill_acquisition",
+        "functional_improvement"
+      ],
+      "source_ids": [
+        "apa-subfields-2025"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Rehabilitation psychology"
+    },
+    {
+      "branch_id": "educational",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "retrieval_practice",
+        "memory_reactivation",
+        "retention",
+        "learning_transfer",
+        "learning_performance"
+      ],
+      "source_ids": [
+        "apa-subfields-2025"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Psychology of teaching and learning"
+    },
+    {
+      "branch_id": "industrial_organizational",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "social",
+      "features": [
+        "role_clarity",
+        "goal_alignment",
+        "coordinated_action",
+        "performance_reliability",
+        "organizational_trust"
+      ],
+      "source_ids": [
+        "apa-subfields-2025"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Industrial and organizational psychology"
+    },
+    {
+      "branch_id": "human_factors",
+      "directions": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "domain": "agent",
+      "features": [
+        "interface_consistency",
+        "task_predictability",
+        "cognitive_load",
+        "error_risk",
+        "task_success"
+      ],
+      "source_ids": [
+        "apa-subfields-2025"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Human factors and engineering psychology"
+    },
+    {
+      "branch_id": "environmental",
+      "directions": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "domain": "social",
+      "features": [
+        "environmental_predictability",
+        "perceived_control",
+        "chronic_stress",
+        "sleep_disruption",
+        "functional_improvement"
+      ],
+      "source_ids": [
+        "apa-subfields-2025",
+        "nimh-rdoc-definitions"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Environmental and community psychology"
+    },
+    {
+      "branch_id": "quantitative",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "symbolic",
+      "features": [
+        "measurement_reliability",
+        "signal_quality",
+        "estimate_precision",
+        "inference_stability",
+        "replication_likelihood"
+      ],
+      "source_ids": [
+        "apa-subfields-2025",
+        "apa-major-v3"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Quantitative and measurement psychology"
+    },
+    {
+      "branch_id": "sport_performance",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "agent",
+      "features": [
+        "deliberate_practice",
+        "skill_automaticity",
+        "attentional_efficiency",
+        "performance_consistency",
+        "performance_quality"
+      ],
+      "source_ids": [
+        "apa-subfields-2025"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Sport and performance psychology"
+    },
+    {
+      "branch_id": "sensorimotor",
+      "directions": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "domain": "biological",
+      "features": [
+        "motor_practice",
+        "sensorimotor_prediction",
+        "action_precision",
+        "feedback_quality",
+        "motor_learning"
+      ],
+      "source_ids": [
+        "nimh-rdoc-constructs",
+        "nimh-rdoc-definitions"
+      ],
+      "status": "source-structured-curriculum-hypothesis",
+      "title": "Sensorimotor psychology"
+    }
+  ],
+  "claim_boundary": "Source-structured synthetic causal curriculum. It supports tested mechanism composition, not diagnosis, treatment prescription, or a claim that the evolving scientific field is exhaustively encoded.",
+  "clinical_diagnosis_authority": false,
+  "consolidation": {
+    "crystallized_laws": 76,
+    "hypothesis_laws": 0,
+    "retired_laws": 0,
+    "runtime": "atom-causal-topological-persistence-v1",
+    "threshold_count": 48
+  },
+  "direction_placebo": false,
+  "excluded_branches": [],
+  "heldout_composed_paths_seen_during_training": 0,
+  "law_count": 76,
+  "model_hash": "33f940c487ceee9cea8fc9808d24820ad75a05143f0a06539c65aa13df168fbd",
+  "model_path": "world_packs/psychology-foundation-v1/atom_psychology_world_model.json",
+  "observation_count": 912,
+  "report_hash": "c4dc34c1055c3c052a7941e57c698b157392e99efa2bfe92edbdc56b2ef443d7",
+  "runtime": "atom-psychology-causal-world-v1",
+  "schema": 1,
+  "scope": "broad psychology foundation across basic, applied, and quantitative branches",
+  "source_manifest_hash": "84bf6c0aaa7672fcc938a258e5a7c637b2128ba4d7fe72d61e3c834a7002a22f",
+  "sources": {
+    "apa-major-v3": {
+      "authority": "American Psychological Association",
+      "role": "five-pillar breadth and scientific-method boundary",
+      "title": "APA Guidelines for the Undergraduate Psychology Major, Version 3.0",
+      "url": "https://www.apa.org/about/policy/undergraduate-psychology-major"
+    },
+    "apa-subfields-2025": {
+      "authority": "American Psychological Association",
+      "role": "applied and research subfield coverage",
+      "title": "Psychology subfields",
+      "url": "https://www.apa.org/education-career/guide/subfields"
+    },
+    "nimh-rdoc-constructs": {
+      "authority": "National Institute of Mental Health",
+      "role": "dimensional cognitive, affective, social, arousal, and sensorimotor constructs",
+      "title": "RDoC Constructs",
+      "url": "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/constructs"
+    },
+    "nimh-rdoc-definitions": {
+      "authority": "National Institute of Mental Health",
+      "role": "construct definitions and normal-to-abnormal continuum boundary",
+      "title": "Definitions of the RDoC Domains and Constructs",
+      "url": "https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/definitions-of-the-rdoc-domains-and-constructs"
+    }
+  },
+  "training_edge_count": 76,
+  "training_examples_per_edge": 12,
+  "treatment_prescription_authority": false,
+  "world_id": "psychology-foundation-v1"
+}

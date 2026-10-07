@@ -1,0 +1,1842 @@
+{
+  "adapter": {
+    "receipt": "receipts/adapters/qwen3.8-27b-llama-cpp-openai.json",
+    "receipt_sha256": "d432236c320db3a59b0e1139e5057051cb68f93a03c2efeacb189abcaa87e2ee",
+    "status": "passed"
+  },
+  "claim_scope": "All 178 worlds registered in the hash-bound catalog at the stated source revision passed every pre-registered training, held-out, negative-control, and four-dimensional shadow gate on a real eight-device Kaggle TPU and were independently hash-validated and loaded by the Rust runtime.",
+  "kaggle": {
+    "accelerator": "TPU",
+    "device_count": 8,
+    "devices": [
+      "TPU_0(process=0,(0,0,0,0))",
+      "TPU_1(process=0,(1,0,0,0))",
+      "TPU_2(process=0,(0,1,0,0))",
+      "TPU_3(process=0,(1,1,0,0))",
+      "TPU_4(process=0,(0,2,0,0))",
+      "TPU_5(process=0,(1,2,0,0))",
+      "TPU_6(process=0,(0,3,0,0))",
+      "TPU_7(process=0,(1,3,0,0))"
+    ],
+    "frameworks": [
+      "jax 0.10.2"
+    ],
+    "kernel_ref": "jessealicea/new-lightcone-catalog-tpu-v0",
+    "kernel_version": 1,
+    "url": "https://www.kaggle.com/code/jessealicea/new-lightcone-catalog-tpu-v0"
+  },
+  "limitations": [
+    "The catalog remains open-world: sealing this revision does not assert that no future domain, source revision, counterexample, or adapter can be discovered.",
+    "The four-dimensional (x,y,z,w) all-spatial shadow remains observer-only; exact graph reachability and full 48-dimensional coordinates remain authoritative.",
+    "World evidence is model-independent; the separately validated Qwen3.8-27B adapter is not embedded in world artifacts."
+  ],
+  "schema_version": 1,
+  "status": "accepted",
+  "training_source": {
+    "archive_filename": "world-bundles.lcz",
+    "archive_sha256": "225142676e5fd53c306f80fd691f969584ac5d2c008b6d872040963716ba732a",
+    "catalog_manifest_sha256": "fe5c793b656a85483b7daed666953ad2e104b857297b2d0668d875d5c4359ddc",
+    "catalog_summary_sha256": "9b578699028cee439015b3ef51f918e937cf024566165367a42c137caa94925b",
+    "dirty": false,
+    "revision": "9afce37bde26baa49a0c4565fa37e067b4ec9863"
+  },
+  "validation": {
+    "failed_world_count": 0,
+    "input_hash_binding_count": 1780,
+    "output_hash_binding_count": 3204,
+    "passed_world_count": 178,
+    "pre_registered_gate_count": 5339,
+    "rust_verified_pack_count": 178,
+    "training_elapsed_seconds_sum": 3457.182405076,
+    "world_count": 178,
+    "world_evidence_set_sha256": "83ab93b880df4bacb560088b64f8905366a40f1e0d84f97df348e0e6d93783c6"
+  },
+  "validation_id": "new-complete-lightcone-catalog-tpu-v1",
+  "verified_at": "2026-09-17T08:57:44.266353+00:00",
+  "verifier_source": {
+    "revision": "3e197deb99dbead5919bf41a897db0d26e933b4b",
+    "tracked_dirty": false
+  },
+  "worlds": [
+    {
+      "accelerator_validation_sha256": "e0542c795fdaa4c96119f4094a4896981f53f517baec7c980475a60c5f91cceb",
+      "finished_at": "2026-09-17T06:51:14.131416+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "c27a74358722b36411e60ae13a28b22d7976e5759f481c1676f882d1abeff88c",
+      "run_id": "ai-development-v0-20260917T065058Z",
+      "training_receipt_sha256": "b63dca19d82a949eda5c0812de705a37f9f87e72c2fc4719a9971e3704f02c09",
+      "world_id": "ai-development-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "9f2658837f2f0b1453ac203d15ce50e4aa73193052794530feb9dd50121fdc29",
+      "finished_at": "2026-09-17T06:53:26.236064+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "c6cdf73fbd228832ab514526691f85954aa68b450ff78171df1b2b2a4935cd50",
+      "run_id": "computer-data-systems-v0-20260917T065311Z",
+      "training_receipt_sha256": "52e8a1c3629b46c2547cd17c8447764aec9c8746d7997f750286dcc7563a8f13",
+      "world_id": "computer-data-systems-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "27aebb75dc3273f4542c3b536549c4d20dbae679269ff8579590fb370db29cff",
+      "finished_at": "2026-09-17T08:22:12.348231+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "a2bea9a985e86bc967b6ccfa843a8d20291a445414071c9dd5599a117ffa8b97",
+      "run_id": "coverage-closure-v0-20260917T082153Z",
+      "training_receipt_sha256": "e5c939539c247c6817aa4c18d7fd24dac67bcffaccfa471404b9582bb6042ba0",
+      "world_id": "coverage-closure-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "fd55ccd688f6fb75e6c566d9b0cd84615a1c022319c83b65b0af4d24090d37cb",
+      "finished_at": "2026-09-17T06:48:18.444848+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "b66d996727c9ef9f6c95d17ea0cc880c4cfae7beadefbe21e49bf0ffbd6534f2",
+      "run_id": "creativity-thinking-v0-20260917T064803Z",
+      "training_receipt_sha256": "c1c85a689ecc07f37264e5cd50dcc9eed07ed2084d3403a5c1f88ef0b5ef8375",
+      "world_id": "creativity-thinking-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "cbbd38eb00fa753e138501354e355dfe853142b36c4bc956f78e99e7ebbfbb6c",
+      "finished_at": "2026-09-17T06:52:34.346394+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "b959fbae605ff901f097ecf648e12366a879b5ff5803c7386104cca3dee8d00f",
+      "run_id": "engineering-v0-20260917T065217Z",
+      "training_receipt_sha256": "7c057c86e1cf084c3ab0c554db29ee2f5731cfe6989518f75f9036f6a4d12bff",
+      "world_id": "engineering-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f55b1b2b9088a972cc65572be89a94605c660c8036afaebd3423b47014016869",
+      "finished_at": "2026-09-17T06:53:00.856931+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "4c8c05160cb877406a137d067ef104f67aaa4d66b9953f8b42e5dac4eb37f759",
+      "run_id": "first-principles-v0-20260917T065245Z",
+      "training_receipt_sha256": "e7ce4faa1ce13cd784e031f05f1a20ac2d176b85db98d8bde73042a2d55749b3",
+      "world_id": "first-principles-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "3660445375b16c41303b793437282b1d477f1c360503628b359dea1c4d53fc8a",
+      "finished_at": "2026-09-17T06:46:10.522935+00:00",
+      "gate_count": 29,
+      "pack_manifest_sha256": "c769db9c7099b0be0cc05eb3a706682c3ce6fb01bf0ee6257ecf97d85c1b16b5",
+      "run_id": "foundation-lanes-v0-20260917T064545Z",
+      "training_receipt_sha256": "964b06404a05e87406245096892715e242ca019081f470207561d0c4cff96306",
+      "world_id": "foundation-lanes-v0",
+      "world_version": "0.2.0"
+    },
+    {
+      "accelerator_validation_sha256": "a851299ccbbe197e94a97e30260c4ad9d5750d0592ddf7452a8adfa581b73817",
+      "finished_at": "2026-09-17T06:46:30.017607+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "5ccd14a4ab4319f3c5869ee546d2cdc800b44c978584bc87a4f70ede45771a7b",
+      "run_id": "geometry-foundation-v0-20260917T064615Z",
+      "training_receipt_sha256": "0397fcc49bed759f426ba5b2ca650dbebeaf954a759d064f55fb8dafbc11b369",
+      "world_id": "geometry-foundation-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "0a52dc43df8a90e4b9fbdecfd4c4d40aff95378d11356446766a28d0e1f7bcfd",
+      "finished_at": "2026-09-17T06:54:18.929968+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "48c9e6db3bac40e50da130c082294f1a88a0099c86552f806e20d8f71c3d6b55",
+      "run_id": "health-agriculture-v0-20260917T065403Z",
+      "training_receipt_sha256": "a9b93e34bf3cb17b699898630d3cdf3fd2484ad89f5fca8c43d9056927193bcb",
+      "world_id": "health-agriculture-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "c18a918606503ca66ae0d69894d4269e92138fee21773c14f271f8f2dd297f8c",
+      "finished_at": "2026-09-17T06:53:52.644373+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "c5c4d21f67bb3140d663cf33716414370179b77883b708ab03ccfab3d8823826",
+      "run_id": "human-communication-learning-v0-20260917T065336Z",
+      "training_receipt_sha256": "922de675257e024eeafa3606ef0c11bbfdf9ad67b11efac8a0bd0138593c1f85",
+      "world_id": "human-communication-learning-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "7b1b6511a8ca4d7739209da7c088cc0390dae505144ef0d2c19f97ab65590efa",
+      "finished_at": "2026-09-17T06:50:23.440498+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "757943caf1526f43dc7ecd5f8c61fd33cff1522624c554938f6ceb97254dd967",
+      "run_id": "languages-compilers-v0-20260917T065007Z",
+      "training_receipt_sha256": "d9ca4102a1111dfa971f6493ee65aef15b0623addf96a0e03e2a41a8bc14b6d4",
+      "world_id": "languages-compilers-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "9e97b95a82cd3b4b699b6e10d79a8008102118f2e35454ad1727a1f3e8b39c9a",
+      "finished_at": "2026-09-17T06:49:07.054959+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e956196ef48d308fea80c495eb8201f1ad496655d71077d42a3d83722eaf911a",
+      "run_id": "literature-writing-v0-20260917T064851Z",
+      "training_receipt_sha256": "5415eb7688937b150dd3e73e98e22d6857217b77185773df9fd204aeac5ec027",
+      "world_id": "literature-writing-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "c04d2a2bc56b6ed6b7eb995584522a2ade915800de1a34744866e6f02ba3d342",
+      "finished_at": "2026-09-17T06:51:42.304817+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "32b113a2698871df030cde80e102a7f0204398a6c559b3ea1c203689eff676ce",
+      "run_id": "math-probability-information-v0-20260917T065123Z",
+      "training_receipt_sha256": "1ba4b68fbd4f42b656249dc3d3a3763885e3c637f0ca7496feb27957163f6df9",
+      "world_id": "math-probability-information-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "0abd4e94f1a497ae02d10b28312c99eb0c51c2f8d302417aeac2d8032483873d",
+      "finished_at": "2026-09-17T06:49:32.407159+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "7c71b6f4499b8cfe73516679d73b88b50bb5de80fe1754048701896cbb9695bd",
+      "run_id": "network-security-browser-v0-20260917T064915Z",
+      "training_receipt_sha256": "fac44f8af4d161fa73a8e1eb44d5783e76d1f43a6b46bb514347dd703748743e",
+      "world_id": "network-security-browser-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "db2122361b9b0a53d62c4903d36a2ed08347ff9da54abd9c98795a6140d77900",
+      "finished_at": "2026-09-17T06:50:48.486273+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "48da1d7c88e6a7939c57767b1b21f298e1778cf7130958a61aa88c3fb443a53e",
+      "run_id": "operating-systems-v0-20260917T065033Z",
+      "training_receipt_sha256": "eed19698e56a0049c021fd3da4191ece6a0350a0dac3557d1db7c37741c655f6",
+      "world_id": "operating-systems-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "fd15ae93cfb0dcd1e7ba5cffd3bcd6e89a7fad41d8a5941203dbff10dc9eace1",
+      "finished_at": "2026-09-17T06:46:50.053945+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "b43a3de07c1c0641729bfc4e59ea3c89783e109f63dd1dba43b37fc9cd105108",
+      "run_id": "philosophy-rhetoric-v0-20260917T064636Z",
+      "training_receipt_sha256": "2e630fe8ca85f64d7617889504484a27aaeab76be2a3cf07299dfc6ace1ec27a",
+      "world_id": "philosophy-rhetoric-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "71e40cdb45cfee08dfe0bb3ac83ff12874b44ae307dc129443c89e0206d87b23",
+      "finished_at": "2026-09-17T06:47:11.330871+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "375b4abf785b9396be6f7eb270ad202ec2ec05dd93fd3f0b965cc9df38f18622",
+      "run_id": "psychology-neuroscience-v0-20260917T064657Z",
+      "training_receipt_sha256": "59f50d68a27b4367df0f68086bcb9fb6ccbcfd6c32079487a34778c21a58801e",
+      "world_id": "psychology-neuroscience-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ec368a17560f1a92bc0e0f94939180bc26db294ca86ab720665729cd031297cd",
+      "finished_at": "2026-09-17T06:47:33.257725+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "0c91e611f259955d4a907c97ec4f129df464324c534694d0d3068b6823b4e8ab",
+      "run_id": "rust-orchestrator-apps-v0-20260917T064718Z",
+      "training_receipt_sha256": "fcc211543a5bbba6f1772dc37d490a0b5803ff67128eddd3a45a00a25ffccfe4",
+      "world_id": "rust-orchestrator-apps-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "c6c09bd7c0f739a97627d6b6e37a90c0aea4010ddfd370e67f81b8b509ff01cc",
+      "finished_at": "2026-09-17T06:52:08.128210+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "a1f3fb9f1d0b1c753230dc9312ffd818b64e3e9f57fba6c4fb59d64324c1ae0c",
+      "run_id": "sciences-v0-20260917T065152Z",
+      "training_receipt_sha256": "766de4be8d1685fbbb7b3fc289deebff36f3c880fb38a525844a609fa6515d2a",
+      "world_id": "sciences-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ac925bb651097da4cbf13b84e30d3c8981aaffdcce56fda9710addec2e05a2d9",
+      "finished_at": "2026-09-17T06:47:55.967683+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "1add2380cccc73ade4859d36427f4f6ef4c96a8560ac5773b43ec9e325d87b17",
+      "run_id": "scientific-reasoning-v0-20260917T064741Z",
+      "training_receipt_sha256": "e5aed6d7501cb600634ddfd78113bc123d9235c41566c90ae6e4ac7d26815375",
+      "world_id": "scientific-reasoning-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "3af5c62d0197e5a60d9761863c685f82a54ae8a8631313b5182e1f86a8aa00cd",
+      "finished_at": "2026-09-17T06:54:46.816566+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "c4517db3b87cf63ce6ea593488af40b6d6b8e17d7b7672fed9388ef5b1534e4c",
+      "run_id": "society-culture-arts-v0-20260917T065430Z",
+      "training_receipt_sha256": "ddec67347f82bbb5eac7846b063fdba0cddaed64e97fc28d2d0a7a7d447dd7a9",
+      "world_id": "society-culture-arts-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "59a9121d25b34df7de0635f81ca7ba68f981772f99de6ef1c1eb057a0910d6b2",
+      "finished_at": "2026-09-17T06:49:57.840215+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "8316d16ef1fd1a33d8454f9dbbd8d8ee44de39027c8269f3f1e1c6eb635ccb25",
+      "run_id": "software-app-development-v0-20260917T064941Z",
+      "training_receipt_sha256": "2ed29703e6063aa66aeeceae7b297859c4358d0b5781e4826f94d4dd35ee6f34",
+      "world_id": "software-app-development-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "7cfb456bebb5dd0f6dcd4148300349fdad93c7b1464e5ff3833e05f4433d6509",
+      "finished_at": "2026-09-17T06:55:15.751498+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "beeb0538c094d8a63be6da5bb6cc6e779d61b14c29df424b78fd9a6f167b626a",
+      "run_id": "taxonomy-mesh2026-agriculture-food-ecology-0001-v0-20260917T065458Z",
+      "training_receipt_sha256": "5cd072313127703cc5ba2e9a94a29e94ec022777f1d0f88a136f281a808fb05a",
+      "world_id": "taxonomy-mesh2026-agriculture-food-ecology-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "505b4ff7d30f6cfbb7958fab246ca92133c73a79b240d3ce3a250da17cbd50eb",
+      "finished_at": "2026-09-17T06:55:43.627600+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "73e652d7839f626418ed7180bae7b69a0a97ef5292375da1dddf6bf5f44252c3",
+      "run_id": "taxonomy-mesh2026-biology-0001-v0-20260917T065524Z",
+      "training_receipt_sha256": "432eed4b72f4dc023de38db89a3a1b2dc199b0477028402ff31e6c5abb54f0b6",
+      "world_id": "taxonomy-mesh2026-biology-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ff2184548678474b95f81dd951bdd9850df67ff69d3467eac33e09c73d46131c",
+      "finished_at": "2026-09-17T06:56:13.936888+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "45d88c4ca12996a58e39dce3141b693b1d31ef64e4e954b75f8c7254a6964648",
+      "run_id": "taxonomy-mesh2026-biology-0002-v0-20260917T065554Z",
+      "training_receipt_sha256": "f4ffd5e835817daf85da09238eae61699ac59584d77bebe980e8c4137ed8d793",
+      "world_id": "taxonomy-mesh2026-biology-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "b4a801e2a1b198ec3b3935c185e7f507302d927594cb004d79a2f58f0b57b1d8",
+      "finished_at": "2026-09-17T06:56:44.857457+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "6b3a2c7dcbd9c0946ad8eb23fcf33795a8a471081e3c78cbee87f9be1319424d",
+      "run_id": "taxonomy-mesh2026-biology-0003-v0-20260917T065625Z",
+      "training_receipt_sha256": "7fca8340a29da240d8b42bc0c5cb1d16e9aeb7fbc6b4496e0471268532587bec",
+      "world_id": "taxonomy-mesh2026-biology-0003-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "a24d6bca455f359127dee4b79ceb0e5682ab638f868ea5e9c7a02730ef333f20",
+      "finished_at": "2026-09-17T06:57:15.690722+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "1c63ba7bd989c1af8858ee4fcfaeefb61d3420278be3a2eff789b8c09940735f",
+      "run_id": "taxonomy-mesh2026-biology-0004-v0-20260917T065656Z",
+      "training_receipt_sha256": "09058c598c2a1bb830c78e044e58ed652436cd54f47bde578d71ea301f0f8150",
+      "world_id": "taxonomy-mesh2026-biology-0004-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "aff2b03677effc13c30e62f60106690ad577c8f0126a05d039ae62ba0576c1bc",
+      "finished_at": "2026-09-17T06:57:47.442965+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "7a34102c645b70bf669032c9798a27d910b465c96ec808f20496f555704518f1",
+      "run_id": "taxonomy-mesh2026-biology-0005-v0-20260917T065727Z",
+      "training_receipt_sha256": "4fca7dba4112158ea8b9bd9f8c551aac2a5328cc793acbf99240bf4e3b1ff1ba",
+      "world_id": "taxonomy-mesh2026-biology-0005-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "4558fc6f87d22063d2e93963502a97f01350058846cbc2760315a667f5f3437f",
+      "finished_at": "2026-09-17T06:58:19.362276+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "66b5214e7f3f2015385c771420a8b15d16e61e173db0afbc1a3f148a6c1f3bd5",
+      "run_id": "taxonomy-mesh2026-biology-0006-v0-20260917T065758Z",
+      "training_receipt_sha256": "743d70b9e1a6ee025988d611c2bfd39b0ccaaadc5349758243a271559d5a7e1d",
+      "world_id": "taxonomy-mesh2026-biology-0006-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "1c342280baa0622771ca1c6e617f03a689fbeff5fb437e833f03d30ba6376433",
+      "finished_at": "2026-09-17T06:58:51.811316+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "5dc1174e3e05f99695c8f26a74a6c93c8f6b31fa82eb3a3575f7c4a94cdd920e",
+      "run_id": "taxonomy-mesh2026-biology-0007-v0-20260917T065831Z",
+      "training_receipt_sha256": "87ef77ff4d4fff5cf541bda6b6a4e49881fa6647a8822a90dfaf7e2411db9b6b",
+      "world_id": "taxonomy-mesh2026-biology-0007-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f293226c745ede20fd844c54bd72828b27e3c44ebf264a6a906925a18ae02233",
+      "finished_at": "2026-09-17T06:59:23.333491+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "b8c3485b6362868be5e735016402461661b8e6556d3fec238a11615b2d94784f",
+      "run_id": "taxonomy-mesh2026-biology-0008-v0-20260917T065903Z",
+      "training_receipt_sha256": "25d14cccec6e1242c6f0fd329fa321d516d537058666d0dbb760dc7a161d9037",
+      "world_id": "taxonomy-mesh2026-biology-0008-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "45e409d48517c56ff81e88f9c782bde7d4bae2b3c3f39f80df0b57b1b5bda02b",
+      "finished_at": "2026-09-17T06:59:54.264748+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "af695e966f2b2d9448518e10515d49d0e60c5bb98ab27915880878749e485286",
+      "run_id": "taxonomy-mesh2026-biology-0009-v0-20260917T065934Z",
+      "training_receipt_sha256": "d7042001ca90c4871946e590179885712fcfac2c004db566a419a6900736f957",
+      "world_id": "taxonomy-mesh2026-biology-0009-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "7e326108b320343053cde2186f3feeb0d1fd31b28b38b66f937393d9e1320603",
+      "finished_at": "2026-09-17T07:00:25.377454+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "0d7c025fc1efc57fae45bdb31f1534ce9b16e4ff7013fa92b2283a6a0e5bbd6f",
+      "run_id": "taxonomy-mesh2026-biology-0010-v0-20260917T070006Z",
+      "training_receipt_sha256": "2ed0e9e8b97a9d5bae92df442885307500768668b0d0bba52ce87e2721d9a313",
+      "world_id": "taxonomy-mesh2026-biology-0010-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "81d4399998ad28c5376b30ac9c8ae26f196400bddf3fe574caffec3fd7b1095d",
+      "finished_at": "2026-09-17T07:00:57.268261+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "aa864ffe3f4b49f179743c5dc5cdad5590a41211a74599dde6463112f4e60780",
+      "run_id": "taxonomy-mesh2026-biology-0011-v0-20260917T070037Z",
+      "training_receipt_sha256": "45a056eda99915b1e4e78c48aaee14cffe24be151ca23a89071fa15f269a7e28",
+      "world_id": "taxonomy-mesh2026-biology-0011-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "03c62f2bb08ccef7684abcbdb1f8e8ea7e3809c5a1b024bd6ea1f67efceeccf1",
+      "finished_at": "2026-09-17T07:01:29.253074+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "be6a3dd007b9e6dafc58730ef0ef6b97ead658a7a14198d040c7947357f1fa5f",
+      "run_id": "taxonomy-mesh2026-biology-0012-v0-20260917T070109Z",
+      "training_receipt_sha256": "6523a2e4c88b9ab5031d0ad0495a6b0d0243be9da384887c38130c5f2b368f9f",
+      "world_id": "taxonomy-mesh2026-biology-0012-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "bc0ea9f2227b820600337003e093e43aad1fa5f75cfa55f19c79fbfc739ad1a9",
+      "finished_at": "2026-09-17T07:02:00.997643+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "1afac6ffbf7d437db8925469c11f652f731b6cdfe945104ccba6f5f74248cba5",
+      "run_id": "taxonomy-mesh2026-biology-0013-v0-20260917T070141Z",
+      "training_receipt_sha256": "a63b2f452f88c081d21fc72956d04b7618cc45b442b6577dce2cca2f7f930c38",
+      "world_id": "taxonomy-mesh2026-biology-0013-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "d8c07896a238f6c97fc848350d9a1dd820a85449f98640a04d48745e9bdc0f51",
+      "finished_at": "2026-09-17T07:02:32.339580+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "f55f4c5df7b0eac87a9193c52f749689b812649916dcff33a0555af6f05aedfd",
+      "run_id": "taxonomy-mesh2026-biology-0014-v0-20260917T070212Z",
+      "training_receipt_sha256": "49505172b34abcba596471626387250682b7631059c45188d7f9e9e6cc41bf9d",
+      "world_id": "taxonomy-mesh2026-biology-0014-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "780892daf983273ef6c1372a6326199ea1fe2f3869c13713dbb052e800b40cc3",
+      "finished_at": "2026-09-17T07:03:01.480273+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "41f3694b553a19bf163a7a02a4c55dfc9b588f66952988ab634e1428fb73d1ce",
+      "run_id": "taxonomy-mesh2026-biology-0015-v0-20260917T070242Z",
+      "training_receipt_sha256": "9f7f8a2c3b0ba63ae1c6acc811ab9043644a630e70a26124e0b66f4a3f3389ff",
+      "world_id": "taxonomy-mesh2026-biology-0015-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "63865ab15c1c70048dbd5a566489dfaed084809c74c385833085a865a31b6177",
+      "finished_at": "2026-09-17T07:03:33.575382+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "13515c30b21e24ab27a40bbe758638a5eb1c4701c20ce06592691c3d39857856",
+      "run_id": "taxonomy-mesh2026-biology-0016-v0-20260917T070313Z",
+      "training_receipt_sha256": "30acb48a661efde4ac2e3e740edcdb6ae1bf460398ecbcd800226e0ce16ce1a8",
+      "world_id": "taxonomy-mesh2026-biology-0016-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "a1a87b07ae634662c5107661f47051df2f51ae9631bb4411ad4bbbc16166e214",
+      "finished_at": "2026-09-17T07:04:06.091364+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "b2f98734077a7ba50b08bfcfb2b26d59bba88337fa7099b4d9d876d55a314bdf",
+      "run_id": "taxonomy-mesh2026-biology-0017-v0-20260917T070346Z",
+      "training_receipt_sha256": "12cb7c18b1dd304fc3604ee1a44af35f2f1ad3de7ce8ea487d7975cab318e138",
+      "world_id": "taxonomy-mesh2026-biology-0017-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "072d188358cc7a4dbac00783df1d8c60c8d34772b0cc3affac001858fb4ed89b",
+      "finished_at": "2026-09-17T07:04:38.555987+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "540fa3eba18233406a43da0445d5c8492727c4f21ac08323f15bfcb3a562ffec",
+      "run_id": "taxonomy-mesh2026-biology-0018-v0-20260917T070418Z",
+      "training_receipt_sha256": "361e9ee814188cfa19f2421e0740c51dda7d23f60e38de6cf873e1c358ef019e",
+      "world_id": "taxonomy-mesh2026-biology-0018-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "1dd75dae552692e7d9e9d17f0a72886d8373d17abfaf28029404868c0f7a6942",
+      "finished_at": "2026-09-17T07:05:09.933782+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "52e4539153485e4eead918d8f512baed35722703ed4483531d2e2f1f3d728f75",
+      "run_id": "taxonomy-mesh2026-biology-0019-v0-20260917T070450Z",
+      "training_receipt_sha256": "5dfa8360674501a0956ca86e32816833181c00731bc0c671ca4f1a78b389d996",
+      "world_id": "taxonomy-mesh2026-biology-0019-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "3a6035cdf35cf9e445deca4669b7ec1841873cdbd3a76517c8b8eb0dc0b97ffc",
+      "finished_at": "2026-09-17T07:05:39.886526+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "4d0e7a19fd510a651abc29ed567d541d46d7fad62ec305388c80cd19f480c0fd",
+      "run_id": "taxonomy-mesh2026-biology-0020-v0-20260917T070520Z",
+      "training_receipt_sha256": "893ec590f19dec4ba1450473adaa5a5f13816b0dc252ed117453e4e0af60b317",
+      "world_id": "taxonomy-mesh2026-biology-0020-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "49d8f266e78ede3e5205c2e5b92861415c536e7e9f238f423f3702438df6a6c7",
+      "finished_at": "2026-09-17T07:06:09.835788+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e5f573f7983756a209caad2591a54744bf8a58070b65643eb226fef414cbec91",
+      "run_id": "taxonomy-mesh2026-biology-0021-v0-20260917T070551Z",
+      "training_receipt_sha256": "01f94c85c2e9fd9bd30d5a270509742cec94b389a9f89808882e7418beddc92e",
+      "world_id": "taxonomy-mesh2026-biology-0021-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ac6504eb96879df08077f858037ae14e95d09362dd0294c704227d76bb2739eb",
+      "finished_at": "2026-09-17T07:06:40.926496+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "94f7b6c97004a3a089c746647cca9a48bba47aea0ea6bd39b9ec3dfa8a6dde21",
+      "run_id": "taxonomy-mesh2026-biology-0022-v0-20260917T070622Z",
+      "training_receipt_sha256": "6c144e15c51a9c7b085fb5af2753923fbf67e61e8787f185eced79a0926c6b30",
+      "world_id": "taxonomy-mesh2026-biology-0022-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "b8ab2cf7f481906f68cce7a04570a881e4a7d123f8bb50bb82ee727f134163d7",
+      "finished_at": "2026-09-17T07:07:11.776651+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "ae87a0a00f40a545925761046bd92ddc8e494122e3068b1823da8f5efd05c9a8",
+      "run_id": "taxonomy-mesh2026-biology-0023-v0-20260917T070653Z",
+      "training_receipt_sha256": "5772e6eb7338aa781a9980965a26d091dd36b616db85de1f436ed9bf607deed9",
+      "world_id": "taxonomy-mesh2026-biology-0023-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "efc1ba8806c0377ed66127a5146fc502bbfd843e546d953ab39e5c07fad06f75",
+      "finished_at": "2026-09-17T07:07:43.611291+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "b0899c0e500f7d4886dc3cadabdb83e1d8ebae7c231688b69599d907c5f78f2e",
+      "run_id": "taxonomy-mesh2026-biology-0024-v0-20260917T070724Z",
+      "training_receipt_sha256": "74d8ffd8d78ca3712f8b04b203aeaef661c7adc860dd381da1c3674776c7dc71",
+      "world_id": "taxonomy-mesh2026-biology-0024-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "68974b5b55ae03ecb65a34acc4eb5713c61560e1f842a16049cb6e133308d860",
+      "finished_at": "2026-09-17T07:08:15.741366+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "17fd26e5b38b6ef2fec6c16115bb6980f68b643a0d4e71c9012984ad02889934",
+      "run_id": "taxonomy-mesh2026-biology-0025-v0-20260917T070756Z",
+      "training_receipt_sha256": "6f81c7b4bc3476bd1b0e6df5127bbf83a2c494e7b1d016c8efb7fa33ed35e5e8",
+      "world_id": "taxonomy-mesh2026-biology-0025-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "87c2719811290c814cab0f43d89450d3202d045b705fd34a15bbf6679d0b04e0",
+      "finished_at": "2026-09-17T07:08:48.021692+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e7fdcfc4e02550bc58f56872e7276a6e70f4289e46de50c0aa54ed966e47fd58",
+      "run_id": "taxonomy-mesh2026-biology-0026-v0-20260917T070828Z",
+      "training_receipt_sha256": "0ce9720845565b0d3257ab3da3223d8700f5a342f3609ce5bec7fbcbca93c25b",
+      "world_id": "taxonomy-mesh2026-biology-0026-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "b0f5153c9c93d3597f25a60c3eec6c86d36142fab336652d3fc039cd42edae5d",
+      "finished_at": "2026-09-17T07:09:20.647815+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "4e49a8d876ddab60de5e9d45d5c43f41c1e45166c4cb4a5fffed821332efe91e",
+      "run_id": "taxonomy-mesh2026-biology-0027-v0-20260917T070901Z",
+      "training_receipt_sha256": "5d067399d012ebc038f64bf053c12333daceee5ee995c3326c695fc792d42b3c",
+      "world_id": "taxonomy-mesh2026-biology-0027-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "1889433bacf6e2bd5f9a760c89c50669c7d2996a665a8ae9eeec977fcecaa1e6",
+      "finished_at": "2026-09-17T07:09:53.635973+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "2c907c5c4da1d597e5df8986764b656a5b7b371b2bb175a23c7087e2aa161c5d",
+      "run_id": "taxonomy-mesh2026-biology-0028-v0-20260917T070933Z",
+      "training_receipt_sha256": "34d3a78224118d9af52fdb392ec01c10bead6d64bd65edb0ebe4ae653c1f6520",
+      "world_id": "taxonomy-mesh2026-biology-0028-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f376ddd5eb88bde7ad728c1415c9fc5df15621505fc7d33f9436c33f42329c5f",
+      "finished_at": "2026-09-17T07:10:27.803539+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "40e1a28be47ad5dfc525739b15e11fde76c84dbab52889906d748c69873135d2",
+      "run_id": "taxonomy-mesh2026-biology-0029-v0-20260917T071006Z",
+      "training_receipt_sha256": "5b144f6138b10454151d9098e1fdaaa0b37b85ea69384298c39725f58d701da3",
+      "world_id": "taxonomy-mesh2026-biology-0029-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f1b1b0889bd899335c4287b9e50d6f6b2f2c23b0411a73bf176594f4de4f571a",
+      "finished_at": "2026-09-17T07:11:01.559011+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "a2d29a104fd797cf8ed78a3cb51b79368979abcec220e167a51910ceb2f2e881",
+      "run_id": "taxonomy-mesh2026-biology-0030-v0-20260917T071041Z",
+      "training_receipt_sha256": "d5c90d1a934aab28c0d1529ea626ca9a77fbebdeb60b4c4ccd4404ed859bd6f2",
+      "world_id": "taxonomy-mesh2026-biology-0030-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "9b0ce585ee3e76bdcb3e90b743867da879a08053fbdb34d33db908eef3c723b6",
+      "finished_at": "2026-09-17T07:11:30.237675+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "76db5aa93f1d02e2b544e554a6a080397c289e8f4d7c331ddb39cc02284ac8b0",
+      "run_id": "taxonomy-mesh2026-biology-0031-v0-20260917T071114Z",
+      "training_receipt_sha256": "6488c33a9531aac49b918b6fdc79e01066fe8aef1e3bef59ba49f045846515c7",
+      "world_id": "taxonomy-mesh2026-biology-0031-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f597b4754f79de3131d832f7090992f0d9c24b012a2fa57bfef54410b23e1760",
+      "finished_at": "2026-09-17T07:12:03.310219+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "1ffec3f6ce5e45ce18f559ac5ca5c5246dff02ec8c6bbef093acec8c44443909",
+      "run_id": "taxonomy-mesh2026-chemistry-0001-v0-20260917T071142Z",
+      "training_receipt_sha256": "267d93b6e4f9241b05afa95e96a82db42596820bd4874e7edefc56ee79d2bb0c",
+      "world_id": "taxonomy-mesh2026-chemistry-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ff2a31ea94df9c27ae009bfb3ecde8c7c461fe58d14c6fee4e60c2aa22da7a0e",
+      "finished_at": "2026-09-17T07:12:36.974233+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "704da393a4ba6cc9eeb302c588883934179aac918a2c16577ca8e3ccd7d5bde9",
+      "run_id": "taxonomy-mesh2026-chemistry-0002-v0-20260917T071216Z",
+      "training_receipt_sha256": "42c097a5f13b5d86bf0a637c24f98afb63b53755e96af62749999a14dbd12a10",
+      "world_id": "taxonomy-mesh2026-chemistry-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "3ac21d74ff22938fa7a51bb5d8888d0662ae95e83d957b5e43196b1e48631d88",
+      "finished_at": "2026-09-17T07:13:11.579958+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "ed7f8b55447a168591869f6492bbeddd60f67b9a61f02bf074841a62cbb53de5",
+      "run_id": "taxonomy-mesh2026-chemistry-0003-v0-20260917T071250Z",
+      "training_receipt_sha256": "ce349697b52e36492ffe0aad5db8abf1538bb562a16508ff18fda5a847059efc",
+      "world_id": "taxonomy-mesh2026-chemistry-0003-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "8b008d931c375d8e585d262d5c1716591d510c730145e5144a9a4af8254917b8",
+      "finished_at": "2026-09-17T07:13:45.422786+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "47073391b4d0002153033acf05ae02db766db1b1d52d09ebc6b956a49fdc0636",
+      "run_id": "taxonomy-mesh2026-chemistry-0004-v0-20260917T071324Z",
+      "training_receipt_sha256": "60925b1709601ef28b9730afee5fcc281864b91cdfe7d6901f685f1429afcc3d",
+      "world_id": "taxonomy-mesh2026-chemistry-0004-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "c5d6efac2ff1d93288b232fbf8e304489f4009162dc3dcbe63eccb81707a4770",
+      "finished_at": "2026-09-17T07:14:19.962725+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "202b5771a5a4f089e57e30d8ac40ca8cb854e02b4acba62a31670752a09ee076",
+      "run_id": "taxonomy-mesh2026-chemistry-0005-v0-20260917T071359Z",
+      "training_receipt_sha256": "a0395ead762546ee1e910f79aaeae12a88864eef67e3c387fb02581d7460ef86",
+      "world_id": "taxonomy-mesh2026-chemistry-0005-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "e76c46f000600f547f178ca6b99ae074653055cc8844a61be25da184ea91cffc",
+      "finished_at": "2026-09-17T07:14:53.508093+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "6e280d0d38db5dbbf17c7963ffc2b196837e20624950dd7218f0f324b533e1d7",
+      "run_id": "taxonomy-mesh2026-chemistry-0006-v0-20260917T071432Z",
+      "training_receipt_sha256": "bea5d6952edda3bdc9e76ca33ee98c6e63d49522519c47e0431050f8dfd2b692",
+      "world_id": "taxonomy-mesh2026-chemistry-0006-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "49eeff3785774eaabc0da20d79440cbb01060286966ccfd27021dbcab04b7ebf",
+      "finished_at": "2026-09-17T07:15:27.333000+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "50dde3d64fe0f558fc1f6b111cb5477d84e3ab727f6154adcc93175ee6a3f08d",
+      "run_id": "taxonomy-mesh2026-chemistry-0007-v0-20260917T071507Z",
+      "training_receipt_sha256": "ad5fb604682209614eacdfd9ad8d4728ada34c391e0feae57201361f5a3b5ab9",
+      "world_id": "taxonomy-mesh2026-chemistry-0007-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "2f49cce2cd6e7af7109053d8235f847bc7ade86dbb61d63a99960fd21ef4be63",
+      "finished_at": "2026-09-17T07:16:01.319344+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "9212531f966bbec18a73998bd37d8bc7510f6c72796f2830911adeaec686dbf5",
+      "run_id": "taxonomy-mesh2026-chemistry-0008-v0-20260917T071540Z",
+      "training_receipt_sha256": "81f6545f8d5caab3e0c2745bd3f61184365d996f0a08c93e4391d33f84b7c978",
+      "world_id": "taxonomy-mesh2026-chemistry-0008-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "688a23a744b79d80902f9ce4980d5ba0ab2dc09f2d59425973c2da924b310bfe",
+      "finished_at": "2026-09-17T07:16:34.776775+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "0b42fac5edb586a9308a36eca00a50e0d7dd321680015ac942d0893d9bf4976b",
+      "run_id": "taxonomy-mesh2026-chemistry-0009-v0-20260917T071614Z",
+      "training_receipt_sha256": "8a0671f4ac651f54bb4071f06f6632139812ca6b0f3e2af866029ff87a17b566",
+      "world_id": "taxonomy-mesh2026-chemistry-0009-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "2ecb1a93400b915ff2e048819ac939cd977aada22165b4e23dcb771ba21a2465",
+      "finished_at": "2026-09-17T07:17:08.744346+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "45173725ace4319a1d2e754b650bc3809403d24049aa53adea7ae9a3fa3dd4c0",
+      "run_id": "taxonomy-mesh2026-chemistry-0010-v0-20260917T071648Z",
+      "training_receipt_sha256": "6c1cf8b2f98ceae9c1235bb3617b831b660c1a056917ba0321ada54b2f75f7b7",
+      "world_id": "taxonomy-mesh2026-chemistry-0010-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "7ac4c3b68bc889e5a9354b53d78ac2d8d33b596167d0c2da0e09cbc0088d907b",
+      "finished_at": "2026-09-17T07:17:42.625578+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "08fb8a583d179cdae01c63b22f5450fed2a0ca340f1a3de9ea9d9c1dc9eb3c9f",
+      "run_id": "taxonomy-mesh2026-chemistry-0011-v0-20260917T071722Z",
+      "training_receipt_sha256": "7842a1a503a3cfaad0f6ebc522db56a55ebff7232229c564ba50da272582913e",
+      "world_id": "taxonomy-mesh2026-chemistry-0011-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "63465412cc140c65ff8c4b8bf93652b14735131fa6265ac6f1363c2b776912f4",
+      "finished_at": "2026-09-17T07:18:16.455930+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "7ea86bfbc08ec3eab73a1190ff1e902afe7795315bf48fe9b3786bedbba1a528",
+      "run_id": "taxonomy-mesh2026-chemistry-0012-v0-20260917T071756Z",
+      "training_receipt_sha256": "ad22105c0eeb291370975e688c09af2a7f8979ee9d2b5feb993e48e2601d9820",
+      "world_id": "taxonomy-mesh2026-chemistry-0012-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "c262d7a85772e815de7aca52205976c0e3b8549c96eca7f57994a43af1e60087",
+      "finished_at": "2026-09-17T07:18:50.479987+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "6934be98cca4e4058d3f0ed74129033c150c2e904c422d24585dc0085eb5c19c",
+      "run_id": "taxonomy-mesh2026-chemistry-0013-v0-20260917T071830Z",
+      "training_receipt_sha256": "0a034d3663bdf40789352a4a7b0b067f78d33e3a858acd609cbc54ec0fc254d3",
+      "world_id": "taxonomy-mesh2026-chemistry-0013-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "30242265730f71fd9baea34ec089bf9a990a75c4596076869789fe29779a2ff7",
+      "finished_at": "2026-09-17T07:19:24.745322+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "d2ec9301ccd51d567ccf382e9ef56047365664b4137c372927e098251394a6d4",
+      "run_id": "taxonomy-mesh2026-chemistry-0014-v0-20260917T071904Z",
+      "training_receipt_sha256": "f29af74b067212839ee75f430025abdb752bfec8515b32ac8eed3e7ff1faa3d4",
+      "world_id": "taxonomy-mesh2026-chemistry-0014-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "4423df07a5f439c04ccabefb1f983398a4228cd69b3cdd79a253818992313cfa",
+      "finished_at": "2026-09-17T07:19:58.704363+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "9b977cd86c59d1f5d734caee6ea41f409717b2ea01dd5e334e2af4a7da8dee42",
+      "run_id": "taxonomy-mesh2026-chemistry-0015-v0-20260917T071938Z",
+      "training_receipt_sha256": "81fc8c036fd9597fc56c2a7244cf82ea3db0242c843a012a8dc9a9fa2b6be106",
+      "world_id": "taxonomy-mesh2026-chemistry-0015-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f914a100ea6a59dc750100283c059d2ac8545cbaa7a55c69fafa3113b2e8bb52",
+      "finished_at": "2026-09-17T07:20:32.822934+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "d03e5b113967c920a16e8a3167ea090223b8326e80e291a0c49fd8d70b3ce423",
+      "run_id": "taxonomy-mesh2026-chemistry-0016-v0-20260917T072012Z",
+      "training_receipt_sha256": "fa40fee2435591dd3901d9fa9ecf068c6b8be67ab8b54baca85c0c1056e1f267",
+      "world_id": "taxonomy-mesh2026-chemistry-0016-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "35ffb8d91178aad33577ab1b7090487e8fb7214d67435132e90feee805c40e21",
+      "finished_at": "2026-09-17T07:21:07.652476+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "5feb0148f7bc9a84975c031d272abd8bf122465faf8c0fe98c0d6b785a852900",
+      "run_id": "taxonomy-mesh2026-chemistry-0017-v0-20260917T072046Z",
+      "training_receipt_sha256": "d7f5753ff3351b9f4e004e158ccbcb3bceb5a65854f55fd80bffec4d66349776",
+      "world_id": "taxonomy-mesh2026-chemistry-0017-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "0c3a874518bac189b050c1b175a65aebd0e8130986b0c72b513eb9e12155d2d6",
+      "finished_at": "2026-09-17T07:21:41.124642+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "105707038fda6fe3023aca37b47b504a7a0bbafc23e505164f27b313c395f0f1",
+      "run_id": "taxonomy-mesh2026-chemistry-0018-v0-20260917T072120Z",
+      "training_receipt_sha256": "1cb3323599fddff65b5e615d8fa5a36685651bea444f696c97ef6d5232f1ef8c",
+      "world_id": "taxonomy-mesh2026-chemistry-0018-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "7d2872c3de1b5938cd6f91a1480334c9f6c8f4e0ea0ca011fdce055429f8f702",
+      "finished_at": "2026-09-17T07:22:15.265861+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "9a574003e81afd45a6ed6ef14598f9b0b7320bcfdf989601ee7e054fd8bccb46",
+      "run_id": "taxonomy-mesh2026-chemistry-0019-v0-20260917T072154Z",
+      "training_receipt_sha256": "15094c82922e68cd9846e5fac864348282033aff8e2ef934e6513981d627df87",
+      "world_id": "taxonomy-mesh2026-chemistry-0019-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "efc8801b3547a4b135e0695ef6a071b2328f2a5d452e4cbef624c0bd61e2bdfa",
+      "finished_at": "2026-09-17T07:22:50.156975+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "de49033096deb6382dd17b345eef42004321c9f18c1518c53b727129eb1dfd57",
+      "run_id": "taxonomy-mesh2026-chemistry-0020-v0-20260917T072229Z",
+      "training_receipt_sha256": "104af8a5cbf6e5e3846aedfe0614dce3da462938cba002a156f663ff9cde8f12",
+      "world_id": "taxonomy-mesh2026-chemistry-0020-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "036a3a5d397e05b009ffceac3a06cc90c60a10b3f6c988acddd59c49618f69f9",
+      "finished_at": "2026-09-17T07:23:24.194917+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "d12bf9da074bafc3b07a47417d8be336d492c338e38102d6a181ab0746c1a980",
+      "run_id": "taxonomy-mesh2026-chemistry-0021-v0-20260917T072304Z",
+      "training_receipt_sha256": "8c44d47bd009cb11cb6b6f901261a8b7d9b913c339b0f9b67d2d3bcfc4c33b89",
+      "world_id": "taxonomy-mesh2026-chemistry-0021-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "83bbda268ad56ec0778518931415aae27327fbb0104d5a0b1d194b7840ff0c45",
+      "finished_at": "2026-09-17T07:23:57.343858+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "ae7ee8cb627b94d729846e0d812328c14aebe783920fd35f59fa554e04ffb649",
+      "run_id": "taxonomy-mesh2026-chemistry-0022-v0-20260917T072337Z",
+      "training_receipt_sha256": "7a6afb739a44be8255bf4dc22efc7c531dcaef8ceb18fcd76008f105aa994171",
+      "world_id": "taxonomy-mesh2026-chemistry-0022-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "9632912fb639549f699b57a461afe508f741b4fd4ba56a5b76e1d673c9a31f62",
+      "finished_at": "2026-09-17T07:24:32.454225+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e07deaef849904da65d836a14be3303da8b079a168d202b66c385c8d2ffbc1e3",
+      "run_id": "taxonomy-mesh2026-chemistry-0023-v0-20260917T072411Z",
+      "training_receipt_sha256": "22c690ff06bdb303a6f8744f9d344d1762848f6896aa6e72fb04f148c5099bbc",
+      "world_id": "taxonomy-mesh2026-chemistry-0023-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "e660cfcdbe0b1b9049b0ba523e9ab97ae5d660b208bf552e0e3651351d7ee4f2",
+      "finished_at": "2026-09-17T07:25:05.955429+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "408e47b8e1bee7eb39f96838f2eda8fd980b325eea70270606ec50fb7ef3611c",
+      "run_id": "taxonomy-mesh2026-chemistry-0024-v0-20260917T072445Z",
+      "training_receipt_sha256": "749ba75c1259fc52d18aacc1bbc9fe9ac2bb13736cce4e8cce5344acd690f9a9",
+      "world_id": "taxonomy-mesh2026-chemistry-0024-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "df56c875a97bc837d1037683a37bc7f9d09691689826a2363edba67d9b17aa74",
+      "finished_at": "2026-09-17T07:25:40.732461+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "fc18293432b2440dd95ee96798d304556959a6badb5b1bdc8ba900a22835bc3f",
+      "run_id": "taxonomy-mesh2026-chemistry-0025-v0-20260917T072519Z",
+      "training_receipt_sha256": "b5f795af8dbdcccea0ba09285186d6ec725fd76a735b70a4b5a58e3062fea3ad",
+      "world_id": "taxonomy-mesh2026-chemistry-0025-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "6b01604703b6c1691a1a86958cd6fd250a8a25471b05c61f19399b13350e4f2e",
+      "finished_at": "2026-09-17T07:26:14.744702+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e87c2c573ac7dbc8ec1ac3bc3ae681784e1b61ea1cd14d2f82949a7540324728",
+      "run_id": "taxonomy-mesh2026-chemistry-0026-v0-20260917T072554Z",
+      "training_receipt_sha256": "a62b42888787b98e164884662bd608fa85257fa32565ee30142162a94c986d33",
+      "world_id": "taxonomy-mesh2026-chemistry-0026-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "1860cc056312e5e9d1e6ec4daea8f87d5890efd429fb9b641744872afcc61922",
+      "finished_at": "2026-09-17T07:26:48.829504+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "97c2d94ee93a02265a66b4e17f3336f1e75b5c67702236452b36c00d18f05809",
+      "run_id": "taxonomy-mesh2026-chemistry-0027-v0-20260917T072627Z",
+      "training_receipt_sha256": "83a7340d44dcbb8205bb50fbf6f705caf03db39c7cb874f5d32a6dee59888f5d",
+      "world_id": "taxonomy-mesh2026-chemistry-0027-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "61f0720cc8a6d8708fdd97e854e5d97c2e507d50aca354eb0223b9bbf8c423ad",
+      "finished_at": "2026-09-17T07:27:23.370298+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "1d6ab1dc2444e5a3cac7fff5fa6dbf11ff90f0c5d90b8b8571367a9637f6d096",
+      "run_id": "taxonomy-mesh2026-chemistry-0028-v0-20260917T072702Z",
+      "training_receipt_sha256": "c94f0d19f1a68793121db26cf3248e223a4817aef81545933ab0c81cc0c3a6cc",
+      "world_id": "taxonomy-mesh2026-chemistry-0028-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ab406f218ccb32a3cbb596e79a93c13b92de8123c3962ad994a7dde2da9a5972",
+      "finished_at": "2026-09-17T07:27:58.367168+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "22f381efb043810f3dd94cf19799ee3d7a3028c8653b0db46697230dfd1dc0e7",
+      "run_id": "taxonomy-mesh2026-chemistry-0029-v0-20260917T072737Z",
+      "training_receipt_sha256": "7ac653a1ae0e11675f51f9368e364411294a378ed774d49a45c9427e012923e6",
+      "world_id": "taxonomy-mesh2026-chemistry-0029-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "65b36c1e226853f41545d918ca261d7590943e0a637c94c6fd83799cc5c69cc5",
+      "finished_at": "2026-09-17T07:28:33.678952+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "3e4dae6c888ad6d9c1690f418517bc4fbc3be2f6c885ef0abc9e14b8fb3e319c",
+      "run_id": "taxonomy-mesh2026-chemistry-0030-v0-20260917T072812Z",
+      "training_receipt_sha256": "108d00ad83800f08b1c908ca75531113dd138e806fad25c09c19dac744dc4179",
+      "world_id": "taxonomy-mesh2026-chemistry-0030-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "80f2ffc62f5d10aaa286569295e20e1eb38e3d796b310f2f104f780a8ac25531",
+      "finished_at": "2026-09-17T07:29:08.664377+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "599644e3f6c2dd31b205cb080d5c9166c5f170c7a745fb6cd913631288952f12",
+      "run_id": "taxonomy-mesh2026-chemistry-0031-v0-20260917T072848Z",
+      "training_receipt_sha256": "36aa9683d27324f679ed103c41174a48e50127b400b8a1340bec425e8a43fee8",
+      "world_id": "taxonomy-mesh2026-chemistry-0031-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "bb1de3f3f978501f3cf2fc5b9baddb953d6b161dd8a61a621b9fcc1e82f014f7",
+      "finished_at": "2026-09-17T07:29:42.564223+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "75ab061e5d53f37cb912b015430521c96540af84b5fd3dbe12f73ead00b32bf3",
+      "run_id": "taxonomy-mesh2026-chemistry-0032-v0-20260917T072922Z",
+      "training_receipt_sha256": "de874713ba5df170b23831575aedb87237e75d6c2d8adfd3193e1aad9dbe3845",
+      "world_id": "taxonomy-mesh2026-chemistry-0032-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "db2d388f3f0fb3d12dde273e125e75b0c194da382a5a98eeec5ecaebe43e255d",
+      "finished_at": "2026-09-17T07:30:16.048944+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "1db44a0c9b888f829011e7c2ac0ff9c7a2a843085c92740ba33b18e3e39f8ad8",
+      "run_id": "taxonomy-mesh2026-chemistry-0033-v0-20260917T072956Z",
+      "training_receipt_sha256": "a150a8e5a5b284d8b90ebde7d96def688505d409fa233122b48ae69ec52a40c7",
+      "world_id": "taxonomy-mesh2026-chemistry-0033-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f60ecb8558db2e7c5f3c62b6624bd6b9ef26930a382945b58fbb5a51933203d2",
+      "finished_at": "2026-09-17T07:30:49.279830+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "7688679309e9d1c9fc5b54888dfdb99bdb519ddf1b24130a48ef22a8bd6f6662",
+      "run_id": "taxonomy-mesh2026-chemistry-0034-v0-20260917T073029Z",
+      "training_receipt_sha256": "dde4fb47954238b49bb2754ef136177848fc27113fdbe853c1d758ff520d712d",
+      "world_id": "taxonomy-mesh2026-chemistry-0034-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "d202a33b7bbb39db65ab327e91eba1ed2e92d7540bfb9c2686296de81b71e454",
+      "finished_at": "2026-09-17T07:31:22.196472+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "f986d78407da445a1fb0451bf98f316bc7e07447ddf2c3fa2525abe4e838908e",
+      "run_id": "taxonomy-mesh2026-chemistry-0035-v0-20260917T073102Z",
+      "training_receipt_sha256": "74494c2476b4556c6edecee9b29e113deee701de295f42bfc5699d6f81453688",
+      "world_id": "taxonomy-mesh2026-chemistry-0035-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "186eb1c03538b3eae0ca39bf5c0a2dabcdbc70694018c68b903c3df790daa43e",
+      "finished_at": "2026-09-17T07:31:55.314199+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "2dda3530474f0113ce3535d81ce89c7363d98489296e653a0b543f08f8adb5ea",
+      "run_id": "taxonomy-mesh2026-chemistry-0036-v0-20260917T073135Z",
+      "training_receipt_sha256": "fa36cf4b5f6918e20da65bad8fd2584a69885cc40fa32ab957a8d27306155d7c",
+      "world_id": "taxonomy-mesh2026-chemistry-0036-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "8f656a2b3e250f044bb6f2655e0e3db23f80fc0b35df65059e163a96c92dd8a8",
+      "finished_at": "2026-09-17T07:32:27.310839+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "f1cb2f642e73e64f71e56cf453ec121ce13d8d2c6e75a33f99460295eca36934",
+      "run_id": "taxonomy-mesh2026-chemistry-0037-v0-20260917T073208Z",
+      "training_receipt_sha256": "4b80c557093deaafbef64212a4ea961e0f281c712c9f166ff97725b5e8198969",
+      "world_id": "taxonomy-mesh2026-chemistry-0037-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "54205bda7c3a14cb105ab86e899cca35cc15ef15ffd8366844adb133f606515d",
+      "finished_at": "2026-09-17T07:32:56.465255+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "f4c0757ade2e8a5c67c75a338e8e4b30a7a0fef62e63c4d25eac22e93a86cad9",
+      "run_id": "taxonomy-mesh2026-chemistry-0038-v0-20260917T073236Z",
+      "training_receipt_sha256": "8fd0b0a10ccab53d0bf3246cedbdb37d97bc7bae331c311cba13d27f2055c4c1",
+      "world_id": "taxonomy-mesh2026-chemistry-0038-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "b433490fab442bd4b556a368339e81ad086a51d5c433ce3242d3a86aaeed8ab9",
+      "finished_at": "2026-09-17T07:33:29.647651+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "2faa94394f6e94ad4a2dc9988896709394e76d5a1f61128b7b72ab0158b05a27",
+      "run_id": "taxonomy-mesh2026-chemistry-0039-v0-20260917T073309Z",
+      "training_receipt_sha256": "715721b804c08a85feec6bf29a26487f93270179bcdb60b2e1735f1da2f5df86",
+      "world_id": "taxonomy-mesh2026-chemistry-0039-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "1fe99b0ab0ef8e26dcb8c05563114a382cf961f583477c7970dc784b4afb7267",
+      "finished_at": "2026-09-17T07:34:04.248039+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "7e501f06afce117d8f0603a7fc16f68b4627658973618d5a487f2033c75bfacd",
+      "run_id": "taxonomy-mesh2026-chemistry-0040-v0-20260917T073343Z",
+      "training_receipt_sha256": "40b769923a55a8c0f960a634d96155699b3add77c1560e1df7b9036446a61fd3",
+      "world_id": "taxonomy-mesh2026-chemistry-0040-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "d4f9f772ba7ab93a081ea64f1dc4095ac5e3bba24a6232f9e83d38951f8be6f7",
+      "finished_at": "2026-09-17T07:34:39.482450+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "f0241207adc13748f9301495000b92002b9099f561baa949bd8f34bbe15f65b8",
+      "run_id": "taxonomy-mesh2026-chemistry-0041-v0-20260917T073418Z",
+      "training_receipt_sha256": "63a9e018a541db502a064ccfc39acb8bf67dd461678e7b5ee2f86a6ef5ffa1ac",
+      "world_id": "taxonomy-mesh2026-chemistry-0041-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "9919cfe30c319fa36cc47b97c5891e5e4ae28d3cef39523b7896172a9a49105d",
+      "finished_at": "2026-09-17T07:35:12.165120+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "6a423064ea7892de63727b7a4583452ec8745f0aa6432421d5ee9c939a20e2b0",
+      "run_id": "taxonomy-mesh2026-chemistry-0042-v0-20260917T073453Z",
+      "training_receipt_sha256": "63522563995d82cc7da6c96469b7d9f1601d59f7b7c14d01d47f77ec7d520706",
+      "world_id": "taxonomy-mesh2026-chemistry-0042-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "fe0bb25f7869983a05436fcc4b3972f6c0401d420a476370b751a9926c109390",
+      "finished_at": "2026-09-17T07:35:44.523646+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e2fcc3eb75f7c533e6cf85ec7119cc34bc256404b214e0de9bdd03f74789e180",
+      "run_id": "taxonomy-mesh2026-computer-science-0001-v0-20260917T073525Z",
+      "training_receipt_sha256": "0b6fee9b40927f280b9adad0f42cd815e377360e4b439e50a17c11e90598803b",
+      "world_id": "taxonomy-mesh2026-computer-science-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "b273b5b99c4341b005a69ee86a74631faa2d7433888e64fb1a8f35a352620a3c",
+      "finished_at": "2026-09-17T07:36:15.176969+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "9a33fb08420222035e5ae45ef09ae3862bcf984dfb83acc8234f77f399903b50",
+      "run_id": "taxonomy-mesh2026-computer-science-0002-v0-20260917T073558Z",
+      "training_receipt_sha256": "e34f2332420ea2c63e2eaafefdf3231986e8613a14149f03952b331c125ddcec",
+      "world_id": "taxonomy-mesh2026-computer-science-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "e529044a63d46a1c1a39c04bad9aa7922bf29f6778e2ab692df6060bd4b21d40",
+      "finished_at": "2026-09-17T07:36:47.412419+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "adad5485bea599ea022a0b41a6952765b2ba6ecad146f87897b511ab6724616c",
+      "run_id": "taxonomy-mesh2026-history-geography-culture-0001-v0-20260917T073628Z",
+      "training_receipt_sha256": "99dfc63e5f3707818a15af8cf78a085e2173396362c0066a3b67018f1ed27370",
+      "world_id": "taxonomy-mesh2026-history-geography-culture-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f1876c49c8a9f925e41c343fe23eedb58dcc8484e819679f0268181e93c652d8",
+      "finished_at": "2026-09-17T07:37:18.530867+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "11cda772f4d60f5efe1fb2451688aee29c31e0a629004cd2510e58571a530961",
+      "run_id": "taxonomy-mesh2026-history-geography-culture-0002-v0-20260917T073700Z",
+      "training_receipt_sha256": "2335a41d88a49268015410d6c4fb5f6c04c9c8102f9740861b2513a373ad87ab",
+      "world_id": "taxonomy-mesh2026-history-geography-culture-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "e512b9ad30ef664fcb2f9b2823176a6c8167df373fc109c3d0b495e1947c32b5",
+      "finished_at": "2026-09-17T07:37:53.262132+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "f10ac4e863cc6541069c924a9c2150186d9204a6f3631408d291393f7c0aaab5",
+      "run_id": "taxonomy-mesh2026-medicine-health-0001-v0-20260917T073732Z",
+      "training_receipt_sha256": "740ac4db3e121f0efd49f532333828b8f27f4c2f6a515aae2d286332fb29e85e",
+      "world_id": "taxonomy-mesh2026-medicine-health-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "fce09aa51481e8f29f280b8ce6b2af4d474037e6956a17cfaf463acd1ac3d5a3",
+      "finished_at": "2026-09-17T07:38:29.679418+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "c815d9c2e855a682c3208634a14784f95c7e1f80cd5fd22f90a32f7a5d6405bb",
+      "run_id": "taxonomy-mesh2026-medicine-health-0002-v0-20260917T073807Z",
+      "training_receipt_sha256": "cd8a900385033ed313a7fc53470089b1874ea76de7d33f1921ed4ccef623428f",
+      "world_id": "taxonomy-mesh2026-medicine-health-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "91ead91c1e856d12f93a1553cdb7da02929ee98efe582bbd2a374f45d342f724",
+      "finished_at": "2026-09-17T07:39:05.234630+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "2c149d47e511a17a4bb6e70531589ba6a0f2d7a2f3d2ab524c71a654b98f8047",
+      "run_id": "taxonomy-mesh2026-medicine-health-0003-v0-20260917T073843Z",
+      "training_receipt_sha256": "4d178ebe9dfcbf660005279d0a86645e6a0764cf928556852d228bf74cc96a59",
+      "world_id": "taxonomy-mesh2026-medicine-health-0003-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "201e113ba7ed7fc54a000689ff9ba5b2395103993db1ccec43c320ef40aaf9b7",
+      "finished_at": "2026-09-17T07:39:39.558953+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e5ec75f2b8c8710217c31e63b837a513f68b2a7caf1a44ddaad0dc087a9e9be3",
+      "run_id": "taxonomy-mesh2026-medicine-health-0004-v0-20260917T073918Z",
+      "training_receipt_sha256": "c561cfe9192146ff6176ddf6505e4eebc0a7b0111fb4e79c168cb8127b064aa4",
+      "world_id": "taxonomy-mesh2026-medicine-health-0004-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "95aa2c9e014e88399e5be930dea5dc6585fb9ab3baf1ec440dd0871992d6239f",
+      "finished_at": "2026-09-17T07:40:14.233884+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "ba8e7faca504880e4739a0b40c6611242a788460f940bd8334d09e1a393b9221",
+      "run_id": "taxonomy-mesh2026-medicine-health-0005-v0-20260917T073953Z",
+      "training_receipt_sha256": "cab0fdbb283e9da25b6b10e1252d2d2b0b58b15e7e7125dad50870470eac3b51",
+      "world_id": "taxonomy-mesh2026-medicine-health-0005-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "a0964e1554e98da826498fe6923f2d9f515c2ef6793df9ec9cee17ebd67b85fd",
+      "finished_at": "2026-09-17T07:40:49.089101+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "80e2cf17732acabf9fd6cd05fe136784819db3fdbe036f8650e7643635d48ee1",
+      "run_id": "taxonomy-mesh2026-medicine-health-0006-v0-20260917T074028Z",
+      "training_receipt_sha256": "009c6f0b9ed61065f1bf50ef8f9f4a83c32a0ed89fe0eca7c6d667f88895ff6c",
+      "world_id": "taxonomy-mesh2026-medicine-health-0006-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "50e6edced15adfb381efac5ada179df4f2cfda666342ee47c79465cf13df602e",
+      "finished_at": "2026-09-17T07:41:25.265492+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "48306310a164c71bea544ee720f44784ed1d786d404e82aa15aa0e85b251ed7e",
+      "run_id": "taxonomy-mesh2026-medicine-health-0007-v0-20260917T074103Z",
+      "training_receipt_sha256": "215af30eeab6d2fda8d274c01de416753c9f1ad633d405c575356c18f1729402",
+      "world_id": "taxonomy-mesh2026-medicine-health-0007-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "fc39f7bb83b30b82cced1ddaa0652efd5d8553a6d4ec8e1f4cf318cacff5fe7b",
+      "finished_at": "2026-09-17T07:42:00.636004+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "bef2cd2011b8ebec4c8a20ba8a947c905d5b7bcf22acad854e0c78ea99f71955",
+      "run_id": "taxonomy-mesh2026-medicine-health-0008-v0-20260917T074139Z",
+      "training_receipt_sha256": "24b68e3c2f4d5fc27a06412415d75362a6e098be34ebce3ac7199cb5cdc95f21",
+      "world_id": "taxonomy-mesh2026-medicine-health-0008-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "a57512c4e56cbf5a443f1da02bc88fb4cef8adfafcf18e34d13349a522ff228f",
+      "finished_at": "2026-09-17T07:42:35.805003+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e608fe65b2794977101a8932bab2c9e797d6ec285df31fc9b1e987b70bea8bb3",
+      "run_id": "taxonomy-mesh2026-medicine-health-0009-v0-20260917T074214Z",
+      "training_receipt_sha256": "da00e4ac1b2336ebdaaae6a7fb3af923a11458caf2f98ea9896e62cdaf438d9f",
+      "world_id": "taxonomy-mesh2026-medicine-health-0009-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "eb1b38947342732a1af379a858f91424a29fa3c68985e5303777075552ce00e1",
+      "finished_at": "2026-09-17T07:43:11.559176+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "d61e01df2517993b8df6b223166eb3a1c67fc5e7c44ab527017424706ff6489c",
+      "run_id": "taxonomy-mesh2026-medicine-health-0010-v0-20260917T074250Z",
+      "training_receipt_sha256": "377ed42361d01639d7ba074cf7e713c72877760c2a19f8ad034edcfb089b73d4",
+      "world_id": "taxonomy-mesh2026-medicine-health-0010-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ae856b48f2676cb9362f068950d496586f7eff4357f2eb9c8ca680a61fe44d1c",
+      "finished_at": "2026-09-17T07:43:46.322085+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e2032a004bb248af27330f95a611f037781a3708aab50619509999c5a6323672",
+      "run_id": "taxonomy-mesh2026-medicine-health-0011-v0-20260917T074325Z",
+      "training_receipt_sha256": "dda3069f35d90c32e76feb015c1eea1da388db1bda34ae5b8082df17bebcb8de",
+      "world_id": "taxonomy-mesh2026-medicine-health-0011-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "88092de4502cf705f95c4be754391ab566ee626b76eedde93e92d5a97fb3af32",
+      "finished_at": "2026-09-17T07:44:21.201640+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "9d6fab3aae126b17eacf7ee5ab45896215da462041322d4420f33c8e1843eee2",
+      "run_id": "taxonomy-mesh2026-medicine-health-0012-v0-20260917T074400Z",
+      "training_receipt_sha256": "e72272236a70c398ddfc3b3df44f9089609e6fc1762b5cfb17db765e83308eb7",
+      "world_id": "taxonomy-mesh2026-medicine-health-0012-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f1ead3190c15fcfbfee4d9352415a4c9f4b94ff1c25f8ed4a993f56163ec870e",
+      "finished_at": "2026-09-17T07:44:55.768496+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "532207a6f093cbe48d99ef560145854fbfa4c53ffe47631f32140b6e2b60f2a6",
+      "run_id": "taxonomy-mesh2026-medicine-health-0013-v0-20260917T074435Z",
+      "training_receipt_sha256": "19f24bb543cdc9e3fcd43d0920e130c6ac932bb38cbe1a9398a085a31641e3de",
+      "world_id": "taxonomy-mesh2026-medicine-health-0013-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ae46dee02f5754e73053f34c67276385d671f7e5f116eb5dd8f1fca5d8ca6151",
+      "finished_at": "2026-09-17T07:45:31.371197+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "0e686ce9d1286ed77e058aceb484ce339c406df0ab42e266ae6b04f1f2fe4566",
+      "run_id": "taxonomy-mesh2026-medicine-health-0014-v0-20260917T074509Z",
+      "training_receipt_sha256": "d5d8b78643e5a31762b784c90d88cc7cf343850c4c9818ba5a0707488f14e4f5",
+      "world_id": "taxonomy-mesh2026-medicine-health-0014-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "1019d934a287604873e2fafa8084a00a08d46110e8c7ead3755abdf2b08499c2",
+      "finished_at": "2026-09-17T07:46:06.786064+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "a1149f372a85065a12b5f220647dd602e16e8b6e7a3b5e5b4e7684527e775272",
+      "run_id": "taxonomy-mesh2026-medicine-health-0015-v0-20260917T074546Z",
+      "training_receipt_sha256": "5c9015ac789a25ff13e4dade53fe86ccf4c53fa7f412d13e0a67fd3a693d40a4",
+      "world_id": "taxonomy-mesh2026-medicine-health-0015-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "a3932e07ac2b523a16226755c89d4134280e1d423e666aceacd05563f8d510c3",
+      "finished_at": "2026-09-17T07:46:43.275481+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "764fac867136200f61e4b99f2b308dd37beeb81336042949d1aeb0393579fb60",
+      "run_id": "taxonomy-mesh2026-medicine-health-0016-v0-20260917T074621Z",
+      "training_receipt_sha256": "c52bd60f536ea572438b7ce029dfc961ecac4c267df2208709810c6334adac27",
+      "world_id": "taxonomy-mesh2026-medicine-health-0016-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "b76dbbeb93f3f98c4ee52691048a04e2c0a00213d1c95c706188641fb18ec567",
+      "finished_at": "2026-09-17T07:47:17.188443+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "d26c190aa66df493bd724c4dd4884b231dbaa01990ddbebe77aef1f51a7422d1",
+      "run_id": "taxonomy-mesh2026-medicine-health-0017-v0-20260917T074656Z",
+      "training_receipt_sha256": "c1d7edcbbd63614670d885f4a15150f7cc82502dee593736c5ee50b618114394",
+      "world_id": "taxonomy-mesh2026-medicine-health-0017-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "37fe500543d91a5dc5587c50cc8a47c504aef1ca026c44a74b9fd1723c5cba5a",
+      "finished_at": "2026-09-17T07:47:53.272176+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "6aa376df56959e9449813ccd5827640086f6d0f564a7eb982b57f179b39a4a8c",
+      "run_id": "taxonomy-mesh2026-medicine-health-0018-v0-20260917T074731Z",
+      "training_receipt_sha256": "6837b78651889e53f137f9d1731c2b4248b40e653efef5039d71cb46be00ebea",
+      "world_id": "taxonomy-mesh2026-medicine-health-0018-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "8ed5207089a498e591b37adcfc618a4925fd089adf150b73278c08f6a81b2f67",
+      "finished_at": "2026-09-17T07:48:29.585770+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "8c219c2f607e121f80dc55df40350c08c66fc917c894574d9fba4beaae6f74da",
+      "run_id": "taxonomy-mesh2026-medicine-health-0019-v0-20260917T074807Z",
+      "training_receipt_sha256": "bb65345b9f1c24f6886d589658c07de635ac271a25354c893b27c786bf2e9c4f",
+      "world_id": "taxonomy-mesh2026-medicine-health-0019-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "06f9c317ccb685739a8f304d4c59a8f4a3f59529d83acbbdb74ad60db6f72d5b",
+      "finished_at": "2026-09-17T07:49:05.129803+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "fac47bcbe51de4c0f5eda21f7eaa463d604b9cf11f3edecaf33f09f2f67e3524",
+      "run_id": "taxonomy-mesh2026-medicine-health-0020-v0-20260917T074844Z",
+      "training_receipt_sha256": "74cb033fbb40f85d1b18f212748d2cc1bb8288725c7228d01dd6acedc1f7f346",
+      "world_id": "taxonomy-mesh2026-medicine-health-0020-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "892ea129ebc1325797c2cfd4881445c3d323aa38784dd1afbf44d7f96f6dcb2f",
+      "finished_at": "2026-09-17T07:49:39.733946+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "831f425abbb2eed6658cfbf3761c3c6d752364d7fe74e5a99f7b6fbf87a3230a",
+      "run_id": "taxonomy-mesh2026-medicine-health-0021-v0-20260917T074919Z",
+      "training_receipt_sha256": "bf42423f5293e7fe665a9964fa4a32cf4df85fa23c3f54008578070e5732dcd7",
+      "world_id": "taxonomy-mesh2026-medicine-health-0021-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "2a2149755f4f47f4da6d3547141b94a7b32406b291ea062b46574858b722f2bf",
+      "finished_at": "2026-09-17T07:50:14.543943+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "d46c1e744b574549f6c91d515bb4a0773bd128a63996437a7b5c212c3f7a1c81",
+      "run_id": "taxonomy-mesh2026-medicine-health-0022-v0-20260917T074953Z",
+      "training_receipt_sha256": "5c0e7c411833fd00c42626d12cc7af1279b65e825607d6f4a5d48cb19c67de92",
+      "world_id": "taxonomy-mesh2026-medicine-health-0022-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "5de484bc3bbd02f6ca841c5f287c83fec82b332d5049c2f2f7bbb8c5885ef6c6",
+      "finished_at": "2026-09-17T07:50:50.115445+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "052905d1d23c39ad6073f86cb60c937b0e3e7102df1f703e9049daf654fdf3d2",
+      "run_id": "taxonomy-mesh2026-medicine-health-0023-v0-20260917T075028Z",
+      "training_receipt_sha256": "cff909e14f0bc918c33e402fb922453c1c718cb95ac07f355fd6cf9b2cca515d",
+      "world_id": "taxonomy-mesh2026-medicine-health-0023-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "45c096d98b5b661f8abf3781d79a9257f54f427ef336572e322d23b906a6ac70",
+      "finished_at": "2026-09-17T07:51:25.270338+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "a2bab030bfdc603ee7dedb2ce3bdc942a5f441046214daa69364bc8070c74c8f",
+      "run_id": "taxonomy-mesh2026-medicine-health-0024-v0-20260917T075104Z",
+      "training_receipt_sha256": "ceb12447915f487a2c5261684994389a828c40b4e9c534a2a3e46067107a4b26",
+      "world_id": "taxonomy-mesh2026-medicine-health-0024-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "1ff58a97a15a7f450b59ea202f6ebe67733942f812d4067317e34e840cb543cf",
+      "finished_at": "2026-09-17T07:52:00.164495+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "c781e9530eb73da16c0d8f4990ac3f8567d7e4455986376706b0abfec63e5869",
+      "run_id": "taxonomy-mesh2026-medicine-health-0025-v0-20260917T075139Z",
+      "training_receipt_sha256": "5714e5ff2466a3c0b1f3a66f1ab04413658274c22b3382b9eab4f78f1a8ce3d4",
+      "world_id": "taxonomy-mesh2026-medicine-health-0025-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "163b6f10cd342e4c74d98fb9843717aa2d1d6463b5b30516e6e6dd840442ff2b",
+      "finished_at": "2026-09-17T07:52:35.491832+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "699c63db0206fc68ddd44237d9e93a5da7a6fac70db8765e15d144f9fd395e2b",
+      "run_id": "taxonomy-mesh2026-medicine-health-0026-v0-20260917T075214Z",
+      "training_receipt_sha256": "bf9890f836886beefb564ea624b9e1fa627aacc9b2d89510e6b8a9c944e092fe",
+      "world_id": "taxonomy-mesh2026-medicine-health-0026-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "9899b9722a5c3550495a8e20f4a33a0011601e26ce41b10e08f06da315e819f2",
+      "finished_at": "2026-09-17T07:53:11.426201+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "fac348bbfe0a23da60bdd3bc86250f9642e38389932676468d03da7316c662ef",
+      "run_id": "taxonomy-mesh2026-medicine-health-0027-v0-20260917T075249Z",
+      "training_receipt_sha256": "55a89ed56a5ccc35009617f214d163878e9d6f18f6506a5ec3d3d82355c2115b",
+      "world_id": "taxonomy-mesh2026-medicine-health-0027-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "998d8b79fda771b9f5cb130869314fc5b29bb3942effce5d22b76dc32d5c5ff2",
+      "finished_at": "2026-09-17T07:53:46.492605+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "3e4d7b46b3404b46380876fca8b8103fe9a938597cf9275b05b62fbc6a091173",
+      "run_id": "taxonomy-mesh2026-medicine-health-0028-v0-20260917T075325Z",
+      "training_receipt_sha256": "b6f100f9bf5ce7e219fbfc2403f9182fda63243b36367b8f7b5bbec2cf756220",
+      "world_id": "taxonomy-mesh2026-medicine-health-0028-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "fee800a8b41d18c04844412079d36af688e1bda9274b1eb66efc4e625329e0f5",
+      "finished_at": "2026-09-17T07:54:20.089933+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "570fefff04374ff3dcf9da896278a00593e94f9d2378cd0f33703b7db8162159",
+      "run_id": "taxonomy-mesh2026-medicine-health-0029-v0-20260917T075359Z",
+      "training_receipt_sha256": "e25654aac8a11d8a5dc9bc83b1713611438d4023e7a29bcce4c8bd636c1781fc",
+      "world_id": "taxonomy-mesh2026-medicine-health-0029-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "a9952f7f7976f24cfc026b28b3a0bb0cbe7d8604aeb86eda4601b3016a3a87ea",
+      "finished_at": "2026-09-17T07:54:55.545074+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "5ff040eae3eb40737504ddd5e11300b0e486f4fa05e485e2a3de9d899357e44e",
+      "run_id": "taxonomy-mesh2026-medicine-health-0030-v0-20260917T075434Z",
+      "training_receipt_sha256": "c78422217745de33f73d0f88dcf092ae2577dc455e0bf61b6aef824658cb4b5a",
+      "world_id": "taxonomy-mesh2026-medicine-health-0030-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "1c98c25c40fa402430d738f0632f11840ddc216cae589d00dfe79bbf9d40950c",
+      "finished_at": "2026-09-17T07:55:32.535831+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "39306db66a51b2d456ac1fc59da41858b98a2750b53909be262654c0dd490229",
+      "run_id": "taxonomy-mesh2026-medicine-health-0031-v0-20260917T075511Z",
+      "training_receipt_sha256": "944032a7a05474d1fda3bba906404e3e9ea008be0dd88e08ae464dad79e8c7ef",
+      "world_id": "taxonomy-mesh2026-medicine-health-0031-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "71e6e13cf3c19a64a1bb8517c618c4ee9b0123629b05308b91e0fd733429d4b3",
+      "finished_at": "2026-09-17T07:56:08.476571+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "def550add299f1812da7fd0136a1bc251b57fbaad89d3b84de3b0146c31d747c",
+      "run_id": "taxonomy-mesh2026-medicine-health-0032-v0-20260917T075546Z",
+      "training_receipt_sha256": "98811ff81718e1bcd6409aebae99e180551d4f2f7c4055eca7311d768eba1e95",
+      "world_id": "taxonomy-mesh2026-medicine-health-0032-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "787d0b4c7b66e79d1e3cf83e055febe986d2995661a57c8b9c0f8623476a3a3a",
+      "finished_at": "2026-09-17T07:56:45.088326+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "56291374242d6dd388d3f36d515c75d05eae7e8d32f9f29f0cd3bc0a626c9296",
+      "run_id": "taxonomy-mesh2026-medicine-health-0033-v0-20260917T075623Z",
+      "training_receipt_sha256": "c07a724d2f3a53b1d0c32ef86bf2ad20af8a7f5b8ccd45b8b98e92b1502f7a78",
+      "world_id": "taxonomy-mesh2026-medicine-health-0033-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "9cc388b1baf43c40ae4466611693672119e9ec797df4ed8bea24fd56f647e946",
+      "finished_at": "2026-09-17T07:57:21.872757+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "00f000599e15a1eb92b33908d608c6526ac4be8d0114df0c2bf1f3f41901b58b",
+      "run_id": "taxonomy-mesh2026-medicine-health-0034-v0-20260917T075700Z",
+      "training_receipt_sha256": "746a0da20eaa92e38df9f274fc7c1a966a9214d65a914cd8fefec2029182b419",
+      "world_id": "taxonomy-mesh2026-medicine-health-0034-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "2c0e8a5af8d44e5558c1ead0665febf17d4d9707b28e0d3b148e56b05bdfeb91",
+      "finished_at": "2026-09-17T07:57:57.573035+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "6d4b90ea29eb0d7aa0abfb0cb6e1f26868557a6b772b38553430202fc35546e7",
+      "run_id": "taxonomy-mesh2026-medicine-health-0035-v0-20260917T075736Z",
+      "training_receipt_sha256": "2ed406a78ef150d3a8c128da5511d3b0e63caf0ba40a81c8eb078adb2190f577",
+      "world_id": "taxonomy-mesh2026-medicine-health-0035-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ba83efded5b8183a3b1196c55508eddc391204d0104af5ffb844f2b03c5f73ad",
+      "finished_at": "2026-09-17T07:58:29.710715+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "ca7da5483cf9129d43e7420701bf9f06fc4f78c083dbca3c6109974a7d8e19b8",
+      "run_id": "taxonomy-mesh2026-medicine-health-0036-v0-20260917T075812Z",
+      "training_receipt_sha256": "becde846df280ca5cba72b5c668bf2d7aff8ec059fee9459c1a7adf28d80908e",
+      "world_id": "taxonomy-mesh2026-medicine-health-0036-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "d7797989d0ee3ac4f51f33da2635abfdefe5300cea6a228c5cb472a9805e0104",
+      "finished_at": "2026-09-17T07:59:02.075661+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "d901c0704a76a4a78d868482b728ed8b4bf8553f9241000991b32b6a6ea8f80a",
+      "run_id": "taxonomy-mesh2026-philosophy-0001-v0-20260917T075844Z",
+      "training_receipt_sha256": "8bd71f2685abef4ae47259f41ee4b1e8e84bee67a1faefebf077db7489ca357a",
+      "world_id": "taxonomy-mesh2026-philosophy-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "262cd2493bc53442ad26d1cde0fe884481c2199665b18efcb3bd4137be954fd6",
+      "finished_at": "2026-09-17T07:59:37.255695+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "fc81622f2a6a98d848b3027108a4ff3094953795c6e11a83e7110048e353eb21",
+      "run_id": "taxonomy-mesh2026-psychology-cognitive-science-0001-v0-20260917T075916Z",
+      "training_receipt_sha256": "6d3793a277eac3cba7befd53b7d178f5bc2c20cc8f9d2bdc4bd9171999a920d3",
+      "world_id": "taxonomy-mesh2026-psychology-cognitive-science-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ea9fafa40e16e932942d1eebb615680983b3b79f08b301286e0e00e944fed84d",
+      "finished_at": "2026-09-17T08:00:12.647765+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "3360616330d9caceb97a6d405366fd53fe87967139fce4b205c568feda0b6415",
+      "run_id": "taxonomy-mesh2026-psychology-cognitive-science-0002-v0-20260917T075952Z",
+      "training_receipt_sha256": "b7dcc81a4ab872f0c67c4795bbf295919bbe3a4ad51db959d4ad2d84e88ec0ad",
+      "world_id": "taxonomy-mesh2026-psychology-cognitive-science-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "50ab3671b5178fd4a3914138e6f30944b2be1011251a36b4796e19b645ab7f9a",
+      "finished_at": "2026-09-17T08:00:46.131178+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "b4879308594e623e95b221a8a8e063a7ce33bddd357594f2a109b9d17d7a03fb",
+      "run_id": "taxonomy-mesh2026-psychology-cognitive-science-0003-v0-20260917T080027Z",
+      "training_receipt_sha256": "ee85e9cea82fa533f75d87ad66fb96788e65a0226396c154a400ff9c613c22ca",
+      "world_id": "taxonomy-mesh2026-psychology-cognitive-science-0003-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ed7ec2402a87667c57b4c09b2feb7108537f302d6b5a0778070a7ab4cd623470",
+      "finished_at": "2026-09-17T08:01:16.945814+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "4283b5669a26d0751d175b042e51ad7cf712c9b26515901b61a360b07f5dc9d7",
+      "run_id": "taxonomy-mesh2026-psychology-cognitive-science-0004-v0-20260917T080056Z",
+      "training_receipt_sha256": "1d91a3abe110c648e8dbf85f1cb118695b86f089d39ae317ea5c89199c95ea24",
+      "world_id": "taxonomy-mesh2026-psychology-cognitive-science-0004-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "cf9ae45b467e5205545edf8dfbaf6c89516b2316897bda41ceca040f926e3238",
+      "finished_at": "2026-09-17T08:01:50.938467+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "302c7abcea4b3886a36404d0fde0c93296f686c2b9f3a61da534b7504ee89f6a",
+      "run_id": "taxonomy-mesh2026-research-scientific-method-0001-v0-20260917T080131Z",
+      "training_receipt_sha256": "1f71895f7143523b667fe04145ef418b8be68bd6a5d3e8a3046a9ab8ef07938b",
+      "world_id": "taxonomy-mesh2026-research-scientific-method-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "249bb8bd3f29a8244752fd458cce1e27522a04fe63a2e7a5c2feaed792a1de75",
+      "finished_at": "2026-09-17T08:02:25.525266+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "467659d48a2ef2668303dc57c42b9c5bd07cc261d112e412ff631c17b3a398d4",
+      "run_id": "taxonomy-mesh2026-research-scientific-method-0002-v0-20260917T080205Z",
+      "training_receipt_sha256": "7bf42c1a4cb8b4d6c87edf20be3aa2576bab904c433abec2b1d9f4036bcb374e",
+      "world_id": "taxonomy-mesh2026-research-scientific-method-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "7c20b78ce2612ee2ff7da49ebeda059c79cabff9b49de9c4327513a348699385",
+      "finished_at": "2026-09-17T08:02:57.127598+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "011f7054a0b66dece78be8708094c58adecf0669e4bd8c0313e34c509dea79ac",
+      "run_id": "taxonomy-mesh2026-research-scientific-method-0003-v0-20260917T080240Z",
+      "training_receipt_sha256": "7405394ba2b79624a66279db2666491daf3b7a29de1f7976ef14ac1449753397",
+      "world_id": "taxonomy-mesh2026-research-scientific-method-0003-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "a99b94bf14b0e875790a064294048d178cf0df0e4e89f19a4bedcae47ef33648",
+      "finished_at": "2026-09-17T08:03:31.271326+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "dd175caea25d27751b39f95224c2a0476e2d94d8e67ca0b61464f21898aeb5ea",
+      "run_id": "taxonomy-mesh2026-social-behavioral-sciences-0001-v0-20260917T080311Z",
+      "training_receipt_sha256": "47611e4c89638cabd4effb0cc2ec365ca568d45485aa4df967a3c7ad9268b878",
+      "world_id": "taxonomy-mesh2026-social-behavioral-sciences-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "9245be62aecd69d803bdee3f4b14705094059392208735bcbfc0826113983042",
+      "finished_at": "2026-09-17T08:04:05.577323+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "eebbd7e5262134fb12884e6c0b70f7c40071cef16b3a980e35eeba62a1b418b2",
+      "run_id": "taxonomy-mesh2026-social-behavioral-sciences-0002-v0-20260917T080346Z",
+      "training_receipt_sha256": "525b9345e9515276cbc25f62ee6667d3c349887fdc42f35a368fcd58e71c1eb2",
+      "world_id": "taxonomy-mesh2026-social-behavioral-sciences-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "47eebd3f8783e09ea05015d8870ec25002533855529bf855f67ecb6127b9b3f5",
+      "finished_at": "2026-09-17T08:04:39.728181+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "1bd931b607f44d9cf4cdadad5c2da144b0ff46edf754e943d1588141267f2652",
+      "run_id": "taxonomy-mesh2026-social-behavioral-sciences-0003-v0-20260917T080420Z",
+      "training_receipt_sha256": "67ea9a7053b176e997409d3668b4741d949e01278bcf35047485ea40274f79cf",
+      "world_id": "taxonomy-mesh2026-social-behavioral-sciences-0003-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f891676c300b06e04c2e7b84e79e268833a66e6de336d560757f4ff701432387",
+      "finished_at": "2026-09-17T08:05:13.007914+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "e9c836226e0cca54e25b8a8c392dc226eeee0cf2b90670abda00740b0448e842",
+      "run_id": "taxonomy-mesh2026-social-behavioral-sciences-0004-v0-20260917T080454Z",
+      "training_receipt_sha256": "ecedc37db10b3fee2ef6b03adcfa957104c4aecb0f4e8bf06c0b546b1a881bdf",
+      "world_id": "taxonomy-mesh2026-social-behavioral-sciences-0004-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "0b37c497c1b15559773f38100818bb8d4b086e7eb52dca3d6524efabe5f2cddf",
+      "finished_at": "2026-09-17T08:05:45.397318+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "a4e7bc1ca978322bfd53455e1a6fd53b13009b5334e724a3da5c4a6b4b7ae760",
+      "run_id": "taxonomy-msc2020-biology-0001-v0-20260917T080527Z",
+      "training_receipt_sha256": "0f75c512c67790b018aa415b40b115d4c61622a9bf6b393e51cf45a7d9d42059",
+      "world_id": "taxonomy-msc2020-biology-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "2d3524ea7599c2c5045d38e02731eb67cfa158ecedc2a2eac59db3cc15c23a9f",
+      "finished_at": "2026-09-17T08:06:17.437153+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "11cecde32eb9f7c94a55b629ea63c618946d4ee4bb8da48106a94a6cf3db7036",
+      "run_id": "taxonomy-msc2020-computer-science-0001-v0-20260917T080600Z",
+      "training_receipt_sha256": "7205ad406fb2a78172f0b0953ecca73f1fb7c2839d90bae85e5bd94c1a587444",
+      "world_id": "taxonomy-msc2020-computer-science-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "50247d6b1cf908cc6475e801b69d0c4a075b8b6ef80a8045c411ac3cb3435417",
+      "finished_at": "2026-09-17T08:06:51.455619+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "4210bb97cff2019c50b7172d8812ac6f37da865d0dacf97f75b9708f4c012079",
+      "run_id": "taxonomy-msc2020-economics-decision-operations-0001-v0-20260917T080632Z",
+      "training_receipt_sha256": "d6707458b7849f1186832cb6ef517e764a4227224ee899033cd100f4cbc7a22f",
+      "world_id": "taxonomy-msc2020-economics-decision-operations-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "45ff616219db8acfcef7dc1e18be376cfb7cf7de989bdc3c062c126ec1b4f56a",
+      "finished_at": "2026-09-17T08:07:25.116668+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "446551690107a6598a92e6b8411e74a34a0b969dbea4f1852e48d227d3fd4641",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0001-v0-20260917T080705Z",
+      "training_receipt_sha256": "46d85d9d22275b5958648068bc47c530464acd16f668c9aef2c99ad478e428ad",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "ea674d115e2e6a90b630005e33f8e3913103bbc36d9181133035f8dbd0a11990",
+      "finished_at": "2026-09-17T08:07:59.934286+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "2d4a135552ee0221a857e28cdc868fa52877b770cc948c67299d4aaa1c7b0347",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0002-v0-20260917T080740Z",
+      "training_receipt_sha256": "c623c872e864e8c4377fb31dad0a4f6a311400dcf0520b00012fa9f87b1386bc",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "2584253acf6de2df554984208911896ad651e7565bc7b4dc34d9c2375a8d5bd6",
+      "finished_at": "2026-09-17T08:08:33.466282+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "600040a2431bd8e8c9ef72f43a8f4f4aa26c82076c59b0e4d0f5f4011963b17d",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0003-v0-20260917T080813Z",
+      "training_receipt_sha256": "e33e45f395e87011ef530d8c9721a2a1ceb467307efa82ed6c786aba72f6b748",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0003-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "34dd745e6ba02c1331c8ce8ce8f640f206d5f51275084ebd38d1c55db82e67c6",
+      "finished_at": "2026-09-17T08:09:07.718342+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "17675518ee07431ebe695264497aa6345256ebbad0c757868d372ed3cdf5d0c3",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0004-v0-20260917T080848Z",
+      "training_receipt_sha256": "51d8669bafd82ea97d1fde5bc80d830ee26f786a827b97be70d47302869fb073",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0004-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "44a516be51374d129384d183ed60061d90735bfd9284cf5a812ca0689ddf5285",
+      "finished_at": "2026-09-17T08:09:41.948344+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "4e9d882400310ae9312bc064b441fcd983cf367f658b906fa883d9564c05d32c",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0005-v0-20260917T080923Z",
+      "training_receipt_sha256": "f372f304c1b95a896723b2ff4052ae6efecb2822c35105cb1ea116cd58a1984f",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0005-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "98318b8be6e5177825e665a570c885219fd263ae9a7fb2786ac1c047627d0276",
+      "finished_at": "2026-09-17T08:10:15.722920+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "054d5bd52a1beb903cf436564a4c0057b5b8cebefaba0ca79aa875076eee40ff",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0006-v0-20260917T080956Z",
+      "training_receipt_sha256": "d0c86f65db2e5112e68fda27239520db5b4e33120bcb836d813db4185b89c8c6",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0006-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "8e6cf22d9164a97082e05b688bf4601ce9f37bd4b35d27c1e3deb5ffb8ab3310",
+      "finished_at": "2026-09-17T08:10:50.020262+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "3bb79a7141d54ced76ccdc61505fe90797d5a83819152adf05848fa67a541888",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0007-v0-20260917T081030Z",
+      "training_receipt_sha256": "b83b00237583f1a0021aa7e3c2de1b0911416f1a100d37593f7fe05fbe2f19ba",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0007-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "98a993eea0775b9dbb772900c98e89345475d4c00f39ee6d406838cdbb55e7ec",
+      "finished_at": "2026-09-17T08:11:24.802896+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "76fdfae64c344c25687e1e732b71723e618156420390eddd519f5e4f76a4df3e",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0008-v0-20260917T081105Z",
+      "training_receipt_sha256": "669c6a1d77c82ca90c975bfa7759cd80082d147973b91ab58e79843fd9739339",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0008-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "8f250f02e6b02970c42bc5c90dd392045da14076b23221306053d65597c9d219",
+      "finished_at": "2026-09-17T08:11:59.339703+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "8986ed96ad235bce752cb904f8144ca81332f89b538aa19b919b32b6db85e113",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0009-v0-20260917T081139Z",
+      "training_receipt_sha256": "6b5480f3c93084230eca2ada9109a7f432efe614a229f0e63f1d37ea6faf1f01",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0009-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "4f9c2b5718c8634f01c66279203f4fadae40c9d9b807b2fff1f098a434cd6052",
+      "finished_at": "2026-09-17T08:12:34.009767+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "897d8a52fdc0afd52ec2f1210e7e751bc960d46b8d437b69afacdc513249c062",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0010-v0-20260917T081214Z",
+      "training_receipt_sha256": "809f50ed9f716a8d2f85fb37c6c15755dc4f0419e65a7ac9324ec235f1963c7e",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0010-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "aaef4665728e003361dcbe82c850001a706e4c155788c41295341d76c5344fd5",
+      "finished_at": "2026-09-17T08:13:08.142530+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "85945cb91d5f7659adf68349e8b998d451ffe159662f0c2a6ba8d553dc9989f4",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0011-v0-20260917T081248Z",
+      "training_receipt_sha256": "aa7133b25849e0a13671e051ba637d29b08159ac7d788009a2e82d93c4c47c66",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0011-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "f4cefa74000bdaede402af5bc1c5f7e5bf300378fd37ab0ca95fbdb6207ff3ca",
+      "finished_at": "2026-09-17T08:13:41.752934+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "eb1e4a70353851454cf299a6070d4f596c45fa57fb60e9b148bf544fce323ce9",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0012-v0-20260917T081322Z",
+      "training_receipt_sha256": "f0f558f707740868a8b40d2fc5ec3e76c36b4a86ce98ce0800c39857b8e15446",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0012-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "952d93e7906d8d42fead02572311fbcdb70c28147d6f99c94fbad4b5591ed3ef",
+      "finished_at": "2026-09-17T08:14:15.803503+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "8cafda1ec069cca191c3b11b7c95afc7c087798985b7ac042a1c76f9c8eea80a",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0013-v0-20260917T081356Z",
+      "training_receipt_sha256": "4f68f0fcd656a7cf5ef0accb6aae4430eed165ab271f15439b6d0fdff3a35e5e",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0013-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "294e84d15e9f1d42fe9269cb4563d0f32a0cf9c75a893b845457f31b55e9678b",
+      "finished_at": "2026-09-17T08:14:50.567942+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "60355499adbe95e6e84c8696c376f54729d145b14ae0afb8c3fe5157e01604d8",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0014-v0-20260917T081430Z",
+      "training_receipt_sha256": "827674c65973f0b3bbcecd99376d41434029204b8551598606ea0e12b468618f",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0014-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "64d7cec67523820a17d1bf18b73b22d5fa076c88b3fca8a7687a7aeb49f81d5e",
+      "finished_at": "2026-09-17T08:15:24.631869+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "67398137c63406d5b7e7c57f96574a99dad77a6aedda3916dfdf49fbdb301fab",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0015-v0-20260917T081505Z",
+      "training_receipt_sha256": "0478087a90007b3619676a56c725642b6541af88d82be184d71790caa5933e9f",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0015-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "e33d656d2625ec6dd0fc4549a28f187fb47e4a7dff10118a1422999ba3a17ac5",
+      "finished_at": "2026-09-17T08:16:00.149309+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "dc99f05d3b285c7f89b5bb2a5db5cdc298cecc74450c1dc9c536668f5084d608",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0016-v0-20260917T081539Z",
+      "training_receipt_sha256": "d8219d234420d9c74286bdfe5a56ab59c0aadc1bd0fd67513574781c569170e9",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0016-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "21d601472d7bb1e4ded8bb152511678e23ee0e94dc53af1beca21ed1bdb6d7a0",
+      "finished_at": "2026-09-17T08:16:35.025376+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "b595c8957960e4a44e857e39f9d74fde1f758e74c00ceb70067d360b148c9497",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0017-v0-20260917T081615Z",
+      "training_receipt_sha256": "22d05645c56da9a99154367ff03dbd0f63e96e9fe7b04cc3931a5114e51f416c",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0017-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "b4ddc240cee315232313b709e78f528d781da6d203cd93041ca4b965784af198",
+      "finished_at": "2026-09-17T08:17:08.535963+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "d75656321135ff13957f02b98d96677ea52e3399c1809cfdc8837f078476b35d",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0018-v0-20260917T081650Z",
+      "training_receipt_sha256": "1c046b078552bdf406ec0054d399cc01a1be68ccaa58fc54ca83b402f470f750",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0018-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "661492ca447a3fc38d1176f84d795506ad27d1ffba53c5224f45ab4acf974c5e",
+      "finished_at": "2026-09-17T08:17:42.295452+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "294e7d010f3047cc224965c5e1da13eb340dcde91715ee27fb4841e52d05a6df",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0019-v0-20260917T081723Z",
+      "training_receipt_sha256": "6da151ddc0d8ddac90077e4d61f077351690531f924765464b1efb173c239e78",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0019-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "016e84ce89a44ff0b0210fb0f2070826e43357f31740b460b13ae01efa461803",
+      "finished_at": "2026-09-17T08:18:16.190853+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "14f0c459c8cc6c31966a89a9bedb6c137a3473b76292d84ade26068b1bdca833",
+      "run_id": "taxonomy-msc2020-formal-mathematics-0020-v0-20260917T081757Z",
+      "training_receipt_sha256": "7dbe3fcad201eda7a1d8b7cc3dd0ce9ea0185992448df88f93788587871b08c6",
+      "world_id": "taxonomy-msc2020-formal-mathematics-0020-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "4ac22ea2b0b9ba4b50d122efe84031186cc0479a866650e04dd682aa40d7c0e2",
+      "finished_at": "2026-09-17T08:18:49.831927+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "1aa9b22d61099b3bdd94ca59939285970a6924e200d6fda440a2628ee062880f",
+      "run_id": "taxonomy-msc2020-information-communication-0001-v0-20260917T081831Z",
+      "training_receipt_sha256": "12a7836acef14b94b345dbdb1692f49ca58d9857e44154b3c82c8ce26da566aa",
+      "world_id": "taxonomy-msc2020-information-communication-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "45187215f4dc40975f676367886a3a964665f0b5094fa0cc8356ec31a455ccd7",
+      "finished_at": "2026-09-17T08:19:24.061031+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "edb68442af8d05763d0deb2e0d3169b9db4b284e9385c4860d24081a652985a3",
+      "run_id": "taxonomy-msc2020-physics-0001-v0-20260917T081904Z",
+      "training_receipt_sha256": "1edb7bae0b893e4d7a65344d27f1a3207760dc6e1930c20940bd3a748742d2fb",
+      "world_id": "taxonomy-msc2020-physics-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "fa419788bbbd2b75521f42812650a27b9daa18a0333b97df38c4a1bf2fd605be",
+      "finished_at": "2026-09-17T08:19:58.264947+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "873216daf8423cb9332726976f04bfba3bbdda1cf04f91e331d81968a5b573ca",
+      "run_id": "taxonomy-msc2020-physics-0002-v0-20260917T081938Z",
+      "training_receipt_sha256": "969a6b3b3438a3ffd127f737d120c9040c935566f2f1034d6d2d6796624ea80a",
+      "world_id": "taxonomy-msc2020-physics-0002-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "7c33190eeac88cb95083b514fbced3d8483e26b2760dd290a64e4d128a49bbee",
+      "finished_at": "2026-09-17T08:20:32.702772+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "f397d7f7f596c4444fa5909e31019a1b133c80b1ff5a7f20871645faa8a87755",
+      "run_id": "taxonomy-msc2020-physics-0003-v0-20260917T082013Z",
+      "training_receipt_sha256": "78904f2f6176f180d6f992e9b3fc0fce2b19d812560656d007df1fc660a70384",
+      "world_id": "taxonomy-msc2020-physics-0003-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "711fa613edc45f63b0fa1af48a2a82a320d6fa3fe2f0313fdb2b51a19d1e8bab",
+      "finished_at": "2026-09-17T08:21:05.072294+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "b0cb3a87a1800af3cae4871fcd9159bbc9c8410f29eda2aa88c699b4f651d99d",
+      "run_id": "taxonomy-msc2020-physics-0004-v0-20260917T082047Z",
+      "training_receipt_sha256": "d7fad7ab1465cb7955fc8f5f0e669e93f8c29c88f274b0b147706bfab5e0dc78",
+      "world_id": "taxonomy-msc2020-physics-0004-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "8d93abf639c6a1dce51580130ff70029eb3d274f4c17accf81bf74a5eac2111b",
+      "finished_at": "2026-09-17T08:21:39.429125+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "4eebf369f00f842842edf30603ccdf7942a04b999e4ab3bf5c36f5710bdbd18e",
+      "run_id": "taxonomy-msc2020-probability-statistics-0001-v0-20260917T082120Z",
+      "training_receipt_sha256": "0196725d0adbfbb4be55cb18a577a6024dfbc156d49373f37b5ce2023b341db4",
+      "world_id": "taxonomy-msc2020-probability-statistics-0001-v0",
+      "world_version": "0.1.0"
+    },
+    {
+      "accelerator_validation_sha256": "2a5b27703bb66a9da099cab022f2a83380a3ad56ef4d9e6cdcaf030b717cb788",
+      "finished_at": "2026-09-17T06:48:42.490906+00:00",
+      "gate_count": 30,
+      "pack_manifest_sha256": "5f130b08092eedabcef347da23169af42323810436e9eef5c54e99b186c02f4b",
+      "run_id": "typography-color-v0-20260917T064827Z",
+      "training_receipt_sha256": "3fd7a9bd66561d3b9c1e46d389bb8c168f0feb288958bb52898d23e6c904ed34",
+      "world_id": "typography-color-v0",
+      "world_version": "0.1.0"
+    }
+  ]
+}

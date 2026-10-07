@@ -1,0 +1,35 @@
+{
+  "acknowledgements": [
+    "Mathematics Subject Classification 2020 is jointly published by Mathematical Reviews and zbMATH.",
+    "Medical Subject Headings data are provided by the U.S. National Library of Medicine; inclusion does not imply NLM endorsement."
+  ],
+  "counts": {
+    "mesh2026": 31110,
+    "msc2020": 6603
+  },
+  "entry_count": 37713,
+  "inputs": [
+    {
+      "acknowledgement": "Mathematics Subject Classification 2020 is jointly published by Mathematical Reviews and zbMATH.",
+      "local_name": "MSC_2020.csv",
+      "rights": "CC BY-NC-SA 4.0",
+      "sha256": "f7c889354c202551fe01f89bad2ae95ccadec4c57ac1f6f9de38bbd658d3c78c",
+      "source_id": "msc2020",
+      "version": "MSC2020"
+    },
+    {
+      "acknowledgement": "Medical Subject Headings data are provided by the U.S. National Library of Medicine; inclusion does not imply NLM endorsement.",
+      "local_name": "desc2026.gz",
+      "rights": "NLM MeSH Terms and Conditions",
+      "sha256": "ccd4d0d33bebfd4c836a59e7dd0c635b1d4e20c4f5a6abc55e2eb0ba4c8716dd",
+      "source_id": "mesh2026",
+      "version": "2026 production year"
+    }
+  ],
+  "ledger_sha256": "33c1f19567bdc2800d7f2f405c5fb46cd515ce526a817d243e6479f4eead4070",
+  "mapped_count": 37713,
+  "open_world": true,
+  "purpose": "Unresolved authoritative taxonomy entries expand the known coverage frontier; entries are not facts or trained worlds.",
+  "schema_version": 1,
+  "unresolved_count": 0
+}

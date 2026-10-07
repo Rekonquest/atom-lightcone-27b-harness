@@ -1,0 +1,15 @@
+[package]
+name = "lightcone-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Verification and passive-admission CLI for model-independent Lightcone worlds"
+
+[dependencies]
+lightcone-core = { path = "../lightcone-core" }
+lightcone-creativity = { path = "../lightcone-creativity" }
+lightcone-formal = { path = "../lightcone-formal" }
+serde_json.workspace = true
+
+[lints]
+workspace = true

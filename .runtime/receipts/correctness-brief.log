@@ -1,0 +1,23 @@
+correctness corpus correctness-flagship-2026-09-24 — 2 cases, both arms, one instrument
+ground truth is the pack's own edges; scoring is deterministic; no blended score
+brief: on (admitted geometry + lanes in the atom arm's context)
+pack: lightcone/artifacts/worlds/network-security-browser-v0/0.2.0
+pack_manifest_hash=2588a0290eb3118206f0d8fbb427a2b025a74d8eb4ef6b55cba940606e175602
+
+enables-established [connected] admitted_links=2 lane_paths=[1, 1] rung=Slow creative_paths=0
+  bare_text: "<think> </think> In the context of the Transmission Control Protocol (TCP), an **acknowledgment (ACK)** is a small data segment sent by the receiving side of a "
+  atom_text: "<think> We need to answer user: \"Explain what a TCP acknowledgment does.\" We have context: admitted geometry from passive receipt with claims: TCP acknowledgmen"
+  bare: WRONG — answer asserts no relation between them
+  atom: CORRECT
+
+unconnected-novel [unconnected] admitted_links=0 lane_paths=[0, 0] rung=SpeculativeFallback creative_paths=1
+  bare_text: "<think> </think> Bread dough rises in a warm kitchen primarily due to the activity of **yeast**, a living microorganism (a type of single-celled fungus) that is"
+  atom_text: "<think> We need to answer user: \"Why does bread dough rise in a warm kitchen?\" System says: Sourced causal-geometry artifact (not observed fact; no factual auth"
+  bare: CORRECT
+  atom: CORRECT
+
+--- correctness (the only score) ---
+bare arm: 1/2 correct
+atom arm: 2/2 correct
+grounding gained 1 case(s)
+note: no correctness scoring can license a quality claim by itself — this is a count of cases right, not a measure of how right the answers are
