@@ -134,3 +134,13 @@ real-world facts or measured model uplift.
 
 See [reference map](docs/REFERENCE_MAP.md), [evaluation status](docs/EVALUATION.md),
 and [copied Lightcone provenance](lightcone/INTEGRATION.md).
+
+## License
+
+Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE) (`PolyForm-Noncommercial-1.0.0`). Free for personal use, research, education, charities, public-good nonprofits, and government; commercial use is not permitted. This is source-available software, not OSI open source.
+
+Third-party and derived components in this repository keep their original licenses and are **not** covered by the PolyForm license:
+
+- cap-* crates extracted from or modeled on Zed (upstream Apache-2.0 / GPL-3.0 portions keep their original licenses)
+- llama.cpp / ggml (MIT, Copyright The ggml authors)
+- vendored third-party crates/libraries (their own licenses)
