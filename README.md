@@ -137,7 +137,20 @@ and [copied Lightcone provenance](lightcone/INTEGRATION.md).
 
 ## License
 
-Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE) (`PolyForm-Noncommercial-1.0.0`). Free for personal use, research, education, charities, public-good nonprofits, and government; commercial use is not permitted. This is source-available software, not OSI open source.
+Atom Lightcone 27B Harness is free for uses permitted by the
+[PolyForm Noncommercial License 1.0.0](LICENSE)
+(`PolyForm-Noncommercial-1.0.0`), including noncommercial use, personal uses
+without an anticipated commercial application, and use by the noncommercial
+organizations described in that license. You may use, modify, and share the
+software subject to its terms and notice requirements.
+
+**Commercial use outside those permissions requires a separate paid written
+license agreement with Rekonquest before use.** See
+[commercial licensing](COMMERCIAL.md) to request terms and pricing.
+
+This is source-available software, not OSI open source. This licensing policy
+does not revoke rights already granted for earlier copies under their applicable
+licenses.
 
 Third-party and derived components in this repository keep their original licenses and are **not** covered by the PolyForm license:
 
